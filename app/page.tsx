@@ -1,7 +1,4 @@
-import Navbar from "@/components/shared/Navbar"
-import FooterSection from "@/components/shared/Footer";
 import Hero from "@/components/home/Hero";
-import Features from "@/components/home/Features";
 import HomeClients from "@/components/home/clients";
 import HomeAbout from "@/components/home/home-about";
 import OurServices from "@/components/home/our-services";
@@ -19,7 +16,6 @@ export default function Home() {
       <HomeCaseStudies />
       <Testimonial />
       <BookNow />
-
     </div>
   );
 }

@@ -10,7 +10,6 @@ import Image from 'next/image';
 
 function OurServices() {
     const [activeCards, setActiveCards] = useState<Record<string, boolean>>({});
-    const [isMore, setIsMore] = useState(false);
 
     const toggleCard = (id: string) => {
         setActiveCards(prev => ({

@@ -8,22 +8,12 @@ import {
 } from "@/components/ui/navbar";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import LaunchUI from "@/components/logos/launch-ui";
-import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import Link from "next/link";
 import heirs_logo from "@/public/assets/images/heirstech.png"
 import Image from "next/image";
-import Typography from "./typography";
 
 export default function Navbar() {
-    const { setTheme } = useTheme();
     return (
         <header className="py-2 sticky top-0 z-50 px-4 flex flex-col justify-center">
             <div className=" absolute left-0 h-full w-full bg-background/60 backdrop-blur-md"></div>

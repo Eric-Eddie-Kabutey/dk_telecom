@@ -24,7 +24,7 @@ function HomeHero() {
                         typo="header-2-medium"
                         className='!leading-11 md:!text-[3rem]'
                     >
-                        Driving Africa's
+                        Driving Africa&apos;s
                     </Typography>
                     <Typography
                         typo="header-2-medium"

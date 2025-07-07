@@ -24,7 +24,7 @@ const HomeClients = () => {
             <div key={logo.id} className="lg:w-32 w-16 h-fit flex items-center md:justify-center text-gray-500">
               <Image 
                 src={logo.img}
-                alt="Brand logo"
+                alt={`Brand logo ${index}`}
                 className="w-full h-full filter  grayscale"
               />
             </div>

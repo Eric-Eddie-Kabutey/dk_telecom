@@ -2,7 +2,7 @@
 import React from 'react'
 import Typography from '../shared/typography'
 import { testimonial_clients } from '@/constants';
-import { Card, CardContent, CardFooter, CardHeader } from '../ui/card';
+import { Card, CardContent, CardFooter } from '../ui/card';
 import { Pause } from 'lucide-react';
 import Image from 'next/image';
 

@@ -5,7 +5,6 @@ import { case_studies } from '@/constants';
 import { Carousel, CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../ui/carousel';
 import { Card, CardContent, CardHeader } from '../ui/card';
 import { Button } from '../ui/button';
-import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 
 function HomeCaseStudies() {
