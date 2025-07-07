@@ -26,7 +26,7 @@ export default function Navbar() {
                             <Image 
                                 src={heirs_logo}
                                 alt="Heirs logo"
-                                className="w-fit h-10"
+                                className="w-fit sm:h-10 h-6"
                             />
                             {/* <Typography
                                 typo="header-6-semibold"
@@ -41,7 +41,7 @@ export default function Navbar() {
                         
                         <Button variant="outline" asChild>
                             <Link href="/"
-                                className="pops text-app-primary font-light"
+                                className="pops text-app-primary font-light bg-transparent"
                             >Contact us</Link>
                         </Button>
                         
