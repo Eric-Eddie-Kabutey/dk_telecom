@@ -17,15 +17,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = generateMetadata({
-  title: "KtechHub | Empowering Businesses with Tailored Tech Solutions",
-  description: "KtechHub delivers cutting-edge digital solutions to empower businesses, offering expertise in software development, API integration, and cloud technologies.",
+  title: "Heirstech | Empowering Businesses with Tailored Tech Solutions",
+  description: "Heirstech delivers cutting-edge digital solutions to empower businesses, offering expertise in software development, API integration, and cloud technologies.",
   url: "/",
 });
 
 const OrganizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "KtechHub",
+  "name": "Heirstech",
   "url": "https://www.ktechhub.com",
   "sameAs": [
     "https://www.instagram.com/ktechhub",

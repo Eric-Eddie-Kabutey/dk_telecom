@@ -7,21 +7,21 @@ interface MetadataProps {
 }
 
 export function generateMetadata({
-    title = "KtechHub | Empowering Businesses with Tailored Tech Solutions",
-    description = "KtechHub delivers cutting-edge digital solutions to empower businesses, offering expertise in software development, API integration, and cloud technologies.",
+    title = "Heirstech | Empowering Businesses with Tailored Tech Solutions",
+    description = "Heirstech delivers cutting-edge digital solutions to empower businesses, offering expertise in software development, API integration, and cloud technologies.",
     url = "/",
 }: MetadataProps): Metadata {
     const defaultUrl = process.env.WEBAPP_URL || 'https://heirstechnologies.vercel.app/';
     return {
         title: { default: title, template: "%s | Empowering Businesses with Tailored Tech Solutions" },
         description: description,
-        applicationName: "KtechHub",
-        authors: [{ name: "KtechHub Team", url: process.env.WEBAPP_URL || 'https://heirstechnologies.vercel.app/' }],
+        applicationName: "Heirstech",
+        authors: [{ name: "Heirstech Team", url: process.env.WEBAPP_URL || 'https://heirstechnologies.vercel.app/' }],
         generator: "Next.js",
         keywords: ["software development", "API integration", "cloud technologies", "UI/UX design", "DevOps", "business solutions", "technology services", "tailored tech solutions"],
         referrer: "origin",
-        creator: "KtechHub Team",
-        publisher: "KtechHub",
+        creator: "Heirstech Team",
+        publisher: "Heirstech",
         robots: "index, follow",
         alternates: {
             canonical: `${defaultUrl}${url}`,
@@ -39,19 +39,19 @@ export function generateMetadata({
             url: process.env.WEBAPP_URL || 'https://heirstechnologies.vercel.app/',
             title: title,
             description: description,
-            siteName: "KtechHub",
+            siteName: "Heirstech",
             images: [
                 {
                     url: `${process.env.WEBAPP_URL}/logo.png`,
                     width: 1200,
                     height: 630,
-                    alt: "KtechHub - Empowering Businesses with Tailored Tech Solutions",
+                    alt: "Heirstech - Empowering Businesses with Tailored Tech Solutions",
                 }
             ],
         },
         twitter: {
             card: "summary_large_image",
-            site: "@KtechHub",
+            site: "@Heirstech",
             creator: "@ktechhub",
             title: title,
             description: description,
@@ -63,13 +63,13 @@ export function generateMetadata({
         },
         appleWebApp: {
             capable: true,
-            title: "KtechHub",
+            title: "Heirstech",
             statusBarStyle: "black-translucent",
         },
         formatDetection: {
             telephone: false
         },
-        abstract: "KtechHub delivers cutting-edge digital solutions to empower businesses, offering expertise in software development, API integration, and cloud technologies.",
+        abstract: "Heirstech delivers cutting-edge digital solutions to empower businesses, offering expertise in software development, API integration, and cloud technologies.",
         archives: ["https://heirstechnologies.vercel.app//archives"],
         assets: ["https://heirstechnologies.vercel.app//assets"],
         bookmarks: ["https://heirstechnologies.vercel.app//bookmarks"],
