@@ -1,14 +1,14 @@
 import React from 'react'
 import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel'
-import { insights_events } from '@/constant';
 import { Card, CardContent, CardHeader } from '../ui/card';
 import Typography from '../shared/typography';
 import { Button } from '../ui/button';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Autoplay from 'embla-carousel-autoplay';
+import { insights_events } from '@/constants';
 
-function Reports() {
+function PressRelease() {
 
   return (
     <div className='w-full py-6'>
@@ -23,7 +23,7 @@ function Reports() {
             <div className="relative">
             <CarouselContent className="flex gap-16">
                 {insights_events.map((data, index) => (
-                    data.header === "Reports" && (
+                    data.header === "Press Release" && (
                         <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/2">
                             <div className="p-1">
                                 <Card
@@ -48,7 +48,7 @@ function Reports() {
                                             </Typography>
                                             <Button
                                                 variant="primary"
-                                                className='!py-2 !px-4 font-normal !text-sm rounded-full'
+                                                className='w-fit !py-2 !px-4 font-normal !text-sm rounded-full'
                                             >
                                                 <span>Read more</span>
                                                 <ArrowRight />
@@ -74,4 +74,4 @@ function Reports() {
   )
 }
 
-export default Reports
+export default PressRelease

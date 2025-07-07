@@ -3,16 +3,16 @@ import React, { useEffect, useState } from 'react'
 import Typography from '../shared/typography'
 import { Carousel, CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../ui/carousel';
 import { Card, CardContent, CardHeader } from '../ui/card';
-import { insights_events } from '@/constant';
 import Image from 'next/image';
 import { Button } from '../ui/button';
 import { ArrowRight } from 'lucide-react';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs-team';
 import CaseStudies from './case-studies';
-import Reports from './reports';
+import PressRelease from './press-release';
 import Blog from './blog';
 import Events from './events';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { insights_events } from '@/constants';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs-insights';
 
 function InsightsMain() {
     const [api, setApi] = useState<CarouselApi>();
@@ -24,7 +24,7 @@ function InsightsMain() {
 
     useEffect(() => {
         const tab = searchParams.get('tab');
-        if (tab && ['case-studies', 'blog', 'events', 'reports'].includes(tab)) {
+        if (tab && ['case-studies', 'blog', 'events', 'pess-release'].includes(tab)) {
             setActiveTab(tab);
         }
     }, [searchParams]);
@@ -60,8 +60,8 @@ function InsightsMain() {
                 return 'Events';
             case 'case-studies':
                 return 'Case studies';
-            case 'reports':
-                return 'Reports';
+            case 'pess-release':
+                return 'PressRelease';
             default:
                 return 'Insights';
         }
@@ -70,7 +70,7 @@ function InsightsMain() {
   return (
     <div className='w-full py-12 bg-app-gray-bg'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex flex-col gap-6'>
-            <div className='md:w-[600px] w-full mx-auto flex flex-col items-center gap-4'>
+            <div className='md:w-[500px] w-full mx-auto flex flex-col items-center gap-4'>
                 <Typography
                     typo="header-3-semibold"
                     className='text-center text-[#53565A]'
@@ -78,8 +78,8 @@ function InsightsMain() {
                     {getTitleText()}
                 </Typography>
                 <Typography
-                    typo="body-large-medium"
-                    className='text-center text-[#53565A]'
+                    typo="body-medium-regular"
+                    className='text-center text-gray-500 '
                 >
                     Take a tour of our latest blog posts, press releases, case studies, and upcoming events.
                 </Typography>
@@ -117,7 +117,7 @@ function InsightsMain() {
                                                     </Typography>
                                                     <Button
                                                         variant="primary"
-                                                        className='!py-2 !px-4 font-normal !text-sm rounded-full'
+                                                        className='w-fit !py-2 !px-4 font-normal !text-sm rounded-full'
                                                     >
                                                         <span>Read more</span>
                                                         <ArrowRight />
@@ -167,20 +167,17 @@ function InsightsMain() {
                     defaultValue="case-studies"
                     className='pt-8'
                 >
-                    <TabsList className='w-full overflow-auto'>
+                    <TabsList className='w-fit overflow-auto bg-transparent'>
                         <div className='flex flex-nowrap gap-2'>
                             <TabsTrigger
                                 value="case-studies"
                             >Case studies</TabsTrigger>
                             <TabsTrigger
-                                value="blog"
-                            >Blog</TabsTrigger>
+                                value="pess-release"
+                            >Press Release</TabsTrigger>
                             <TabsTrigger
                                 value="events"
                             >Events</TabsTrigger>
-                            <TabsTrigger 
-                                value="reports"
-                            >Reports</TabsTrigger>
                         </div>
                     </TabsList>
 
@@ -193,8 +190,8 @@ function InsightsMain() {
                     <TabsContent value="events">
                         <Events />
                     </TabsContent>
-                    <TabsContent value="reports">
-                        <Reports />
+                    <TabsContent value="pess-release">
+                        <PressRelease />
                     </TabsContent>
                 </Tabs>
             </div>

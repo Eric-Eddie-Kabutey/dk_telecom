@@ -1,4 +1,3 @@
-import Hereforyou from '@/components/home/hereforyou'
 import InsightsMain from '@/components/insights/insights-main'
 import React, { Suspense } from 'react'
 
@@ -8,7 +7,6 @@ function InsightsPage() {
         <Suspense fallback={<div>Loading...</div>}>
             <InsightsMain />
         </Suspense>
-        <Hereforyou />
     </div>
   )
 }

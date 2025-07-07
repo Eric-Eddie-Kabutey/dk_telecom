@@ -1,12 +1,12 @@
 import React from 'react'
 import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel'
-import { insights_events } from '@/constant';
 import { Card, CardContent, CardHeader } from '../ui/card';
 import Typography from '../shared/typography';
 import { Button } from '../ui/button';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Autoplay from 'embla-carousel-autoplay';
+import { insights_events } from '@/constants';
 
 function Blog() {
 
@@ -48,7 +48,7 @@ function Blog() {
                                             </Typography>
                                             <Button
                                                 variant="primary"
-                                                className='!py-2 !px-4 font-normal !text-sm rounded-full'
+                                                className='w-fit !py-2 !px-4 font-normal !text-sm rounded-full'
                                             >
                                                 <span>Read more</span>
                                                 <ArrowRight />

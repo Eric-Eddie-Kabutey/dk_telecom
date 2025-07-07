@@ -62,22 +62,24 @@ const links: { title: string; href: string; description: string, links?: { title
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
     links: [
       {
-        title: "Introduction",
-        href: "/docs",
-        description:
-          "Re-usable components built using Radix UI and Tailwind CSS.",
+        title: "Case Studies",
+        description: "In-depth analyses of our client projects showcasing challenges, solutions, and ",
+        href: "/insights?tab=case-studies"
       },
       {
-        title: "Installation",
-        href: "/docs/installation",
-        description:
-          "How to install dependencies and structure your app.",
+        title: "Blog",
+        description: "Articles and thought pieces on technology trends, digital transformation ",
+        href: "/insights?tab=blog"
       },
       {
-        title: "Typography",
-        href: "/doc/typography",
-        description:
-          "Styles for headings, paragraphs, lists...etc",
+        title: "Events",
+        description: "Upcoming webinars, conferences, and workshops where we share ",
+        href: "/insights?tab=events"
+      },
+      {
+        title: "Report",
+        description: "Research papers and market analysis reports providing valuable insights ",
+        href: "/insights?tab=reports"
       },
     ]
   },
