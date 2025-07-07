@@ -27,7 +27,6 @@ const OrganizationSchema = {
   "@type": "Organization",
   "name": "KtechHub",
   "url": "https://www.ktechhub.com",
-  "logo": "https://ktechhub.s3.amazonaws.com/images/KtechHub.png",
   "sameAs": [
     "https://www.instagram.com/ktechhub",
     "https://www.facebook.com/ktechhub",

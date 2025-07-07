@@ -11,12 +11,12 @@ export function generateMetadata({
     description = "KtechHub delivers cutting-edge digital solutions to empower businesses, offering expertise in software development, API integration, and cloud technologies.",
     url = "/",
 }: MetadataProps): Metadata {
-    const defaultUrl = process.env.WEBAPP_URL || 'https://www.ktechhub.com';
+    const defaultUrl = process.env.WEBAPP_URL || 'https://heirstechnologies.vercel.app/';
     return {
         title: { default: title, template: "%s | Empowering Businesses with Tailored Tech Solutions" },
         description: description,
         applicationName: "KtechHub",
-        authors: [{ name: "KtechHub Team", url: process.env.WEBAPP_URL || 'https://www.ktechhub.com' }],
+        authors: [{ name: "KtechHub Team", url: process.env.WEBAPP_URL || 'https://heirstechnologies.vercel.app/' }],
         generator: "Next.js",
         keywords: ["software development", "API integration", "cloud technologies", "UI/UX design", "DevOps", "business solutions", "technology services", "tailored tech solutions"],
         referrer: "origin",
@@ -36,7 +36,7 @@ export function generateMetadata({
         manifest: "/manifest.json",
         openGraph: {
             type: "website",
-            url: process.env.WEBAPP_URL || 'https://www.ktechhub.com',
+            url: process.env.WEBAPP_URL || 'https://heirstechnologies.vercel.app/',
             title: title,
             description: description,
             siteName: "KtechHub",
@@ -55,7 +55,7 @@ export function generateMetadata({
             creator: "@ktechhub",
             title: title,
             description: description,
-            images: "https://www.ktechhub.com/twitter-image.png"
+            images: "https://heirstechnologies.vercel.app//twitter-image.png"
         },
         verification: {
             google: "9skpBpwKDtj0DYmqZppulq6euNwztgaLg6JZc4_RZ-g",
@@ -70,9 +70,9 @@ export function generateMetadata({
             telephone: false
         },
         abstract: "KtechHub delivers cutting-edge digital solutions to empower businesses, offering expertise in software development, API integration, and cloud technologies.",
-        archives: ["https://www.ktechhub.com/archives"],
-        assets: ["https://www.ktechhub.com/assets"],
-        bookmarks: ["https://www.ktechhub.com/bookmarks"],
+        archives: ["https://heirstechnologies.vercel.app//archives"],
+        assets: ["https://heirstechnologies.vercel.app//assets"],
+        bookmarks: ["https://heirstechnologies.vercel.app//bookmarks"],
         category: "Technology, Business Solutions",
         classification: "Digital Transformation Services",
         // other: {
