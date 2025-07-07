@@ -1,8 +1,6 @@
 // app/not-found.tsx
 import Link from 'next/link';
 import { FC } from 'react';
-import Navbar from '../components/shared/Navbar';
-import Footer from '../components/shared/Footer';
 import { Button } from '@/components/ui/button';
 
 const NotFound: FC = () => {
