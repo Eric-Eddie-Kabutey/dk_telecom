@@ -18,45 +18,44 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
+import heirs_logo from "@/public/assets/images/heirstech.png"
+import Image from "next/image";
+import Typography from "./typography";
 
 export default function Navbar() {
     const { setTheme } = useTheme();
     return (
-        <header className="sticky top-0 z-50 -mb-4 px-4 pb-4">
-            <div className="fade-bottom absolute left-0 h-24 w-full bg-background/15 backdrop-blur-lg"></div>
-            <div className="relative mx-auto max-w-container">
+        <header className="py-2 sticky top-0 z-50 px-4 flex flex-col justify-center">
+            <div className=" absolute left-0 h-full w-full bg-background/60 backdrop-blur-md"></div>
+            <div className="max-container relative 2xl:w-[85%] w-[95%] mx-auto">
                 <NavbarComponent>
                     <NavbarLeft>
                         <Link
                             href="/"
                             className="flex items-center gap-2 text-xl font-bold"
                         >
-                            <LaunchUI />
-                            KtechHub
+                            <Image 
+                                src={heirs_logo}
+                                alt="Heirs logo"
+                                className="w-fit h-10"
+                            />
+                            {/* <Typography
+                                typo="header-6-semibold"
+                                className="public"
+                            >
+                                Heirs Technologies
+                            </Typography> */}
                         </Link>
-                        <Navigation />
                     </NavbarLeft>
+                    <Navigation />
                     <NavbarRight>
-                        <Link href="/" className="hidden text-sm md:block">
-                            Sign in
-                        </Link>
-                        <Button variant="default" asChild>
-                            <Link href="/">Get Started</Link>
+                        
+                        <Button variant="outline" asChild>
+                            <Link href="/"
+                                className="pops text-app-primary font-light"
+                            >Contact us</Link>
                         </Button>
-                        <DropdownMenu>
-                            <DropdownMenuTrigger asChild>
-                                <Button variant="outline" size="icon">
-                                    <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-                                    <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                                    <span className="sr-only">Toggle theme</span>
-                                </Button>
-                            </DropdownMenuTrigger>
-                            <DropdownMenuContent align="end">
-                                <DropdownMenuItem onClick={() => setTheme("light")}>Light</DropdownMenuItem>
-                                <DropdownMenuItem onClick={() => setTheme("dark")}>Dark</DropdownMenuItem>
-                                <DropdownMenuItem onClick={() => setTheme("system")}>System</DropdownMenuItem>
-                            </DropdownMenuContent>
-                        </DropdownMenu>
+                        
                         <Sheet>
                             <SheetTrigger asChild>
                                 <Button
@@ -74,7 +73,7 @@ export default function Navbar() {
                                         href="/"
                                         className="flex items-center gap-2 text-xl font-bold"
                                     >
-                                        <span>KtechHub</span>
+                                        <span>Heirs Technologies</span>
                                     </Link>
                                     <Link
                                         href="/"

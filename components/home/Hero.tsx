@@ -1,91 +1,54 @@
-"use client";
+'use client';
+import React from 'react'
+import hero_1 from "@/public/assets/images/hero-2.png";
+import Image from 'next/image';
+import Typography from '../shared/typography';
+import { Button } from '../ui/button';
+import { ArrowRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { ArrowRightIcon } from "lucide-react";
-import { Section } from "@/components/ui/section";
-import { Mockup, MockupFrame } from "@/components/ui/mockup";
-import Glow from "@/components/ui/glow";
-import Image from "next/image";
-import { useTheme } from "next-themes";
-import Github from "@/components/logos/github";
-import Link from "next/link";
-
-const Hero = () => {
-    const { resolvedTheme } = useTheme();
-    let src;
-
-    switch (resolvedTheme) {
-        case "light":
-            src = "/app-light.png";
-            break;
-        case "dark":
-            src = "/app-dark.png";
-            break;
-        default:
-            src = "/app-dark.png";
-            break;
-    }
-
-    return (
-        <Section className="fade-bottom overflow-hidden pb-0 sm:pb-0 md:pb-0">
-            <div className="mx-auto flex max-w-container flex-col gap-12 pt-16 sm:gap-24">
-                <div className="flex flex-col items-center gap-6 text-center sm:gap-12">
-                    <Badge variant="outline" className="animate-appear">
-                        <span className="text-muted-foreground">
-                            New version of Launch UI is out!
-                        </span>
-                        <Link
-                            href="/"
-                            className="flex items-center gap-1"
-                        >
-                            Get started
-                            <ArrowRightIcon className="h-3 w-3" />
-                        </Link>
-                    </Badge>
-                    <h1 className="relative z-10 inline-block animate-appear bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-4xl font-semibold leading-tight text-transparent drop-shadow-2xl sm:text-6xl sm:leading-tight md:text-8xl md:leading-tight">
-                        Give your big idea the website it deserves
-                    </h1>
-                    <p className="text-md relative z-10 max-w-[550px] animate-appear font-medium text-muted-foreground opacity-0 delay-100 sm:text-xl">
-                        Landing page components built with React, Shadcn/ui and Tailwind
-                        that will make your website feel premium.
-                    </p>
-                    <div className="relative z-10 flex animate-appear justify-center gap-4 opacity-0 delay-300">
-                        <div className="relative z-10 flex animate-appear justify-center gap-4 opacity-0 delay-300">
-                            <Button variant="default" size="lg" asChild>
-                                <Link href="/">Get Started</Link>
-                            </Button>
-                            <Button variant="outline" size="lg" asChild>
-                                <Link href="/">
-                                    <Github className="mr-2 h-4 w-4" /> Github
-                                </Link>
-                            </Button>
-                        </div>
-                    </div>
-                    <div className="relative pt-12">
-                        <MockupFrame
-                            className="animate-appear opacity-0 delay-700"
-                            size="small"
-                        >
-                            <Mockup type="responsive">
-                                <Image
-                                    src={src}
-                                    alt="Launch UI app screenshot"
-                                    width={1248}
-                                    height={765}
-                                />
-                            </Mockup>
-                        </MockupFrame>
-                        <Glow
-                            variant="top"
-                            className="animate-appear-zoom opacity-0 delay-1000"
-                        />
-                    </div>
-                </div>
+function HomeHero() {
+  return (
+    <div className='w-full'>
+        <section className='w-[95%] max-h-[700px] h-[90vh] relative mx-auto'>
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/30 to-black/80 z-10 rounded-[1.2rem]"></div>
+            <div className='w-full h-full'>
+                <Image 
+                    src={hero_1}
+                    alt='Hero image 1'
+                    className='w-full h-full object-cover rounded-[1.2rem]'
+                />
             </div>
-        </Section>
-    );
+            <div className='pops absolute bottom-16 inset-x-0 max-container 2xl:w-[85%] w-[95%] flex flex-col gap-6 text-white z-20'>
+                <div className='flex flex-col '>
+                    <Typography
+                        typo="header-2-medium"
+                        className='!leading-11 md:!text-[3rem]'
+                    >
+                        Driving Africa's
+                    </Typography>
+                    <Typography
+                        typo="header-2-medium"
+                        className='!leading-11 md:!text-[3rem]'
+                    >
+                        Digital Transformation
+                    </Typography>
+                </div>
+                <Typography
+                    typo="body-large-medium"
+                >
+                    Your Partner in Business Transformation & Consulting, Licensing & Renewals and Managed Services
+                </Typography>
+                <Button
+                    variant="primary"
+                    className='w-fit py-3 px-5 font-medium'
+                >
+                    <span>Explore more</span>
+                    <ArrowRight />
+                </Button>
+            </div>
+        </section>
+    </div>
+  )
 }
 
-
-export default Hero
+export default HomeHero

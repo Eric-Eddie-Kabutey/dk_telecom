@@ -2,24 +2,24 @@ import Navbar from "@/components/shared/Navbar"
 import FooterSection from "@/components/shared/Footer";
 import Hero from "@/components/home/Hero";
 import Features from "@/components/home/Features";
-import Stats from "@/components/home/Stats";
-import Testimonials from "@/components/home/Testimonials";
-import CTA from "@/components/home/CTA";
+import HomeClients from "@/components/home/clients";
+import HomeAbout from "@/components/home/home-about";
+import OurServices from "@/components/home/our-services";
+import HomeCaseStudies from "@/components/home/home-case-studies";
+import Testimonial from "@/components/home/testimonial";
+import BookNow from "@/components/reusable/book-now";
 
 export default function Home() {
   return (
-    <>
-      <Navbar />
-      <div className="items-center justify-items-center font-[family-name:var(--font-geist-sans)]">
-        <main className="max-w-container mx-auto">
-          <Hero />
-          <Features />
-          <Stats />
-          <Testimonials />
-          <CTA />
-        </main>
-      </div>
-      <FooterSection />
-    </>
+    <div className="bg-[#F6F6F6]">
+      <Hero />
+      <HomeClients />
+      <HomeAbout />
+      <OurServices />
+      <HomeCaseStudies />
+      <Testimonial />
+      <BookNow />
+
+    </div>
   );
 }

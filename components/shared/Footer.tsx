@@ -1,99 +1,106 @@
-import {
-    Footer,
-    FooterColumn,
-    FooterBottom,
-    FooterContent,
-} from "@/components/ui/footer";
-import LaunchUI from "@/components/logos/launch-ui";
-import Link from "next/link";
-import { Github, Linkedin, Instagram } from "lucide-react";
+'use client';
+import white_logo from "@/public/assets/images/logo-white.png";
+import Image from "next/image";
+import { Button } from "../ui/button";
+import { ArrowRight, Facebook, Instagram, Linkedin, X } from "lucide-react";
+import Typography from "./typography";
 
-export default function FooterSection() {
+
+export default function Footer() {
     return (
-        <footer className="w-full bg-background px-4">
-            <div className="mx-auto max-w-container">
-                <Footer className="border-t pt-8">
-                    <FooterContent className="sm:grid-cols-2 md:grid-cols-3">
-                        <FooterColumn className="col-span-2 flex-row items-center justify-between gap-8 border-b pb-8 md:col-span-1 md:flex-col md:items-start md:justify-start md:border-b-0">
-                            <div className="flex items-center gap-2">
-                                <LaunchUI />
-                                <h3 className="text-xl font-bold">KtechHub</h3>
-                            </div>
-                            <div className="ml-2.5 flex gap-4 sm:ml-0">
-                                <Link
-                                    href="/"
-                                    className="text-muted-foreground"
-                                >
-                                    <span className="sr-only">GitHub</span>
-                                    <Github className="h-5 w-5" />
-                                </Link>
-                                <Link
-                                    href="/"
-                                    className="text-muted-foreground"
-                                >
-                                    <span className="sr-only">Twitter</span>
-                                    <Linkedin className="h-5 w-5" />
-                                </Link>
-                                <Link href="/" className="text-muted-foreground">
-                                    <span className="sr-only">Discord</span>
-                                    <Instagram className="h-5 w-5" />
-                                </Link>
-                            </div>
-                        </FooterColumn>
-                        <FooterColumn>
-                            <h3 className="text-md pt-1 font-semibold">Product</h3>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Changelog
-                            </Link>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Documentation
-                            </Link>
-                        </FooterColumn>
-                        <FooterColumn>
-                            <h3 className="text-md pt-1 font-semibold">Company</h3>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                About
-                            </Link>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Careers
-                            </Link>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Blog
-                            </Link>
-                        </FooterColumn>
-                        <FooterColumn>
-                            <h3 className="text-md pt-1 font-semibold">Contact</h3>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Discord
-                            </Link>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Twitter
-                            </Link>
-                            <Link
-                                href="/"
-                                className="text-sm text-muted-foreground"
+        <div className="w-full bg-[#262626]">
+            <section className="max-container 2xl:w-[85%] w-[95%] mx-auto flex flex-col gap-6">
+                <div className="w-full py-20 flex lg:flex-row flex-col justify-between gap-16 border-b border-gray-500">
+                    <div className="xl:w-[30%] lg:w-[35%] xs:w-[60%] flex flex-col gap-12 ">
+                        <div className="w-fit h-8">
+                            <Image 
+                                src={white_logo}
+                                alt="White logo"
+                                className="w-full h-full"
+                            />
+                        </div>
+                        <div className="px-3 py-2 flex justify-between items-center bg-[#383838] rounded-full">
+                            <input 
+                                type="text"
+                                placeholder="Enter your email"
+                                className="flex-1 placeholder:text-gray-500 text-gray-500 bg-[#383838] outline-none focus:outline-none focus:ring-0"
+                            />
+                            <Button
+                                variant="primary"
+                                className='w-fit py-2 px-5 font-medium'
                             >
-                                Github
-                            </Link>
-                        </FooterColumn>
-                        <FooterColumn>
-                            <h3 className="text-md pt-1 font-semibold">Legal</h3>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Privacy Policy
-                            </Link>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Terms of Service
-                            </Link>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Cookie Policy
-                            </Link>
-                        </FooterColumn>
-                    </FooterContent>
-                    <FooterBottom className="border-0">
-                        <div>© 2024 KtechHub. All rights reserved</div>
-                    </FooterBottom>
-                </Footer>
-            </div>
-        </footer>
+                                <span>Subscribe</span>
+                                <ArrowRight />
+                            </Button>
+                        </div>
+                    </div>
+                    <div className="flex-1 grid sm:grid-cols-3 xs:grid-cols-2 gap-6">
+                        <div className="flex flex-col gap-6">
+                            <Typography
+                                typo="body-large-regular"
+                                className="text-white"
+                            >Company</Typography>
+                            <ul className="flex flex-col gap-3">
+                                <li className="text-sm text-gray-300">Home</li>
+                                <li className="text-sm text-gray-300">Company</li>
+                                <li className="text-sm text-gray-300">Insights</li>
+                                <li className="text-sm text-gray-300">Careers</li>
+                                <li className="text-sm text-gray-300">i-Academy</li>
+                            </ul>
+                        </div>
+                        <div className="flex flex-col gap-6">
+                            <Typography
+                                typo="body-large-regular"
+                                className="text-white"
+                            >Our Service</Typography>
+                            <ul className="flex flex-col gap-3">
+                                <li className="text-sm text-gray-300">Business Transformation & Consulting</li>
+                                <li className="text-sm text-gray-300">Managed services</li>
+                                <li className="text-sm text-gray-300">Licensing and Renewals</li>
+                                <li className="text-sm text-gray-300">FAQs</li>
+                            </ul>
+                        </div>
+                        <div className="flex flex-col gap-6">
+                            <Typography
+                                typo="body-large-regular"
+                                className="text-white"
+                            >i-Academy</Typography>
+                            <ul className="flex flex-col gap-3">
+                                <li className="text-sm text-gray-300">Welcome to i-academy</li>
+                                <li className="text-sm text-gray-300">Join i-Academy</li>
+                                <li className="text-sm text-gray-300">Course Modules</li>
+                                <li className="text-sm text-gray-300">FAQs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full pt-3 pb-8 flex sm:flex-row flex-col justify-between items-center gap-4">
+                    <div className="flex flex-col gap-1">
+                        <span className="text-sm text-white">© 2025, Heirs Technologies Ltd. All Rights Reserved.</span>
+                        <div className="flex items-center gap-3 text-gray-300 text-[13px]">
+                            <span>Cookie Policy</span>
+                            <span>|</span>
+                            <span>Terms of Use</span>
+                            <span>|</span>
+                            <span>Privacy Policy</span>
+                        </div>
+                    </div>
+                    <div className="flex justify-end items-center gap-4">
+                        <div>
+                            <Facebook color="white" size={22} />
+                        </div>
+                        <div>
+                            <Instagram color="white" size={20} />
+                        </div>
+                        <div>
+                            <Linkedin color="white" size={20} />
+                        </div>
+                        <div>
+                            <X color="white" size={22} />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     );
 }
