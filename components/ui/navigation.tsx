@@ -66,19 +66,14 @@ const links: { title: string; href: string; description: string, links?: { title
         href: "/insights?tab=case-studies"
       },
       {
-        title: "Blog",
-        description: "Articles and thought pieces on technology trends, digital transformation ",
-        href: "/insights?tab=blog"
-      },
-      {
         title: "Events",
         description: "Upcoming webinars, conferences, and workshops where we share ",
         href: "/insights?tab=events"
       },
       {
-        title: "Report",
+        title: "Press Release",
         description: "Research papers and market analysis reports providing valuable insights ",
-        href: "/insights?tab=reports"
+        href: "/insights?tab=press-release"
       },
     ]
   },

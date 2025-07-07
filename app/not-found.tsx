@@ -8,7 +8,6 @@ import { Button } from '@/components/ui/button';
 const NotFound: FC = () => {
     return (
         <div>
-            <Navbar />
             <div className="flex items-center justify-center min-h-screen bg-gray-100">
                 <div className="text-center">
                     <h1 className="text-6xl font-bold text-red-600">404</h1>
@@ -18,7 +17,6 @@ const NotFound: FC = () => {
                     </Button>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 };
