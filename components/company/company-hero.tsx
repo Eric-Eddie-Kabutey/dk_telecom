@@ -45,7 +45,7 @@ function CompanyHero() {
             clearInterval(intervalId);
             clearTimeout(timeoutId);
         };
-    }, [company_slides]);
+    }, []);
 
   return (
     <div className='w-full'>
@@ -118,10 +118,10 @@ function CompanyHero() {
                         className='text-gray-300'
                     >
                         Africapitalism is the economic philosophy developed by our Founder, Mr. Tony O. Elumelu, CFR, and is 
-                        predicated on the belief that Africa’s private sector can and must play a leading role in the 
+                        predicated on the belief that Africa&apos;s private sector can and must play a leading role in the 
                         continent&apos;s development. At the core of our mission lies the aspiration to establish Heirs 
                         Technologies as a sustainable investment fostering economic prosperity and social wealth across Africa. 
-                        This commitment is encapsulated in our tagline: "World class expertise, local accessibility."
+                        This commitment is encapsulated in our tagline: &apos;World class expertise, local accessibility.&apos;
                     </Typography>
                 </div>
 

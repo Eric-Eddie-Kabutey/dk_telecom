@@ -89,7 +89,7 @@ function Packages() {
             </div>
             <div className='w-full grid md:grid-cols-3 xl:gap-10 gap-4'>
                 {pricing.map(data => (
-                    <Card className={`p- flex flex-col gap-3 text-white ${data.title === "Basic" && "border-app-primary"} shadow-none bg-app-secondary`}>
+                    <Card key={data.id} className={`p- flex flex-col gap-3 text-white ${data.title === "Basic" && "border-app-primary"} shadow-none bg-app-secondary`}>
                         <CardHeader className='pb-0 flex flex-col gap-1'>
                             <div className='w-full flex justify-between items-center'>
                                 <Typography
@@ -134,14 +134,13 @@ function Packages() {
                                 </Typography>
                                 <ul className='flex flex-col gap-2'>
                                     {data.includes.map(include => (
-                                        <li className='flex items-center gap-2 text-gray-200'>
+                                        <li key={include} className='flex items-center gap-2 text-gray-200'>
                                             <CircleCheck size={18} />
                                             <span className='text-base'>{include}</span>
                                         </li>
                                     ))}
                                 </ul>
                             </div>
-                            
                         </CardContent>
                     </Card>
                 ))}
