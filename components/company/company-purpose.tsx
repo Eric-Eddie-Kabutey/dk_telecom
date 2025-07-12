@@ -7,10 +7,10 @@ import { Separator } from '../ui/separator';
 
 function CompanyPurpose() {
   return (
-    <div className='w-full py-20 bg-[#F4F4F4]'>
-      <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex justify-between gap-20'>
+    <div className='w-full md:py-20 py-12 bg-[#F4F4F4]'>
+      <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex md:flex-row flex-col justify-between md:gap-20 gap-5'>
         <div className='flex-1'>
-          <div className='w-[80%] mx-auto h-fit'>
+          <div className='xl:w-[80%] md:w-full w-[70%] mx-auto h-fit'>
             <Image 
               src={africanMap}
               alt='African map'
@@ -19,7 +19,7 @@ function CompanyPurpose() {
           </div>
         </div>
         <div className='flex-1 pt-6'>
-          <div className='w-[75%] flex flex-col gap-8'>
+          <div className='xl:w-[75%] lg:w-[80%] flex flex-col xl:gap-8 md:gap-4 gap-8'>
             <Typography
               typo="body-medium-regular"
               className='!leading-relaxed text-gray-600'

@@ -57,7 +57,7 @@ function LeadershipMain() {
     >
       <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
         <motion.div 
-          className='pops w-[500px] flex flex-col gap-4'
+          className='pops sm:w-[500px] flex flex-col gap-4'
           variants={itemVariants}
         >
           <Typography

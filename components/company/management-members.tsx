@@ -121,7 +121,7 @@ function ManagementMembers() {
     };
   return (
     <div className='w-full'>
-        <div className='w-full xl:pt-8 xs:pt-4 grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 xs:gap-20 gap-4'>
+        <div className='w-full xl:pt-8 xs:pt-4 grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 2xl:gap-20 lg:gap-12 gap-4'>
             {team_members.map((data, index) => (
                 <div 
                     onClick={() => handleMemberClick(data)}
@@ -137,7 +137,7 @@ function ManagementMembers() {
                     className='relative group bg-white rounded-2xl shadow-md cursor-pointer'
                     key={data.id}
                 >
-                    <div className='w-full h-[370px] rounded-2xl overflow-hidden bg-gray-300'>
+                    <div className='w-full xl:h-[370px] lg:h-[300px] h-[250px] rounded-2xl overflow-hidden bg-gray-300'>
                         <Image 
                             src={data.img}
                             alt={`${data.name} ${index+1}`}

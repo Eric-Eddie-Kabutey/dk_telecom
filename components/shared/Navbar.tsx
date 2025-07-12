@@ -40,12 +40,12 @@ export default function Navbar() {
                     <Navigation />
                     <NavbarRight>
                         
-                        <Button variant="outline" asChild>
+                        <Button variant="outline" asChild className="sm:flex hidden">
                             <Link href="/"
                                 className="pops text-app-primary font-light bg-transparent"
                             >Contact us</Link>
                         </Button>
-                        <Button variant="primary" asChild>
+                        <Button variant="primary" asChild className="sm:flex hidden">
                             <Link href="/"
                                 className="pops "
                             >Locate Branch</Link>

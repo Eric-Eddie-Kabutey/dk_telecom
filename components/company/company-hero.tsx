@@ -85,7 +85,7 @@ function CompanyHero() {
             </div>
         </section>
         <div className='w-full -mt-60 relative pt-80 pb-12 bg-[#3D3D3D] overflow-hidden'>
-            <div className='w-[650px] h-fit absolute top-24 -right-32'>
+            <div className='md:w-[650px] sm:w-[500px] w-[80%] h-fit absolute top-24 -right-32'>
                 <div className='w-full h-full relative'>
                     <Image 
                         src={globeImg}
@@ -100,8 +100,8 @@ function CompanyHero() {
                 </div>
             </div>
             <div className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
-                <div className='max-w-[590px] flex flex-col gap-8'>
-                    <div className='flex flex-col text-white'>
+                <div className='max-w-[590px] flex flex-col gap-8 '>
+                    <div className='flex flex-col text-white z-[50]'>
                         <Typography
                             typo="header-3-semibold"
                         >
@@ -115,7 +115,7 @@ function CompanyHero() {
                     </div>
                     <Typography
                         typo="body-medium-regular"
-                        className='text-gray-300'
+                        className='text-gray-300 z-[50]'
                     >
                         Africapitalism is the economic philosophy developed by our Founder, Mr. Tony O. Elumelu, CFR, and is 
                         predicated on the belief that Africa&apos;s private sector can and must play a leading role in the 
