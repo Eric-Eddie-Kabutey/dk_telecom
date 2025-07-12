@@ -85,6 +85,14 @@
   background-position-x: right;
 }
 
+.leadership-bg {
+  background: url('/assets/images/company/team/leadership-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
