@@ -9,8 +9,9 @@ import {
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Link from "next/link";
-import heirs_logo from "@/public/assets/images/heirstech.png"
+import heirs_logo from "@/public/logo.png"
 import Image from "next/image";
+import Typography from "./typography";
 
 export default function Navbar() {
     return (
@@ -28,12 +29,12 @@ export default function Navbar() {
                                 alt="Heirs logo"
                                 className="w-fit sm:h-10 h-6"
                             />
-                            {/* <Typography
+                            <Typography
                                 typo="header-6-semibold"
-                                className="public"
+                                className="public text-app-primary"
                             >
-                                Heirs Technologies
-                            </Typography> */}
+                                DK Telecom
+                            </Typography>
                         </Link>
                     </NavbarLeft>
                     <Navigation />
@@ -43,6 +44,11 @@ export default function Navbar() {
                             <Link href="/"
                                 className="pops text-app-primary font-light bg-transparent"
                             >Contact us</Link>
+                        </Button>
+                        <Button variant="primary" asChild>
+                            <Link href="/"
+                                className="pops "
+                            >Locate Branch</Link>
                         </Button>
                         
                         <Sheet>

@@ -77,6 +77,14 @@
   background-position-x: right;
 }
 
+.company-bg {
+  background: url('/assets/images/company/globe.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

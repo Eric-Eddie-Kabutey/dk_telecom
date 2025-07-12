@@ -78,7 +78,7 @@ export const our_services = [
         id: "1",
         img: service_1,
         bg_color: "#53565A",
-        title: "Business Transformation & Consulting",
+        title: "Internet Services",
         sub_title: "Redefining Business Success with Digital-First Strategies",
         description:
             `Transform your operations, unlock efficiency, and achieve measurable outcomes with our bespoke consulting solutions.`,
@@ -87,19 +87,10 @@ export const our_services = [
         id: "2",
         img: service_2,
         bg_color: "#E7E7E7",
-        title: "Managed Services",
+        title: "Digital Solution",
         sub_title: `Empowering Your IT Infrastructure with Scalable, Secure, and Reliable Solutions`,
-        description:            
-            `At Heirs Technologies, we provide comprehensive managed IT services designed to optimise, secure, and scale your IT operations seamlessly.`,
-    },
-    {
-        id: "3",
-        img: service_3,
-        bg_color: "#262626",
-        title: "Licensing and Renewals",
-        sub_title: `Simplifying License Management for Maximum Efficiency and Compliance`,
         description:
-            `Transform your operations, unlock efficiency, and achieve measurable outcomes with our bespoke consulting solutions.`,
+            `At Heirs Technologies, we provide comprehensive managed IT services designed to optimise, secure, and scale your IT operations seamlessly.`,
     },
 ]
 

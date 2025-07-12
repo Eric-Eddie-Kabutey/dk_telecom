@@ -24,7 +24,7 @@ const links: { title: string; href: string; description: string, links?: { title
   },
   {
     title: "Company",
-    href: "/about-us",
+    href: "/company",
     description:
       "For sighted users to preview content available behind a link.",
   },
@@ -60,6 +60,11 @@ const links: { title: string; href: string; description: string, links?: { title
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
     links: [
+      {
+        title: "Blog",
+        description: "In-depth analyses of our client projects showcasing challenges, solutions, and ",
+        href: "/insights?tab=blog"
+      },
       {
         title: "Case Studies",
         description: "In-depth analyses of our client projects showcasing challenges, solutions, and ",

@@ -5,6 +5,7 @@ import OurServices from "@/components/home/our-services";
 import HomeCaseStudies from "@/components/home/home-case-studies";
 import Testimonial from "@/components/home/testimonial";
 import BookNow from "@/components/reusable/book-now";
+import Packages from "@/components/home/packages";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <HomeAbout />
       <OurServices />
       <HomeCaseStudies />
+      <Packages />
       <Testimonial />
       <BookNow />
     </div>

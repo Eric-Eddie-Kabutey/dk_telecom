@@ -34,7 +34,7 @@ function HomeHero() {
                     </Typography>
                 </div>
                 <Typography
-                    typo="body-large-medium"
+                    typo="body-large-regular"
                 >
                     Your Partner in Business Transformation & Consulting, Licensing & Renewals and Managed Services
                 </Typography>
