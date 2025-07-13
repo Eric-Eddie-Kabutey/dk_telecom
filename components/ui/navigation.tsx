@@ -30,25 +30,25 @@ const links: { title: string; href: string; description: string, links?: { title
   },
   {
     title: "Service",
-    href: "/product",
+    href: "/services",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
     links: [
       {
-        title: "Introduction",
-        href: "/docs",
+        title: "Business Transformation & Consulting",
+        href: "/it-consulting",
         description:
           "Re-usable components built using Radix UI and Tailwind CSS.",
       },
       {
-        title: "Installation",
-        href: "/docs/installation",
+        title: "Managed Services",
+        href: "/managed_services",
         description:
           "How to install dependencies and structure your app.",
       },
       {
-        title: "Typography",
-        href: "/doc/typography",
+        title: "Licensing and Renewals",
+        href: "/bpo",
         description:
           "Styles for headings, paragraphs, lists...etc",
       },
@@ -104,7 +104,11 @@ export default function Navigation() {
           links.map((link) => (
             link.links ? (
               <NavigationMenuItem key={link.href}>
-                <NavigationMenuTrigger>{link.title}</NavigationMenuTrigger>
+                <NavigationMenuTrigger>
+                  <Link href={link.href}>
+                    {link.title}
+                  </Link>
+                </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                     {link.links.map((sublink) => (
