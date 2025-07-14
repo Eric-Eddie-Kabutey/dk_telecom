@@ -29,8 +29,8 @@ function HomeCaseStudies() {
       };
   }, [api]);
   return (
-    <div className='w-full py-12'>
-      <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex flex-col sm:gap-4'>
+    <div className='w-full py-12 relative'>
+      <section className=' max-container 2xl:w-[85%] w-[95%] mx-auto flex flex-col sm:gap-4'>
         <div className='w-full flex flex-col items-center gap-4'>
           <Typography
               typo="body-medium-regular"
@@ -118,6 +118,7 @@ function HomeCaseStudies() {
                 </Carousel>
             </div>
       </section>
+      <div className='w-full h-[40vh] -mt-64 bg-app-secondary/80 '></div>
     </div>
   )
 }

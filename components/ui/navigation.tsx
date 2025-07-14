@@ -16,12 +16,7 @@ import {
 
 
 const links: { title: string; href: string; description: string, links?: { title: string; href: string; description: string }[] }[] = [
-  {
-    title: "Home",
-    href: "/",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
+  
   {
     title: "Company",
     href: "/company",
@@ -35,23 +30,23 @@ const links: { title: string; href: string; description: string, links?: { title
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
     links: [
       {
-        title: "Business Transformation & Consulting",
+        title: "Internet services",
         href: "/it-consulting",
         description:
           "Re-usable components built using Radix UI and Tailwind CSS.",
       },
       {
-        title: "Managed Services",
+        title: "Digital solutions",
         href: "/managed-services",
         description:
           "How to install dependencies and structure your app.",
       },
-      {
-        title: "Licensing and Renewals",
-        href: "/bpo",
-        description:
-          "Styles for headings, paragraphs, lists...etc",
-      },
+      // {
+      //   title: "Licensing and Renewals",
+      //   href: "/bpo",
+      //   description:
+      //     "Styles for headings, paragraphs, lists...etc",
+      // },
     ]
   },
   {
@@ -84,12 +79,12 @@ const links: { title: string; href: string; description: string, links?: { title
   },
   {
     title: "Careers",
-    href: "/blog",
+    href: "/careers",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
-    title: "i-Academy",
+    title: "DK TalentHub",
     href: "/contact-us",
     description:
       "Get in touch with our team for any questions or inquiries.",
