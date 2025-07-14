@@ -1,7 +1,7 @@
 'use client';
 import React from 'react'
 import Typography from '../shared/typography'
-import { consulting_services, managed_services } from '@/constants/services';
+import { managed_services } from '@/constants/services';
 import { Card, CardContent, CardFooter, CardHeader } from '../ui/card';
 import Image from 'next/image';
 import { Button } from '../ui/button';

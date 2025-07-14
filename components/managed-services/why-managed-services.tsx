@@ -5,7 +5,7 @@ import { Button } from '../ui/button';
 import { ArrowRight } from 'lucide-react';
 import consultingImg from "@/public/assets/images/services/why_consulting_img.png"
 import Image from 'next/image';
-import { consulting_reasons, managed_reasons } from '@/constants/services';
+import { managed_reasons } from '@/constants/services';
 
 function WhyManagedServices() {
   return (

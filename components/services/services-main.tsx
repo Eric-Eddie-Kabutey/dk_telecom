@@ -8,29 +8,34 @@ import { Card, CardContent, CardFooter, CardHeader } from '../ui/card';
 import Image from 'next/image';
 import { Button } from '../ui/button';
 import { ArrowRight } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 const services = [
     {
         id: "1",
         icon: service_1,
+        href: "/it-consulting",
         title: "Business Transformation & Consulting",
         description: `Drive your business forward with strategic IT consulting`,
     },
     {
         id: "2",
         icon: service_2,
+        href: "/managed-services",
         title: "Managed Services",
         description: `AI-powered solutions that connect people and technology seamlessly`,
     },
     {
         id: "3",
         icon: service_3,
+        href: "/bpo",
         title: "OEM Licenses & Renewals",
         description: `We streamline and simplify your operations`,
     },
 ]
 
 function ServicesMain() {
+    const router = useRouter()
   return (
     <div className='w-full py-12'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex flex-col gap-8'>
@@ -78,6 +83,7 @@ function ServicesMain() {
                         <CardFooter className='pb-0 flex flex-col items-start justify-end'>
                             <Button
                                 variant="ghost"
+                                onClick={() => router.push(data.href)}
                                 className='p-0 flex items-center text-gray-500 font-normal group-hover:text-red-500 hover:bg-transparen'
                             >
                                 <span>Learn more</span>
