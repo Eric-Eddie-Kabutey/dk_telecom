@@ -16,7 +16,7 @@ import Autoplay from 'embla-carousel-autoplay';
 
 function Testimonial() {
   return (
-    <div className='w-full py-12'>
+    <div className='w-full py-20 bg-[#F9F9F9]'>
         <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex flex-col gap-4'>
             <div className='w-full pb-4 flex flex-col items-center gap-5'>
                 <Typography

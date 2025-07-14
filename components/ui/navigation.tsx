@@ -42,7 +42,7 @@ const links: { title: string; href: string; description: string, links?: { title
       },
       {
         title: "Managed Services",
-        href: "/managed_services",
+        href: "/managed-services",
         description:
           "How to install dependencies and structure your app.",
       },
@@ -110,10 +110,10 @@ export default function Navigation() {
                   </Link>
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[400px] ">
                     {link.links.map((sublink) => (
                       <ListItem key={sublink.href} href={sublink.href} title={sublink.title}>
-                        {sublink.description}
+                        {/* {sublink.description} */}
                       </ListItem>
                     ))}
                   </ul>
