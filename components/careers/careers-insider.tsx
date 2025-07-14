@@ -6,11 +6,8 @@ import Image from 'next/image';
 import { useForm } from 'react-hook-form';
 import { Form, FormControl, FormField, FormItem, FormLabel } from '../ui/form';
 import { Input } from '../ui/input';
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '../ui/select';
-import { Textarea } from '../ui/textarea';
 import { Button } from '../ui/button';
 
-const inquiries = ["General Information", "What we do", "Business Inquiry", "Partnership", "Media Inquiry", "Program Information", "Other"]
 
 function CareersInsider() {
     const form = useForm({

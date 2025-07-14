@@ -85,7 +85,7 @@ const links: { title: string; href: string; description: string, links?: { title
   },
   {
     title: "DK TalentHub",
-    href: "/contact-us",
+    href: "/dk-talent",
     description:
       "Get in touch with our team for any questions or inquiries.",
   },
