@@ -13,14 +13,12 @@ import heirs_logo from "@/public/logo.png"
 import Image from "next/image";
 import Typography from "./typography";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger } from "../ui/dropdown-menu";
 import { languages } from "@/constants";
 
 
 export default function Navbar() {
     const [position, setPosition] = useState("EN")
-    const router = useRouter()
 
     useEffect(() => {
         const addScript = () => {

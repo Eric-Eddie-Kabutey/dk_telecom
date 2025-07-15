@@ -15,7 +15,7 @@ function DkTalentPartners() {
             </Typography>
             <div className='w-full py-8 flex justify-between items-center gap-5 flex-wrap'>
                 {partners.map((data, index) => (
-                    <div className='w-fit sm:h-10 h-8'>
+                    <div key={index+1} className='w-fit sm:h-10 h-8'>
                         <Image 
                             src={data}
                             alt={`Partner ${index+1}`}

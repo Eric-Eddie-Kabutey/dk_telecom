@@ -45,7 +45,7 @@ function DkTalentSpecialized() {
                                 </Typography>
                                 <div className='flex flex-col gap-2'>
                                     {data.contents.map(data => (
-                                        <div className='pb-3 flex items-center gap-2 border-b'>
+                                        <div key={data} className='pb-3 flex items-center gap-2 border-b'>
                                             <div className='min-w-2 h-2 rounded-full bg-red-500'></div>
                                             <Typography
                                                 typo="body-small-light"

@@ -59,7 +59,7 @@ function DkkTalentElevate() {
                     At i-Academy, we believe in the power of education to change lives. Our comprehensive training programs 
                     are built with the understanding that real-world experience, combined with expert-led instruction, leads 
                     to true mastery. From foundational IT skills to advanced technical support, our courses are designed to 
-                    equip you with the tools you need to thrive in today's dynamic tech environment.
+                    equip you with the tools you need to thrive in today&apos;s dynamic tech environment.
                 </Typography>
             </div>
             <div className='w-full py-16 grid grid-cols-9 gap-4'>

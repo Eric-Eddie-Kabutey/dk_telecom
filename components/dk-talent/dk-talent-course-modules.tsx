@@ -3,14 +3,13 @@ import React, { useState } from 'react'
 import Typography from '../shared/typography'
 import { course_modules } from '@/constants';
 import { Card, CardContent, CardHeader } from '../ui/card';
-import { Check, LaptopMinimal } from 'lucide-react';
+import { Check } from 'lucide-react';
 import { Button } from '../ui/button';
 import clsx from 'clsx';
 import Image from 'next/image';
 
 function DkTalentCourseModules() {
     const [activeCards, setActiveCards] = useState<Record<string, boolean>>({});
-    const [isMore, setIsMore] = useState(false);
 
     const toggleCard = (id: string) => {
         setActiveCards(prev => ({
@@ -119,7 +118,7 @@ function DkTalentCourseModules() {
                                 </Typography>
                                 <div className='flex flex-col gap-2'>
                                     {data.topics_covered.map(data => (
-                                        <div className='pb-3 flex items-center gap-3 border-b'>
+                                        <div key={data} className='pb-3 flex items-center gap-3 border-b'>
                                             <div className='min-w-2 h-2 bg-red-500 rounded-full'></div>
                                             <Typography
                                                 typo="body-small-light"
