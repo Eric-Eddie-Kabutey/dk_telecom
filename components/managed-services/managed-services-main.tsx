@@ -15,7 +15,7 @@ function ManagedServicesMain() {
                 <Typography
                     typo="body-medium-medium"
                     className='text-app-primary !leading-normal'
-                >Managed Services</Typography>
+                >Digital solutions</Typography>
                 <Typography
                     typo="header-3-semibold"
                     className='text-gray-500'

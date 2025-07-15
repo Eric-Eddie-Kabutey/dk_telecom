@@ -17,7 +17,7 @@ function WhyManagedServices() {
                         typo="header-4-semibold"
                         className='text-gray-500'
                     >
-                        Why Managed Services
+                        Why Digital Services
                     </Typography>
                     <Button
                         variant="primary"

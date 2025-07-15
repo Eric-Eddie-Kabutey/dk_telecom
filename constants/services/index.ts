@@ -224,6 +224,13 @@ export const managed_services = [
         description: `Boost productivity with expert helpdesk services, device management, and employee training for a 
                         tech-savvy workforce.`
     },
+    {
+        id: "6",
+        img: managed2,
+        title: "End-User Support",
+        description: `Boost productivity with expert helpdesk services, device management, and employee training for a 
+                        tech-savvy workforce.`
+    },
 ]
 
 export const licensing_services = [

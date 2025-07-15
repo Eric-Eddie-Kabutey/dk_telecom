@@ -31,22 +31,16 @@ const links: { title: string; href: string; description: string, links?: { title
     links: [
       {
         title: "Internet services",
-        href: "/it-consulting",
+        href: "/internet-services",
         description:
           "Re-usable components built using Radix UI and Tailwind CSS.",
       },
       {
         title: "Digital solutions",
-        href: "/managed-services",
+        href: "/digital-solutions",
         description:
           "How to install dependencies and structure your app.",
       },
-      // {
-      //   title: "Licensing and Renewals",
-      //   href: "/bpo",
-      //   description:
-      //     "Styles for headings, paragraphs, lists...etc",
-      // },
     ]
   },
   {
@@ -92,6 +86,7 @@ const links: { title: string; href: string; description: string, links?: { title
 ];
 
 export default function Navigation() {
+  
   return (
     <NavigationMenu className="pops font-light hidden lg:flex">
       <NavigationMenuList>

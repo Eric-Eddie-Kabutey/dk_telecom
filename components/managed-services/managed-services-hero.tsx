@@ -24,7 +24,7 @@ function ManagedServicesHero() {
                         typo="header-3-medium"
                         className='!leading-11'
                     >
-                        Managed Services
+                        Digital Solutions
                     </Typography>
                     {/* <Typography
                         typo="header-3-medium"
