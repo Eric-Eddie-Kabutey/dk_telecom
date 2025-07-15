@@ -17,13 +17,13 @@ function WhyBusiness() {
                         typo="header-4-semibold"
                         className='text-gray-500'
                     >
-                        Why Business Transformation & Consulting
+                        Why Internet Services
                     </Typography>
                     <Button
                         variant="primary"
                         className='w-fit !py-3 !px-6'
                     >
-                        <span>Get expert advIce</span>
+                        <span>Get expert advice</span>
                         <ArrowRight />
                     </Button>
                     <div className='w-full h-[500px]'>

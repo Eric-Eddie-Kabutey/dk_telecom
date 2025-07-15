@@ -15,9 +15,9 @@ function ConsultingServices() {
                 <Typography
                     typo="body-medium-medium"
                     className='text-app-primary !leading-normal'
-                >Digital Transformation & Consulting</Typography>
+                >Internet Services</Typography>
                 <Typography
-                    typo="header-2-semibold"
+                    typo="header-3-semibold"
                     className='text-gray-500'
                 >
                     Explore Services

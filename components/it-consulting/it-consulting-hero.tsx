@@ -24,14 +24,14 @@ function ItConsultingHero() {
                         typo="header-3-medium"
                         className='!leading-11'
                     >
-                        Business Transformation &
+                        Internet Services
                     </Typography>
-                    <Typography
+                    {/* <Typography
                         typo="header-3-medium"
                         className='!leading-tight '
                     >
                         Consulting
-                    </Typography>
+                    </Typography> */}
                 </div>
                 <Typography
                     typo="body-large-regular"
