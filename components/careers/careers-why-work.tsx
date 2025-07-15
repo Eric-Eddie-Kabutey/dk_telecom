@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 function CareersWhyWork() {
   return (
-    <div className='w-full py-12 bg-[#262626]'>
+    <div className='w-full py-12 bg-app-black-bg'>
         <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex flex-col items-center gap-8'>
             <Typography
                 typo="header-3-semibold"

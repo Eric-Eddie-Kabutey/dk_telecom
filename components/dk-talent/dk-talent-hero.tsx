@@ -12,7 +12,7 @@ function DkTalentHero() {
     <div className='w-full lg:py-16 py-10 bg-[#F6F6F6]'>
         <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex flex-col items-center lg:gap-20 gap-10'>
             <div className='flex flex-col items-center gap-6'>
-                <div className='max-w-[400px] mx-auto flex flex-col md:gap-3 gap-1'>
+                <div className='max-w-[500px] mx-auto flex flex-col md:gap-3 gap-1'>
                     <Typography
                         typo="body-medium-medium"
                         className='text-center text-app-primary'
@@ -23,17 +23,17 @@ function DkTalentHero() {
                         typo="header-2-semibold"
                         className='!leading-11 text-center text-gray-600'
                     >
-                        Welcome to Heirs Technologies!
+                        Heirs Technologies&apos; Training Centre
                     </Typography>
                 </div>
                 <Typography
-                    className='max-w-[630px] text-center text-gray-500'
+                    className='max-w-[500px] text-center text-gray-500'
                 >
-                    Join a team that values creativity, innovation, and continuous growth. We’re looking for passionate 
-                    individuals ready to make a difference. Apply to get started on your journey with Heirs Technologies.
+                    Unlock your potential with our Supplementary Technical Engineering Program (STEP)
                 </Typography>
                 <Button
                     variant="primary"
+                    className='!py-3 !px-5'
                 >
                     Learn more
                     <ArrowRight />

@@ -6,8 +6,8 @@ import Image from 'next/image';
 
 function CareersGreatPlace() {
   return (
-    <div className='w-full py-16 relative bg-[#F6F6F6]'>
-        <div className='w-full h-[600px] lg:-mb-[350px] md:-mb-[300px] xs:-mb-[250px] -mb-[200px] py-16 bg-[#262626]'>
+    <div className='w-full py-16 relative bg-app-black-bg'>
+        <div className='w-full h-[600px] lg:-mb-[350px] md:-mb-[300px] xs:-mb-[250px] -mb-[200px] py-16 bg-app-black-bg'>
             <section className='max-container 2xl:w-[85%] w-[95%] mx-auto'>
                 <div className='w-full flex md:flex-row flex-col justify-between lg:gap-20 gap-8'>
                     <Typography

@@ -8,7 +8,7 @@ import Typography from "./typography";
 
 export default function Footer() {
     return (
-        <div className="w-full bg-[#262626]">
+        <div className="w-full bg-app-black-bg">
             <section className="max-container 2xl:w-[85%] w-[95%] mx-auto flex flex-col gap-6">
                 <div className="w-full py-20 flex lg:flex-row flex-col justify-between gap-16 border-b border-gray-500">
                     <div className="xl:w-[30%] lg:w-[35%] xs:w-[60%] flex flex-col gap-12 ">
