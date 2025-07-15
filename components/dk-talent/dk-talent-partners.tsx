@@ -13,9 +13,9 @@ function DkTalentPartners() {
             >
                 Our Training Partners
             </Typography>
-            <div className='w-full py-8 flex justify-between items-center gap-5'>
+            <div className='w-full py-8 flex justify-between items-center gap-5 flex-wrap'>
                 {partners.map((data, index) => (
-                    <div className='w-fit h-10'>
+                    <div className='w-fit sm:h-10 h-8'>
                         <Image 
                             src={data}
                             alt={`Partner ${index+1}`}

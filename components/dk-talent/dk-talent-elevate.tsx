@@ -44,9 +44,9 @@ function DkkTalentElevate() {
     }, [elevates_images]);
 
   return (
-    <div className='w-full py-20'>
+    <div className='w-full lg:py-20 py-16   '>
         <section className='max-container 2xl:w-[85%] w-[95%] mx-auto'>
-            <div className='w-full flex justify-between gap-2'>
+            <div className='w-full flex md:flex-row flex-col justify-between gap-2'>
                 <Typography
                     typo="header-4-semibold"
                     className='flex-1'
@@ -81,7 +81,7 @@ function DkkTalentElevate() {
                                 },
                                 opacity: { duration: 0.7 }
                             }}
-                            className={`${selectedCulture === data.id ? "col-span-5" : "col-span-1"} h-[450px]`}
+                            className={`${selectedCulture === data.id ? "col-span-5" : "col-span-1"} sm:h-[450px] h-[350px]`}
                             onClick={() => {
                                 if (!isAnimating) {
                                     setIsAnimating(true);

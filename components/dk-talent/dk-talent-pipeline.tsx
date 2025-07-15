@@ -8,9 +8,9 @@ import { Button } from '../ui/button';
 function DkTalentPipeline() {
   return (
     <div className='w-full py-20'>
-        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto p-6 flex justify-between items-stretch gap-12 text-white bg-app-black-bg rounded-2xl'>
+        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto p-6 flex md:flex-row flex-col justify-between items-stretch xl:gap-12 gap-8 text-white bg-app-black-bg rounded-2xl'>
             <div className='flex-1 flex flex-col'>
-                <div className='w-[83%] flex flex-col gap-4'>
+                <div className='md:w-[83%] w-full flex flex-col gap-4'>
                     <div className='flex flex-col gap-4'>
                         <Typography
                             typo="body-medium-regular"
@@ -57,11 +57,11 @@ function DkTalentPipeline() {
                 </div>
             </div>
             <div className='flex-1'>
-                <div className='w-full h-full'>
+                <div className='w-full md:h-full h-[400px]'>
                     <Image 
                         src={pipelineImg}
                         alt='Pipeline image'
-                        className='w-full h-full '
+                        className='w-full h-full object-cover rounded-xl'
                     />
                 </div>
             </div>
