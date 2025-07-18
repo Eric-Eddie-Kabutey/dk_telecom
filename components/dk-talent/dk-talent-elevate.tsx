@@ -41,7 +41,7 @@ function DkkTalentElevate() {
             clearInterval(intervalId);
             clearTimeout(timeoutId);
         };
-    }, [elevates_images]);
+    }, []);
 
   return (
     <div className='w-full lg:py-20 py-16   '>

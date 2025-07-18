@@ -15,12 +15,10 @@ import Typography from "./typography";
 import { useEffect, useState } from "react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger } from "../ui/dropdown-menu";
 import { languages } from "@/constants";
-import { useRouter } from "next/navigation";
 
 
 export default function Navbar() {
     const [position, setPosition] = useState("EN")
-    const router = useRouter()
 
     useEffect(() => {
         const addScript = () => {
