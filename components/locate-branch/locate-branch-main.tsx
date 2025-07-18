@@ -32,11 +32,6 @@ const locations: Location[] = [
   { id: "8", location: "Bakau Sanchaba", town: "Sira Jallow", tele: "+220-890-1234", lat: 13.4776, lng: -16.6820 },
   { id: "9", location: "Mariama Kololi", town: "Hussainatou Jallow", tele: "+220-901-2345", lat: 13.4599, lng: -16.6890 },
   { id: "10", location: "Kololi Gamtel", town: "Fatou Saidy", tele: "+220-012-3456", lat: 13.4605, lng: -16.6880 },
-  { id: "11", location: "Kololi Gamtel", town: "Fatou Saidy", tele: "+220-012-3456", lat: 13.4605, lng: -16.6880 },
-  { id: "12", location: "Kololi Gamtel", town: "Fatou Saidy", tele: "+220-012-3456", lat: 13.4605, lng: -16.6880 },
-  { id: "13", location: "Kololi Gamtel", town: "Fatou Saidy", tele: "+220-012-3456", lat: 13.4605, lng: -16.6880 },
-  { id: "14", location: "Kololi Gamtel", town: "Fatou Saidy", tele: "+220-012-3456", lat: 13.4605, lng: -16.6880 },
-  { id: "15", location: "Kololi Gamtel", town: "Fatou Saidy", tele: "+220-012-3456", lat: 13.4605, lng: -16.6880 }
 ];
 
 const LocateBranchMain: React.FC = () => {
