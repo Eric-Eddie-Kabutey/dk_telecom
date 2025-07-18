@@ -15,10 +15,12 @@ import Typography from "./typography";
 import { useEffect, useState } from "react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger } from "../ui/dropdown-menu";
 import { languages } from "@/constants";
+import { useRouter } from "next/navigation";
 
 
 export default function Navbar() {
     const [position, setPosition] = useState("EN")
+    const router = useRouter()
 
     useEffect(() => {
         const addScript = () => {
@@ -108,7 +110,8 @@ export default function Navbar() {
                             >Contact us</Link>
                         </Button>
                         <Button variant="primary" asChild className="sm:flex hidden">
-                            <Link href="/"
+                            <Link 
+                                href="/locate-branch"
                                 className="pops "
                             >Locate Branch</Link>
                         </Button>
