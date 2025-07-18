@@ -125,7 +125,7 @@ const LocateBranchMain: React.FC = () => {
           </div>
         </div>
 
-        <div className='w-full md:flex-1 md:h-full xs:h-[450px] h-[350px]'>
+        <div className='w-full md:flex-1 md:h-full xs:h-[450px] h-[350px] z-[10]'>
           <MapContainer
             center={[13.4549, -16.5790]}
             zoom={12}
