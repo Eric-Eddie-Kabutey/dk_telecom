@@ -31,7 +31,12 @@ const locations: Location[] = [
   { id: "7", location: "Bundung", town: "Hulaimatou Jallow", tele: "+220-789-0123", lat: 13.4098, lng: -16.6789 },
   { id: "8", location: "Bakau Sanchaba", town: "Sira Jallow", tele: "+220-890-1234", lat: 13.4776, lng: -16.6820 },
   { id: "9", location: "Mariama Kololi", town: "Hussainatou Jallow", tele: "+220-901-2345", lat: 13.4599, lng: -16.6890 },
-  { id: "10", location: "Kololi Gamtel", town: "Fatou Saidy", tele: "+220-012-3456", lat: 13.4605, lng: -16.6880 }
+  { id: "10", location: "Kololi Gamtel", town: "Fatou Saidy", tele: "+220-012-3456", lat: 13.4605, lng: -16.6880 },
+  { id: "11", location: "Kololi Gamtel", town: "Fatou Saidy", tele: "+220-012-3456", lat: 13.4605, lng: -16.6880 },
+  { id: "12", location: "Kololi Gamtel", town: "Fatou Saidy", tele: "+220-012-3456", lat: 13.4605, lng: -16.6880 },
+  { id: "13", location: "Kololi Gamtel", town: "Fatou Saidy", tele: "+220-012-3456", lat: 13.4605, lng: -16.6880 },
+  { id: "14", location: "Kololi Gamtel", town: "Fatou Saidy", tele: "+220-012-3456", lat: 13.4605, lng: -16.6880 },
+  { id: "15", location: "Kololi Gamtel", town: "Fatou Saidy", tele: "+220-012-3456", lat: 13.4605, lng: -16.6880 }
 ];
 
 const LocateBranchMain: React.FC = () => {
@@ -69,10 +74,9 @@ const LocateBranchMain: React.FC = () => {
   if (!isClient) return <div>Loading map...</div>;
 
   return (
-    <div className='w-full py-12'>
-      <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex flex-col md:flex-row gap-6'>
-        {/* Sidebar */}
-        <div className='w-full md:w-[40%] px-5 flex flex-col'>
+    <div className='w-full md:h-[100vh] py-12'>
+      <section className='h-full w-full mx-auto flex flex-col md:flex-row gap-6'>
+        <div className='w-full max-w-[600px] md:w-[30%] px-5 flex flex-col'>
           <Typography typo="header-4-semibold"
             className='pb-4'
           >Locations</Typography>
@@ -121,9 +125,7 @@ const LocateBranchMain: React.FC = () => {
           </div>
         </div>
 
-
-        {/* Map */}
-        <div className='w-full md:flex-1 xl:h-[600px] sm:h-[500px] h-[400px]'>
+        <div className='w-full md:flex-1 md:h-full xs:h-[450px] h-[350px]'>
           <MapContainer
             center={[13.4549, -16.5790]}
             zoom={12}
