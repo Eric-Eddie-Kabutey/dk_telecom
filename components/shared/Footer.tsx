@@ -1,5 +1,5 @@
 'use client';
-import white_logo from "@/public/assets/images/logo-white.png";
+import white_logo from "@/public/assets/images/dk_logo_white.png";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { ArrowRight, Facebook, Instagram, Linkedin, X } from "lucide-react";
@@ -12,7 +12,7 @@ export default function Footer() {
             <section className="max-container 2xl:w-[85%] w-[95%] mx-auto flex flex-col gap-6">
                 <div className="w-full py-20 flex lg:flex-row flex-col justify-between gap-16 border-b border-gray-500">
                     <div className="xl:w-[30%] lg:w-[35%] xs:w-[60%] flex flex-col gap-12 ">
-                        <div className="w-fit h-8">
+                        <div className="w-fit h-16">
                             <Image 
                                 src={white_logo}
                                 alt="White logo"

@@ -9,7 +9,7 @@ import {
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Globe, Menu } from "lucide-react";
 import Link from "next/link";
-import heirs_logo from "@/public/logo.png"
+import dk_logo from "@/public/assets/images/dk_logo_blue.png"
 import Image from "next/image";
 import Typography from "./typography";
 import { useEffect, useState } from "react";
@@ -87,16 +87,16 @@ export default function Navbar() {
                             className="flex items-center gap-2 text-xl font-bold"
                         >
                             <Image 
-                                src={heirs_logo}
+                                src={dk_logo}
                                 alt="Heirs logo"
-                                className="w-fit sm:h-10 h-6"
+                                className="w-fit sm:h-12 h-6"
                             />
-                            <Typography
+                            {/* <Typography
                                 typo="header-6-semibold"
                                 className="public text-app-primary"
                             >
                                 DK Telecom
-                            </Typography>
+                            </Typography> */}
                         </Link>
                     </NavbarLeft>
                     <Navigation />
