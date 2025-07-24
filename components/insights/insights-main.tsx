@@ -78,7 +78,7 @@ function InsightsMain() {
                                     data.header === "Latest blog" && (
                                         <CarouselItem key={index} className="pl-1 lg:basis-1/2">
                                             <div className="p-1">
-                                                <Card className='xl:w-[800px] w-[650px] p-2 flex justify-between items-stretch gap-3 bg-white'>
+                                                <Card className='xl:w-[800px]   w-[650px] p-2 flex justify-between items-stretch gap-3 bg-white'>
                                                     <div className='rale flex flex-col gap-3'>
                                                         <CardHeader className='xl:pb-6 pb-3 flex flex-col gap-1'>
                                                             <span className='text-[13px] font-normal text-red-600'>{data.header}</span>
@@ -141,13 +141,15 @@ function InsightsMain() {
                 );
             case 'events':
                 return (
-                    <div className='w-[600px] h-[600px] mx-auto relative'>
+                    <div className='lg:w-[700px] md:w-[600px] sm:w-[500px] xs:w-[400px] w-[300px] lg:h-[700px] md:h-[600px] sm:h-[500px] xs:h-[400px] h-[300px] mx-auto relative'>
                         <div className='w-full h-full'>
                             <Image 
                                 src={eventImg}
                                 alt='Event Image'
                                 className='w-full h-full rounded-full object-cover'
                             />
+                            {/* Overlay */}
+                            <div className='absolute top-0 left-0 w-full h-full rounded-full bg-black/40 pointer-events-none'></div>
                         </div>
                         <Button 
                             variant="primary"
@@ -158,26 +160,25 @@ function InsightsMain() {
                     </div>
                 );
             case 'case-studies':
-            case 'pess-release':
             default:
                 return (
                     <Carousel className="w-full" setApi={setApi}>
                         <div className="relative">
-                            <CarouselContent className="flex">
+                            <CarouselContent className="flex xl:gap-0 gap-6">
                                 {insights_events.map((data, index) => (
                                     data.header === "Financial Sector" && (
                                         <CarouselItem key={index} className=" lg:basis-1/2">
                                             <div className="p-1">
-                                                <Card className='xl:w-[600px] w-[650px] p-2 flex flex-col justify-between items-stretch gap-3 bg-white'>
-                                                    <div className='min-w-[47%] xl:h-[350px] h-[300px]'>
+                                                <Card className='xl:w-[600px] sm:w-[500px] w-[400px] p-2 flex flex-col justify-between items-stretch sm:gap-3 bg-white'>
+                                                    <div className='min-w-[47%] xl:h-[350px] sm:h-[300px] h-[250px]'>
                                                         <Image 
                                                             src={data.img}
                                                             alt={`Insights ${index+1}`}
                                                             className='w-full h-full object-cover rounded-xl'
                                                         />
                                                     </div>
-                                                    <div className='rale flex flex-col gap-3'>
-                                                        <CardHeader className='xl:pb-4 pb-3 flex flex-col gap-1'>
+                                                    <div className='rale flex flex-col sm:gap-3 gap-2'>
+                                                        <CardHeader className='xl:pb-4 sm:pb-3 pb-1 flex flex-col gap-1'>
                                                             <span className='text-[17px] font-normal text-red-600'>{data.header}</span>
                                                             <Typography
                                                                 typo="header-4-semibold"
@@ -189,7 +190,7 @@ function InsightsMain() {
                                                         <CardContent className="flex flex-col xl:gap-6 gap-3">
                                                             <Typography
                                                                 typo="body-medium-regular"
-                                                                className='pops !font-light !leading-normal line-clamp-3'
+                                                                className='pops !font-light !leading-normal sm:line-clamp-3 line-clamp-2'
                                                             >
                                                                 {data.description}
                                                             </Typography>
@@ -234,7 +235,7 @@ function InsightsMain() {
 
     return (
         <div className='w-full py-12 bg-app-gray-bg'>
-            <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex flex-col gap-6'>
+            <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex flex-col gap-4'>
                 <div className='md:w-[500px] w-full mx-auto flex flex-col items-center gap-4'>
                     <Typography
                         typo="header-3-semibold"
