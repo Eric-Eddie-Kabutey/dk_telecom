@@ -63,12 +63,7 @@ const links: { title: string; href: string; description: string, links?: { title
         title: "Events",
         description: "Upcoming webinars, conferences, and workshops where we share ",
         href: "/insights?tab=events"
-      },
-      {
-        title: "Press Release",
-        description: "Research papers and market analysis reports providing valuable insights ",
-        href: "/insights?tab=press-release"
-      },
+      }
     ]
   },
   {
@@ -78,7 +73,7 @@ const links: { title: string; href: string; description: string, links?: { title
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
-    title: "DK TalentHub",
+    title: "Contact us",
     href: "/dk-talent",
     description:
       "Get in touch with our team for any questions or inquiries.",

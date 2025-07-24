@@ -103,15 +103,15 @@ export default function Navbar() {
                     <NavbarRight>
                         
                         <Button variant="outline" asChild className="sm:flex hidden">
-                            <Link href="/"
+                            <Link href="/locate-branch"
                                 className="pops text-app-primary font-light bg-transparent"
-                            >Contact us</Link>
+                            >Locate Branch</Link>
                         </Button>
                         <Button variant="primary" asChild className="sm:flex hidden">
                             <Link 
-                                href="/locate-branch"
+                                href="/"
                                 className="pops "
-                            >Locate Branch</Link>
+                            >Customer Portal</Link>
                         </Button>
                         <div className="">
                             <DropdownMenu>
