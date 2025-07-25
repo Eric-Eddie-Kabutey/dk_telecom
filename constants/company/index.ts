@@ -1,8 +1,8 @@
-import slide_1 from "@/public/assets/images/company/about-slide-1.png"
-import slide_2 from "@/public/assets/images/company/about-slide-2.png"
-import slide_3 from "@/public/assets/images/company/about-slide-3.png"
-import slide_4 from "@/public/assets/images/company/about-slide-4.png"
-import slide_5 from "@/public/assets/images/company/about-slide-5.png"
+import slide_1 from "@/public/assets/images/company/company-4.png"
+import slide_2 from "@/public/assets/images/company/company-1.png"
+import slide_3 from "@/public/assets/images/company/company-3.png"
+import slide_4 from "@/public/assets/images/company/company-2.png"
+import slide_5 from "@/public/assets/images/company/company-5.png"
 
 import excellence_icon from "@/public/assets/icons/excellence_icon.png"
 import enterprise_icon from "@/public/assets/icons/enterprise.png"
