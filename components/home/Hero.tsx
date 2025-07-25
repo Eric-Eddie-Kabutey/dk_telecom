@@ -12,7 +12,7 @@ function HomeHero() {
   return (
     <div className='w-full'>
         <section className='w-[95%] max-h-[700px] h-[90vh] relative mx-auto'>
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/40 to-black/90 z-10 rounded-[1.2rem]"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/10 to-black/90 z-10 rounded-[1.2rem]"></div>
            <Carousel 
                 plugins={[
                     Autoplay({
