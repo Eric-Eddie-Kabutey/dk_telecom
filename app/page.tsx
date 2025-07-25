@@ -10,6 +10,7 @@ import { useState } from "react";
 import dklogo from "@/public/assets/images/dk_logo.png"
 import Image from "next/image";
 import BlogPost from "@/components/home/blog-posts";
+import InternetServices from "@/components/home/internet-services";
 
 export default function Home() {
   // Floating DK TalentHub Card
@@ -25,6 +26,7 @@ export default function Home() {
       <Hero />
       <HomeClients />
       <HomeAbout />
+      <InternetServices />
       <OurServices />
       <HomeCaseStudies />
       {/* <Packages /> */}

@@ -56,7 +56,7 @@ function BookNow() {
                 </Button>
             </div>
         </section> */}
-        <div className='hidden flex-1 mx-auto xs:flex flex-col gap-6 bg-white'>
+        <div className='hidden flex-1 mx-auto xs:flex flex-col gap-6 bg-white overflow-hidden'>
             <Carousel 
                 plugins={[
                     Autoplay({
