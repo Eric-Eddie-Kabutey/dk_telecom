@@ -11,6 +11,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { useState } from "react";
 import dklogo from "@/public/assets/images/dk_logo.png"
 import Image from "next/image";
+import BlogPost from "@/components/home/blog-posts";
 
 export default function Home() {
   // Floating DK TalentHub Card
@@ -28,8 +29,9 @@ export default function Home() {
       <HomeAbout />
       <OurServices />
       <HomeCaseStudies />
-      <Packages />
-      <Testimonial />
+      {/* <Packages /> */}
+      <BlogPost />
+      {/* <Testimonial /> */}
       <BookNow />
 
       <div

@@ -118,7 +118,7 @@ function HomeCaseStudies() {
                 </Carousel>
             </div>
       </section>
-      <div className='w-full h-[40vh] -mt-64 bg-app-secondary/80 '></div>
+      <div className='w-full max-h-[400px] h-[40vh] -mt-64 bg-app-secondary/80 '></div>
     </div>
   )
 }

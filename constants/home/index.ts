@@ -17,6 +17,45 @@ import test1 from "@/public/assets/images/home/testimonial-1.png";
 import test2 from "@/public/assets/images/home/testimonial-2.png";
 import test3 from "@/public/assets/images/home/testimonial-3.png";
 
+export const internet_services = [
+    {
+        id: "1",
+        img: test1,
+        title: "SME Plus",
+        sub_title: "SME Plus Combo Bundles",
+    },
+    {
+        id: "2",
+        img: test2,
+        title: "Webwiz",
+        sub_title: "Web design and hosting",
+    },
+    {
+        id: "3",
+        img: test3,
+        title: "Business Messenger",
+        sub_title: "Business Communications",
+    },
+    {
+        id: "4",
+        img: service_1,
+        title: "Business Manager",
+        sub_title: "Inventory Management",
+    },
+    {
+        id: "5",
+        img: service_1,
+        title: "Business Manager",
+        sub_title: "Inventory Management",
+    },
+    {
+        id: "6",
+        img: service_1,
+        title: "Business Manager",
+        sub_title: "Inventory Management",
+    },
+]
+
 export const testimonial_clients = [
     {
         id: "1",
@@ -74,15 +113,15 @@ export const case_studies = [
 ]
 
 export const our_services = [
-    {
-        id: "1",
-        img: service_1,
-        bg_color: "#53565A",
-        title: "Internet Services",
-        sub_title: "Redefining Business Success with Digital-First Strategies",
-        description:
-            `Transform your operations, unlock efficiency, and achieve measurable outcomes with our bespoke consulting solutions.`,
-    },
+    // {
+    //     id: "1",
+    //     img: service_1,
+    //     bg_color: "#53565A",
+    //     title: "Internet Services",
+    //     sub_title: "Redefining Business Success with Digital-First Strategies",
+    //     description:
+    //         `Transform your operations, unlock efficiency, and achieve measurable outcomes with our bespoke consulting solutions.`,
+    // },
     {
         id: "2",
         img: service_2,
