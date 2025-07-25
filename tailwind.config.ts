@@ -12,6 +12,7 @@ export default {
   		colors: {
   			'app-primary': '#175AA1',
   			'app-secondary': '#165AA1',
+  			'app-deep-blue': '#282781',
   			'app-gray-color': '#F4F4F4',
   			'app-black-bg': '#262626',
   			background: 'hsl(var(--background))',

@@ -23,6 +23,32 @@ import hero_3 from "@/public/assets/images/home/hero_2.png"
 import hero_4 from "@/public/assets/images/home/hero_3.png"
 import hero_5 from "@/public/assets/images/home/hero_4.png"
 
+import ghanaFlag from "@/public/assets/images/flags/ghana_flag.png";
+import gambiaFlag from "@/public/assets/images/flags/gambia_flag.png";
+
+export const country_flags = [
+    {
+        id: "1",
+        country : "Ghana",
+        img: ghanaFlag,
+    },
+    {
+        id: "2",
+        country : "Gambia",
+        img: gambiaFlag,
+    },
+    {
+        id: "3",
+        country : "Germany",
+        img: ghanaFlag,
+    },
+    {
+        id: "4",
+        country : "Kenya",
+        img: gambiaFlag,
+    },
+]
+
 export const hero_images = [hero_1, hero_2, hero_3, hero_4, hero_5]
 
 export const internet_services = [

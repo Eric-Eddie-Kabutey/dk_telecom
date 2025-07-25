@@ -10,6 +10,7 @@ import dklogo from "@/public/assets/images/dk_logo.png"
 import Image from "next/image";
 import BlogPost from "@/components/home/blog-posts";
 import InternetServices from "@/components/home/internet-services";
+import DownloadWallet from "@/components/home/download-wallet";
 
 export default function Home() {
   const [minimized, setMinimized] = useState(false);
@@ -24,6 +25,7 @@ export default function Home() {
       <HomeClients />
       <HomeAbout />
       <InternetServices />
+      <DownloadWallet />
       {/* <OurServices /> */}
       <HomeCaseStudies />
       {/* <Packages /> */}
