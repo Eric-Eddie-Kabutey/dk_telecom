@@ -28,7 +28,7 @@ function HomeHero() {
                                 <Image 
                                     src={data}
                                     alt='Hero image 1'
-                                    className='w-full h-full object-cover rounded-[1.2rem]'
+                                    className='w-full h-full object-cover object-top rounded-[1.2rem]'
                                 />
                             </div>
                         </CarouselItem>
