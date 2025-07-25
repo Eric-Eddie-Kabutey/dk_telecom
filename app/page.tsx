@@ -12,10 +12,8 @@ import BlogPost from "@/components/home/blog-posts";
 import InternetServices from "@/components/home/internet-services";
 
 export default function Home() {
-  // Floating DK TalentHub Card
   const [minimized, setMinimized] = useState(false);
   const handleCardClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    // Prevent navigation if clicking minimize button
     if ((e.target as HTMLElement).closest('.dk-talent-minimize')) return;
     window.location.href = '/dk-talent';
   };

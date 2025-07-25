@@ -110,7 +110,7 @@ export default function Navbar() {
                         <Button variant="primary" asChild className="sm:flex hidden">
                             <Link 
                                 href="/"
-                                className="pops "
+                                className="pops bg-orange-500"
                             >Customer Portal</Link>
                         </Button>
                         <div className="">
