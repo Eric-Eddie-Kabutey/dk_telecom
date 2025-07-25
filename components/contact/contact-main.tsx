@@ -13,9 +13,15 @@ function ContactMain() {
                         typo="body-medium-medium"
                         className='text-app-primary'
                     >Contact Us</Typography>
-                    <Typography>
+                    <Typography
+                        typo="header-4-semibold"
+                        className='text-gray-700'
+                    >
                         Talk with our team.
                     </Typography>
+                </div>
+                <div className='w-full bg-white'>
+                    
                 </div>
             </div>
         </section>
