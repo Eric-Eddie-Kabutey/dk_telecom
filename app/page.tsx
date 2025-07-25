@@ -4,9 +4,7 @@ import HomeClients from "@/components/home/clients";
 import HomeAbout from "@/components/home/home-about";
 import OurServices from "@/components/home/our-services";
 import HomeCaseStudies from "@/components/home/home-case-studies";
-import Testimonial from "@/components/home/testimonial";
 import BookNow from "@/components/reusable/book-now";
-import Packages from "@/components/home/packages";
 import { FaWhatsapp } from "react-icons/fa";
 import { useState } from "react";
 import dklogo from "@/public/assets/images/dk_logo.png"

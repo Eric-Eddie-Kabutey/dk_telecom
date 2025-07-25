@@ -1,5 +1,5 @@
 'use client';
-import { Star, StarHalf, StarOff } from 'lucide-react';
+import { Star, StarHalf } from 'lucide-react';
 import React from 'react';
 
 type StarRatingProps = {

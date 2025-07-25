@@ -2,7 +2,7 @@
 import React from 'react'
 import Typography from '../shared/typography'
 import { Button } from '../ui/button';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../ui/carousel';
+import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import { testimonial_clients } from '@/constants';
 import { Card, CardContent, CardFooter } from '../ui/card';

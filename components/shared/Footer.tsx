@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import { ArrowRight, Facebook, Instagram, Linkedin, X } from "lucide-react";
 import Typography from "./typography";
+import { payment_methods } from "@/constants";
 
 
 export default function Footer() {
@@ -34,8 +35,8 @@ export default function Footer() {
                             </Button>
                         </div>
                     </div>
-                    <div className="flex-1 grid sm:grid-cols-3 xs:grid-cols-2 gap-6">
-                        <div className="flex flex-col gap-6">
+                    <div className="flex-1 grid sm:grid-cols-6 xs:grid-cols-2 gap-6">
+                        <div className="flex flex-col gap-6 w-32 flex-none col-span-1">
                             <Typography
                                 typo="body-large-regular"
                                 className="text-white"
@@ -48,7 +49,7 @@ export default function Footer() {
                                 <li className="text-sm text-gray-300">i-Academy</li>
                             </ul>
                         </div>
-                        <div className="flex flex-col gap-6">
+                        <div className="flex flex-col gap-6 col-span-2 sm:col-span-2">
                             <Typography
                                 typo="body-large-regular"
                                 className="text-white"
@@ -60,17 +61,18 @@ export default function Footer() {
                                 <li className="text-sm text-gray-300">FAQs</li>
                             </ul>
                         </div>
-                        <div className="flex flex-col gap-6">
-                            <Typography
-                                typo="body-large-regular"
-                                className="text-white"
-                            >i-Academy</Typography>
-                            <ul className="flex flex-col gap-3">
-                                <li className="text-sm text-gray-300">Welcome to i-academy</li>
-                                <li className="text-sm text-gray-300">Join i-Academy</li>
-                                <li className="text-sm text-gray-300">Course Modules</li>
-                                <li className="text-sm text-gray-300">FAQs</li>
-                            </ul>
+                        <div className="flex flex-col gap-6 col-span-3 sm:col-span-3">
+                            <div className="w-full grid grid-cols-3 gap-6">
+                                {payment_methods.map((data, index) => (
+                                    <div key={index+1} className="max-w-20 w-full h-fit">
+                                        <Image 
+                                            src={data}
+                                            alt={`Payment ${index+1}`}
+                                            className="w-full h-full"
+                                        />
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -19,9 +19,9 @@ function OurServices() {
         }
     }, []);
 
-    const toggleCard = (id: string) => {
-        setActiveCardId(prevId => prevId === id ? null : id);
-    };
+    // const toggleCard = (id: string) => {
+    //     setActiveCardId(prevId => prevId === id ? null : id);
+    // };
 
     return (
         <div className='w-full py-12'>
@@ -115,8 +115,8 @@ function OurServices() {
                             Internet Serivces
                         </Typography>
                         <div className='w-full grid sm:grid-cols-3 grid-cols-2 gap-3'>
-                            {internet_services.slice(0,).map((data, index) => (
-                                <Card className='p-2 flex flex-col gap-2'>
+                            {internet_services.map((data, index) => (
+                                <Card key={data.id} className='p-2 flex flex-col gap-2'>
                                     <CardHeader className='w-full h-[120px] p-0'>
                                         <Image 
                                             src={data.img}

@@ -5,6 +5,14 @@ import franceFlag from "@/public/assets/images/countries/france-flag.png";
 import japanFlag from "@/public/assets/images/countries/japan-flag.png";
 import nederlandFlag from "@/public/assets/images/countries/nederlands-flag.png";
 
+import applepayImg from "@/public/assets/images/payment_methods/applepay.jpg"
+import mastercardImg from "@/public/assets/images/payment_methods/mastercard.jpg"
+import taybullImg from "@/public/assets/images/payment_methods/taybull.jpg"
+import googlepayImg from "@/public/assets/images/payment_methods/googlepay.png"
+import visaImg from "@/public/assets/images/payment_methods/visa_logo.png"
+
+export const payment_methods = [visaImg, googlepayImg, taybullImg, mastercardImg, applepayImg]
+
 export const languages = [
     { id: "1", name: "English", flag: englishFlag, label: "EN", code: "en" },
     { id: "2", name: "Espanol", flag: spanishFlag, label: "ES", code: "es" },
