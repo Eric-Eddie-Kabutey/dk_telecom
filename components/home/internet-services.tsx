@@ -20,7 +20,7 @@ function InternetServices() {
 
     return (
         <div className='w-full py-12'>
-            <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex flex-col gap-6'>
+            <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex flex-col md:gap-10 gap-6'>
                 <div className='w-full pb-4 flex flex-col items-center gap-5'>
                     <Typography
                         typo="header-3-medium"
@@ -35,19 +35,19 @@ function InternetServices() {
                         Tailored technology services to accelerate your business growth
                     </Typography>
                 </div>
-                <div className='flex-1 lg:pr-4 flex flex-col gap-9 lg:border-r border-dashed'>
-                    <div className='md:w-[740px] w-full mx-auto grid sm:grid-cols-3 grid-cols-2 md:gap-5 gap-3'>
-                        {internet_services.map((data, index) => (
-                            <Card key={data.id} className='p-3 flex flex-col justify-between gap-2'>
+                <div className='flex-1 lg:pr-4 flex flex-col md:gap-12 gap-8 lg:border-r border-dashed'>
+                    <div className='w-full mx-auto grid md:grid-cols-4 grid-cols-2 xl:gap-16 md:gap-4 sm:gap-10 gap-4'>
+                        {internet_services.slice(0, 4).map((data, index) => (
+                            <Card key={data.id} className='lg:p-3 p-2 flex flex-col justify-between gap-2'>
                                 <div className='flex flex-col '>
-                                    <CardHeader className='w-full md:h-[140px] xs:h-[120px] h-[100px] p-0'>
+                                    <CardHeader className='w-full lg:h-[150px] md:h-[120px] xs:h-[150px] h-[120px] p-0'>
                                         <Image 
                                             src={data.img}
                                             alt={`service ${index+1}`}
-                                            className='w-full h-full'
+                                            className='w-full h-full object-cover rounded-lg'
                                         />
                                     </CardHeader>
-                                    <CardContent className='px-0 pt-1 pb-0 flex flex-col'>
+                                    <CardContent className='px-0 pt-4 xl:pb-2 pb-0 flex flex-col'>
                                         <Typography 
                                             typo="body-large-semibold"
                                             className='pb-2 !leading-none'>{data.title}</Typography>
@@ -59,13 +59,13 @@ function InternetServices() {
                                             </Typography>
                                     </CardContent>
                                 </div>
-                                <CardFooter className='px-0 pb-0 flex flex-row justify-between items-center'>
+                                <CardFooter className='px-0 xl:pb-3 pb-1 flex flex-row justify-between items-center'>
                                     <StarRating rating={5} />
                                     <button
                                         type='button'
                                         className='p-1 border rounded-full'
                                     >
-                                        <ArrowUp size={16} />
+                                        <ArrowUp size={18} />
                                     </button>
                                 </CardFooter>
                             </Card>
