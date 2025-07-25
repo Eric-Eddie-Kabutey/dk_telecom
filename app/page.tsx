@@ -27,7 +27,7 @@ export default function Home() {
       <HomeClients />
       <HomeAbout />
       <InternetServices />
-      <OurServices />
+      {/* <OurServices /> */}
       <HomeCaseStudies />
       {/* <Packages /> */}
       <BlogPost />
