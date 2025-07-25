@@ -1,7 +1,7 @@
 'use client';
 import React from 'react'
 import Typography from '../shared/typography'
-import careerImg from "@/public/assets/images/careers/career-great.png"
+import careerImg from "@/public/assets/images/careers/career-work.png"
 import Image from 'next/image';
 
 function CareersGreatPlace() {

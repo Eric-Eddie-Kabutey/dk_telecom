@@ -6,6 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import gridImages from "@/public/assets/images/careers/career_1.png"
 import gridmobileImages from "@/public/assets/images/careers/hero_mobile_img.png"
 import Image from 'next/image';
+import { career_hero } from '@/constants';
 
 function CareersHero() {
   return (
@@ -40,11 +41,23 @@ function CareersHero() {
                 </Button>
             </div>
             <div className='md:block hidden w-full h-fit'>
-                <Image 
+                {/* <Image 
                     src={gridImages}
                     alt='Grid images'
                     className='w-full h-full'
-                />
+                /> */}
+                <div className='hidden sm:block columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4'>
+                    {career_hero.map((team, index) => (
+                        <div key={`Team ${index+1}`} className='break-inside-avoid mb-4'>
+                            <Image
+                                src={team}
+                                alt={`Team ${index+1}`}
+                                className='w-full h-auto rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300'
+                                style={{ objectFit: 'cover' }}
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
             <div className='md:hidden block w-full h-fit'>
                 <Image 

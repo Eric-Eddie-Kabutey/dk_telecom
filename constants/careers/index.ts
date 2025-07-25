@@ -3,11 +3,20 @@ import teamIcon from "@/public/assets/icons/partners_icon.png";
 import heartIcon from "@/public/assets/icons/heart_icon.png";
 import rewardIcon from "@/public/assets/icons/reward_icon.png";
 
-import working1 from "@/public/assets/images/careers/working-1.png"
-import working2 from "@/public/assets/images/careers/working-2.png"
-import working3 from "@/public/assets/images/careers/working-3.png"
-import working4 from "@/public/assets/images/careers/working-4.png"
-import working5 from "@/public/assets/images/careers/working-5.png"
+import working1 from "@/public/assets/images/careers/career-growth.png"
+import working2 from "@/public/assets/images/careers/career-family.png"
+import working3 from "@/public/assets/images/careers/career-industry.png"
+import working4 from "@/public/assets/images/careers/career-passion.png"
+import working5 from "@/public/assets/images/careers/career-reward.png"
+
+import career1 from "@/public/assets/images/careers/career_1.png"
+import career3 from "@/public/assets/images/careers/career_3.jpg"
+import career4 from "@/public/assets/images/careers/career_4.jpg"
+import career5 from "@/public/assets/images/careers/career_5.jpg"
+import career7 from "@/public/assets/images/careers/career_7.jpg"
+import career8 from "@/public/assets/images/careers/career_8.jpg"
+
+export const career_hero = [career1, career5,  career3,  career4, career7, career8 ]
 
 export const work_reasons = [
     {

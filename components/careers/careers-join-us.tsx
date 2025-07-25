@@ -2,7 +2,7 @@
 import React from 'react'
 import Typography from '../shared/typography'
 import Image from 'next/image'
-import joinImg from '@/public/assets/images/careers/join-us-img.png'
+import joinImg from '@/public/assets/images/careers/career_1.png'
 import { Button } from '../ui/button';
 import { ArrowRight } from 'lucide-react';
 
@@ -22,7 +22,7 @@ function CareersJoinUs() {
                         <Image 
                             src={joinImg}
                             alt='Join us image'
-                            className='w-full h-full object-cover'
+                            className='w-full h-full object-cover rounded-lg'
                         />
                     </div>
                 </div>
