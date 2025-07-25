@@ -7,7 +7,6 @@ import client_6 from "@/public/assets/images/home/client-6.png"
 
 import service_1 from "@/public/assets/images/home/home_service-1.png"
 import service_2 from "@/public/assets/images/home/home_service-2.png"
-import service_3 from "@/public/assets/images/home/home_service-3.png"
 
 import case_study_1 from "@/public/assets/images/home/case-studies-1.png"
 import case_study_2 from "@/public/assets/images/home/case-studies-2.png"

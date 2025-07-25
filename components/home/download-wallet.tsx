@@ -12,7 +12,6 @@ import mobilebackImg from "@/public/assets/images/home/mobile_back_1.png";
 import SlidingCountries from '../reusable/sliding-countries';
 import SlidingRight from '../reusable/sliding-right';
 import * as THREE from 'three';
-import Globe from 'globe.gl';
 
 const features = [
   "Send Money", "Pay Bills", "Receive Payment", "Withdraw Money",
@@ -25,55 +24,62 @@ function DownloadWallet() {
   useEffect(() => {
     if (!globeEl.current) return;
 
-    const earthTextureUrl = 'https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg'; // lighter texture
+    // Dynamically import globe.gl only on client side
+    import('globe.gl').then(({ default: Globe }) => {
+      const earthTextureUrl =
+        "https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg";
 
-    const world = new Globe(globeEl.current, {
-      waitForGlobeReady: true,
-      animateIn: false
+      const world = new Globe(globeEl.current!, {
+        waitForGlobeReady: true,
+        animateIn: false,
+      });
+
+      const scene = world.scene();
+
+      // Lights setup
+      const directionalLight = new THREE.DirectionalLight(0xffffff, 2);
+      directionalLight.position.set(3, 2, 5);
+      scene.add(directionalLight);
+
+      const ambientLight = new THREE.AmbientLight(0xffffff, 3);
+      scene.add(ambientLight);
+
+      const hemiLight = new THREE.HemisphereLight(0xffffff, 0x555555, 1.5);
+      scene.add(hemiLight);
+
+      // Globe settings
+      world
+        .globeImageUrl(earthTextureUrl)
+        .showAtmosphere(true)
+        .atmosphereColor("rgba(0, 174, 239, 0.3)")
+        .atmosphereAltitude(0.25)
+        .width(250)
+        .height(250)
+        .backgroundColor("rgba(0,0,0,0)");
+
+      world.globeMaterial(
+        new THREE.MeshStandardMaterial({
+          map: new THREE.TextureLoader().load(earthTextureUrl),
+          transparent: true,
+          opacity: 0.7,
+          roughness: 0.4,
+          metalness: 0.1,
+          emissive: new THREE.Color(0x444444),
+          emissiveIntensity: 0.7,
+          side: THREE.DoubleSide,
+        })
+      );
+
+      const controls = world.controls();
+      controls.autoRotate = true;
+      controls.autoRotateSpeed = 1;
+      controls.enableZoom = false;
+      controls.enablePan = false;
+
+      return () => {
+        world._destructor();
+      };
     });
-
-    const scene = world.scene();
-
-    // Enhanced lighting
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 2);
-    directionalLight.position.set(3, 2, 5);
-    scene.add(directionalLight);
-
-    const ambientLight = new THREE.AmbientLight(0xffffff, 3);
-    scene.add(ambientLight);
-
-    const hemiLight = new THREE.HemisphereLight(0xffffff, 0x555555, 1.5);
-    scene.add(hemiLight);
-
-    world
-      .globeImageUrl(earthTextureUrl)
-      .showAtmosphere(true)
-      .atmosphereColor('rgba(0, 174, 239, 0.3)')
-      .atmosphereAltitude(0.25)
-      .width(250)
-      .height(250)
-      .backgroundColor('rgba(0,0,0,0)');
-
-    world.globeMaterial(new THREE.MeshStandardMaterial({
-      map: new THREE.TextureLoader().load(earthTextureUrl),
-      transparent: true,
-      opacity: 0.7,
-      roughness: 0.4,
-      metalness: 0.1,
-      emissive: new THREE.Color(0x444444),
-      emissiveIntensity: 0.7,
-      side: THREE.DoubleSide
-    }));
-
-    const controls = world.controls();
-    controls.autoRotate = true;
-    controls.autoRotateSpeed = 1;
-    controls.enableZoom = false;
-    controls.enablePan = false;
-
-    return () => {
-      world._destructor();
-    };
   }, []);
 
   return (
