@@ -3,7 +3,6 @@ import React from 'react'
 import Typography from '../shared/typography'
 import { Button } from '../ui/button';
 import { ArrowRight } from 'lucide-react';
-import gridImages from "@/public/assets/images/careers/career_1.png"
 import gridmobileImages from "@/public/assets/images/careers/hero_mobile_img.png"
 import Image from 'next/image';
 import { career_hero } from '@/constants';

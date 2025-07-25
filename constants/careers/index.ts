@@ -13,8 +13,8 @@ import career1 from "@/public/assets/images/careers/career_1.png"
 import career3 from "@/public/assets/images/careers/career_3.jpg"
 import career4 from "@/public/assets/images/careers/career_4.jpg"
 import career5 from "@/public/assets/images/careers/career_5.jpg"
-import career7 from "@/public/assets/images/careers/career_7.jpg"
-import career8 from "@/public/assets/images/careers/career_8.jpg"
+import career7 from "@/public/assets/images/careers/career_7.png"
+import career8 from "@/public/assets/images/careers/career_8.png"
 
 export const career_hero = [career1, career5,  career3,  career4, career7, career8 ]
 
