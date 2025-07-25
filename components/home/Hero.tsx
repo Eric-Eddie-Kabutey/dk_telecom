@@ -40,7 +40,7 @@ function HomeHero() {
                 </Typography>
                 <Button
                     variant="primary"
-                    className='w-fit py-3 px-5 font-medium bg-orange-500'
+                    className='w-fit py-3 px-5 font-medium'
                 >
                     <span>Explore more</span>
                     <ArrowRight />
