@@ -17,6 +17,14 @@ import test1 from "@/public/assets/images/home/testimonial-1.png";
 import test2 from "@/public/assets/images/home/testimonial-2.png";
 import test3 from "@/public/assets/images/home/testimonial-3.png";
 
+import hero_1 from "@/public/assets/images/home/hero_img.png"
+import hero_2 from "@/public/assets/images/home/hero_1.png"
+import hero_3 from "@/public/assets/images/home/hero_2.png"
+import hero_4 from "@/public/assets/images/home/hero_3.png"
+import hero_5 from "@/public/assets/images/home/hero_4.png"
+
+export const hero_images = [hero_1, hero_2, hero_3, hero_4, hero_5]
+
 export const internet_services = [
     {
         id: "1",

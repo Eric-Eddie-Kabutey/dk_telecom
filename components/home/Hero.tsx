@@ -1,23 +1,41 @@
 'use client';
 import React from 'react'
-import hero_1 from "@/public/assets/images/hero-2.png";
 import Image from 'next/image';
 import Typography from '../shared/typography';
 import { Button } from '../ui/button';
 import { ArrowRight } from 'lucide-react';
+import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel';
+import { hero_images } from '@/constants';
+import Autoplay from 'embla-carousel-autoplay';
 
 function HomeHero() {
   return (
     <div className='w-full'>
         <section className='w-[95%] max-h-[700px] h-[90vh] relative mx-auto'>
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/30 to-black/80 z-10 rounded-[1.2rem]"></div>
-            <div className='w-full h-full'>
-                <Image 
-                    src={hero_1}
-                    alt='Hero image 1'
-                    className='w-full h-full object-cover rounded-[1.2rem]'
-                />
-            </div>
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/40 to-black/90 z-10 rounded-[1.2rem]"></div>
+           <Carousel 
+                plugins={[
+                    Autoplay({
+                        delay:2000
+                    })
+                ]}
+                className="w-full max-h-[700px]"
+            >
+                <CarouselContent>
+                    {hero_images.map((data, index) => (
+                        <CarouselItem key={index+1}>
+                            <div className='w-full h-[90vh] max-h-[700px]'>
+                                <Image 
+                                    src={data}
+                                    alt='Hero image 1'
+                                    className='w-full h-full object-cover rounded-[1.2rem]'
+                                />
+                            </div>
+                        </CarouselItem>
+                    ))}
+                </CarouselContent>
+            </Carousel>
+            
             <div className='pops absolute bottom-16 inset-x-0 max-container 2xl:w-[85%] w-[95%] flex flex-col gap-6 text-white z-20'>
                 <div className='flex flex-col '>
                     <Typography
