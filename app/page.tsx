@@ -2,7 +2,6 @@
 import Hero from "@/components/home/Hero";
 import HomeClients from "@/components/home/clients";
 import HomeAbout from "@/components/home/home-about";
-import OurServices from "@/components/home/our-services";
 import HomeCaseStudies from "@/components/home/home-case-studies";
 import BookNow from "@/components/reusable/book-now";
 import { FaWhatsapp } from "react-icons/fa";
