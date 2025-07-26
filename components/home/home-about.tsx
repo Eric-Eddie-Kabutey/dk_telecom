@@ -68,11 +68,11 @@ function HomeAbout() {
     }, []);
     
   return (
-    <div className='w-full py-16 bg-[#F6F6F6]'>
+    <div className='w-full pb-16 bg-[#F6F6F6]'>
         <section className='lg:block flex flex-col relative max-container 2xl:w-[85%] w-[95%] lg:h-[500px] mx-auto'>
             {/* <div className="absolute top-0 left-0 w-full h-full bg-white/60 z-10 rounded-[1.2rem]"></div> */}
             <div className='w-full flex justify-end'>
-                <div className=' xl:w-[70%] lg:w-[55%] md:h-[500px] h-[350px] flex justify-end'>
+                <div className=' xl:w-[70%] lg:w-[85%] md:block hidden xl:h-[500px] h-[450px] flex justify-end border'>
                     {/* <Image 
                         src={about_map}
                         alt='About map'
@@ -85,7 +85,7 @@ function HomeAbout() {
                     />
                 </div>
             </div>
-            <div className='pops lg:absolute inset-0 md:max-w-[550px] flex flex-col justify-center gap-6 z-[10]'>
+            <div className='pops lg:absolute inset-0 xl:max-w-[550px] lg:max-w-[450px] md:pt-0 pt-12 flex flex-col justify-center gap-6 z-[10]'>
                 <Typography
                     typo="body-medium-regular"
                     className='text-app-primary'
