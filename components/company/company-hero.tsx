@@ -50,7 +50,7 @@ function CompanyHero() {
   return (
     <div className='w-full'>
         <section className='w-[95%] max-h-[700px] h-[90vh] relative mx-auto z-10'>
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/10 to-black/80 z-10 rounded-[1.2rem]"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/5 to-black/50 z-10 rounded-[1.2rem]"></div>
             <div className='w-full h-full'>
                 <Image
                     src={company_hero}
