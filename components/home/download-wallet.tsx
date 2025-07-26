@@ -84,7 +84,7 @@ function DownloadWallet() {
 
   return (
     <div className='w-full pt-8 pb-24'>
-      <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex xl:flex-row flex-col justify-between items-stretch gap-16'>
+      <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex xl:flex-row flex-col justify-between items-stretch gap-32'>
         <div className='flex-1 flex flex-col gap-6 rounded-lg bg-white'>
           <div className='w-full pt-6 px-10 flex flex-col gap-2'>
             <div className='flex justify-between gap-3'>

@@ -19,7 +19,7 @@ function InternetServices() {
 
 
     return (
-        <div className='w-full pb-10'>
+        <div className='w-full pb-20'>
             <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex flex-col md:gap-10 gap-6'>
                 <div className='w-full pb-4 flex flex-col items-center gap-5'>
                     <Typography
