@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import Typography from '../shared/typography'
 import { Button } from '../ui/button'
 import { ArrowRight } from 'lucide-react'
-import company_hero from "@/public/assets/images/company/company_hero.png"
+import company_hero from "@/public/assets/images/company/company-hero.jpg"
 import globeImg from "@/public/assets/images/company/globe.png"
 import { company_slides } from '@/constants'
 import { motion, AnimatePresence } from 'framer-motion';

@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useRef } from 'react'
 import Typography from '../shared/typography'
-import logo from "@/public/assets/images/dk_logo.png";
+import logo from "@/public/assets/images/home/dk-pay.jpg";
 import Image from 'next/image';
 import { CircleCheck, Info } from 'lucide-react';
 import qrCodeImg from "@/public/assets/images/qr_code_img.png";
@@ -83,7 +83,7 @@ function DownloadWallet() {
   }, []);
 
   return (
-    <div className='w-full pt-12'>
+    <div className='w-full pt-8 pb-24'>
       <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex xl:flex-row flex-col justify-between items-stretch gap-16'>
         <div className='flex-1 flex flex-col gap-6 rounded-lg bg-white'>
           <div className='w-full pt-6 px-10 flex flex-col gap-2'>
@@ -92,9 +92,9 @@ function DownloadWallet() {
                 typo="header-1-semibold"
                 className='lobster w-[75%] !leading-tight text-[#282781]'
               >
-                Download <span className='text-[#00aeef]'>MyNafa</span> Wallet
+                Download <span className='text-[#00aeef]'>DKPay</span> Wallet
               </Typography>
-              <button className='sm:w-12 w-8 h-fit'>
+              <button className='sm:w-24 w-16 h-fit'>
                 <Image src={logo} alt='Pay logo' className='w-full h-full' />
               </button>
             </div>
@@ -102,7 +102,7 @@ function DownloadWallet() {
               typo="body-medium-medium"
               className='text-app-deep-blue'
             >
-              What can you do with MyNafa Wallet?
+              What can you do with DKPay Wallet?
             </Typography>
             <div className='w-full pt-6 grid xs:grid-cols-2 gap-3'>
               {features.map((data, i) => (
@@ -116,33 +116,33 @@ function DownloadWallet() {
               ))}
             </div>
           </div>
-          <div className='w-full flex-1 flex flex-col justify-between gap- pt-4 pl-10 rounded-lg bg-[#00aeef]'>
-            <div className='w-full md:px-6 px-4 flex justify-between items-center gap-4 '>
+          <div className='w-full flex-1 flex flex-col justify-between pt-4 pl-10 rounded-lg bg-[#00aeef]'>
+            <div className='w-full md:px-6 px-4 flex justify-between items-center gap-4'>
               <Typography
                 typo="header-5-semibold"
-                className='md:w-[65%] text-white !font-bold'
-              >Where can I send money using with MyNafa?</Typography>
-              <button className='p-1.5 bg-gray-100/20 rounded-full'>
+                className='md:w-[65%] text-white !font-bold '
+              >Where can I send money using with DKPay?</Typography>
+              {/* <button className='p-1.5 bg-gray-100/20 rounded-full'>
                 <div className='p-2 rounded-full bg-gray-100/30'>
                   <Info size={18} fill='#40a5dd' />
                 </div>
-              </button>
+              </button> */}
             </div>
-            <div className='w-full py-5 flex justify-between items-end overflow-hidden'>
+            <div className='w-full py-5 pr-6 flex justify-between items-end overflow-hidden'>
               <div className='xl:max-w-[400px] flex flex-col gap-8 w-auto overflow-x-auto'>
                 <SlidingCountries />
                 <SlidingRight />
               </div>
-              <div
-                className='w-44 h-44'
-                ref={globeEl}
-                aria-label="Interactive globe showing countries where you can send money"
-              />
+              <button className='p-3 bg-gray-100/20 rounded-full group'>
+                <div className='p-4 rounded-full bg-gray-100/30 animate-ping opacity-75 transition-all duration-1000'>
+                  <Info size={22} fill='#40a5dd' />
+                </div>
+              </button>
             </div>
           </div>
         </div>
         <div className='flex-1 flex flex-col gap-'>
-          <div className='w-full px-8 sm:pt-24 pt-16 flex flex-col justify-end rounded-t-lg bg-app-deep-blue overflow-hidden'>
+          <div className='w-full px-8 sm:pt-16 pt-16 flex flex-col justify-end rounded-t-lg bg-app-deep-blue overflow-hidden'>
             <div className='sm:w-[90%] w-full mx-auto -mb-24 relative flex justify-between items-end'>
               <div className='w-[50%] h-fit mt-16'>
                 <Image src={mobilebackImg} alt='Mobile back' className='w-full h-full' />
@@ -155,7 +155,7 @@ function DownloadWallet() {
               </div>
             </div>
           </div>
-          <div className='w-full py-12 px-12 flex xs:flex-row flex-col items-center gap-8 rounded-b-lg bg-[#19b5f0]'>
+          <div className='w-full py-8 px-12 flex xs:flex-row flex-col items-center gap-8 rounded-b-lg bg-[#19b5f0]'>
             <div className='w-44 h-fit bg-white rounded-lg'>
               <Image src={qrCodeImg} alt='QR code image' className='w-full h-full' />
             </div>

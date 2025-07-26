@@ -21,6 +21,7 @@ import hero_2 from "@/public/assets/images/home/hero_1.png"
 import hero_3 from "@/public/assets/images/home/hero_2.png"
 import hero_4 from "@/public/assets/images/home/hero_3.png"
 import hero_5 from "@/public/assets/images/home/hero_4.png"
+import hero_6 from "@/public/assets/images/home/hero_5.jpg"
 
 import ghanaFlag from "@/public/assets/images/flags/ghana_flag.png";
 import gambiaFlag from "@/public/assets/images/flags/gambia_flag.png";
@@ -48,7 +49,7 @@ export const country_flags = [
     },
 ]
 
-export const hero_images = [hero_1, hero_2, hero_3, hero_4, hero_5]
+export const hero_images = [hero_6, hero_1, hero_2, hero_3, hero_4, hero_5]
 
 export const internet_services = [
     {

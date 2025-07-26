@@ -9,13 +9,13 @@ import Image from 'next/image';
 import StarRating from '../reusable/star-rating';
 
 function InternetServices() {
-    const [activeCardId, setActiveCardId] = useState<string | null>(our_services[0]?.id || null);
+    // const [activeCardId, setActiveCardId] = useState<string | null>(our_services[0]?.id || null);
 
-    useEffect(() => {
-        if (our_services.length > 0 && !activeCardId) {
-            setActiveCardId(our_services[0].id);
-        }
-    }, []);
+    // useEffect(() => {
+    //     if (our_services.length > 0 && !activeCardId) {
+    //         setActiveCardId(our_services[0].id);
+    //     }
+    // }, []);
 
 
     return (
@@ -36,10 +36,12 @@ function InternetServices() {
                     </Typography>
                 </div>
                 <div className='flex-1 lg:pr-4 flex flex-col md:gap-12 gap-8 lg:border-r border-dashed'>
-                    <div className='w-full mx-auto grid md:grid-cols-4 grid-cols-2 xl:gap-16 md:gap-4 sm:gap-10 gap-4'>
+                    <div className='w-full mx-auto grid md:grid-cols-4 grid-cols-2 xl:gap-16 md:gap-4 sm:gap-10 gap-4 '>
                         {internet_services.slice(0, 4).map((data, index) => (
-                            <Card key={data.id} className='lg:p-3 p-2 flex flex-col justify-between gap-2'>
-                                <div className='flex flex-col '>
+                            <Card key={data.id} className='lg:p-3 p-2 flex flex-col justify-between gap-2 group relative overflow-hidden transition-all duration-300'>
+                                
+                                <div className='absolute bottom-0 left-0 w-full h-0 bg-[#00aeef] group-hover:h-full transition-all duration-300 ease-in-out'></div>
+                                <div className='flex flex-col relative z-10'>
                                     <CardHeader className='w-full lg:h-[150px] md:h-[120px] xs:h-[150px] h-[120px] p-0'>
                                         <Image 
                                             src={data.img}
@@ -50,20 +52,20 @@ function InternetServices() {
                                     <CardContent className='px-0 pt-4 xl:pb-2 pb-0 flex flex-col'>
                                         <Typography 
                                             typo="body-large-semibold"
-                                            className='pb-2 !leading-none'>{data.title}</Typography>
+                                            className='pb-2 !leading-none group-hover:text-white'>{data.title}</Typography>
                                             <Typography
                                                 typo="body-small-regular"
-                                                className='text-gray-500  line-clamp-1'
+                                                className='text-gray-500  line-clamp-1 group-hover:text-black'
                                             >
                                                 {data.sub_title}
                                             </Typography>
                                     </CardContent>
                                 </div>
-                                <CardFooter className='px-0 xl:pb-3 pb-1 flex flex-row justify-between items-center'>
+                                <CardFooter className='px-0 xl:pb-3 pb-1 flex flex-row justify-between items-center z-[10]'>
                                     <StarRating rating={5} />
                                     <button
                                         type='button'
-                                        className='p-1 border rounded-full'
+                                        className='p-1 border rounded-full bg-white'
                                     >
                                         <ArrowUp size={18} />
                                     </button>

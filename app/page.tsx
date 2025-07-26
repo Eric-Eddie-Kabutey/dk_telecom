@@ -25,11 +25,11 @@ export default function Home() {
       <HomeClients />
       <HomeAbout />
       <InternetServices />
-      <DownloadWallet />
       {/* <OurServices /> */}
       <HomeCaseStudies />
       {/* <Packages /> */}
       <BlogPost />
+      <DownloadWallet />
       {/* <Testimonial /> */}
       <BookNow />
 
