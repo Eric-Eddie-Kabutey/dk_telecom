@@ -78,7 +78,7 @@ function CompanyPurpose() {
               className='w-full h-full'
             /> */}
             <div
-                  className=' w-full h-full'
+                  className=' w-full h-[550px]'
                   ref={globeEl}
                   aria-label="Interactive globe showing countries where you can send money"
               />
