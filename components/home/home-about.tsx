@@ -72,7 +72,7 @@ function HomeAbout() {
         <section className='lg:block flex flex-col relative max-container 2xl:w-[85%] w-[95%] lg:h-[500px] mx-auto'>
             {/* <div className="absolute top-0 left-0 w-full h-full bg-white/60 z-10 rounded-[1.2rem]"></div> */}
             <div className='w-full flex justify-end'>
-                <div className=' xl:w-[70%] lg:w-[85%] md:block hidden xl:h-[500px] h-[450px] flex justify-end border'>
+                <div className=' xl:w-[70%] lg:w-[85%] hidden xl:h-[500px] h-[450px] md:flex justify-end'>
                     {/* <Image 
                         src={about_map}
                         alt='About map'
