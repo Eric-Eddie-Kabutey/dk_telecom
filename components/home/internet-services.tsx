@@ -1,7 +1,7 @@
 'use client';
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Typography from '../shared/typography'
-import { internet_services, our_services } from '@/constants';
+import { internet_services } from '@/constants';
 import { Card, CardContent, CardFooter, CardHeader } from '../ui/card';
 import { ArrowRight, ArrowUp } from 'lucide-react';
 import { Button } from '../ui/button';

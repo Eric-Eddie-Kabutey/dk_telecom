@@ -1,7 +1,5 @@
 'use client';
 import React, { useEffect, useRef } from 'react'
-import about_map from "@/public/assets/images/home/map-bac-2.png";
-import Image from 'next/image';
 import Typography from '../shared/typography';
 import * as THREE from 'three';
 
