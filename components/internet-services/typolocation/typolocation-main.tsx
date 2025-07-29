@@ -57,6 +57,7 @@ function TypolocationMain() {
                 <div className='w-full flex flex-col border-b'>
                     {nearbys.map(data => (
                         <button 
+                            key={data}
                             onClick={() => router.push("/internet-plans/usemap")}
                             className='py-3 flex items-center gap-3 border-t'
                         >

@@ -6,7 +6,6 @@ import { Card, CardContent, CardFooter, CardHeader } from '../ui/card';
 import { ArrowRight, ArrowUp } from 'lucide-react';
 import { Button } from '../ui/button';
 import Image from 'next/image';
-import StarRating from '../reusable/star-rating';
 import Link from 'next/link';
 
 function InternetServices() {
@@ -39,8 +38,8 @@ function InternetServices() {
                 <div className='flex-1 lg:pr-4 flex flex-col md:gap-12 gap-8 lg:border-r border-dashed'>
                     <div className='w-full mx-auto grid md:grid-cols-4 grid-cols-2 xl:gap-16 md:gap-4 sm:gap-10 gap-4 '>
                         {internet_services.map((data, index) => (
-                            <Link href={data.href}>
-                                <Card key={data.id} className='lg:p-3 p-2 flex flex-col justify-between gap-2 group relative overflow-hidden transition-all duration-300'>
+                            <Link key={data.id} href={data.href}>
+                                <Card className='lg:p-3 p-2 flex flex-col justify-between gap-2 group relative overflow-hidden transition-all duration-300'>
                                     
                                     <div className='absolute bottom-0 left-0 w-full h-0 bg-[#175aa1] group-hover:h-full transition-all duration-300 ease-in-out'></div>
                                     <div className='flex flex-col relative z-10'>

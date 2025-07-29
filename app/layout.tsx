@@ -3,8 +3,6 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
 import { generateMetadata } from "./metadata";
-import Navbar from "@/components/shared/Navbar";
-import Footer from "@/components/shared/Footer";
 import ClientLayout from "./client-layout";
 
 const geistSans = Geist({

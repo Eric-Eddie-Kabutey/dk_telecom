@@ -28,7 +28,7 @@ function InternetPlansMain() {
                     <Typography
                         typo="header-4-semibold"
                     >
-                        Let's get you connected
+                        Let&apos;s get you connected
                     </Typography>
                     <div className='flex flex-col gap-2'>
                         <Typography
