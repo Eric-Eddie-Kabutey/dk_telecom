@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster"
 import { generateMetadata } from "./metadata";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import ClientLayout from "./client-layout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -57,9 +58,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
-          {children}
-          <Footer />
+          <ClientLayout>
+            {children}
+          </ClientLayout>
           <Toaster />
         </ThemeProvider>
       </body>

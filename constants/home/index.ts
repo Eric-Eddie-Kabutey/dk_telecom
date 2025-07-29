@@ -54,38 +54,30 @@ export const hero_images = [hero_6, hero_1, hero_2, hero_3, hero_4, hero_5]
 export const internet_services = [
     {
         id: "1",
+        href: "/internet-plans",
         img: test1,
-        title: "SME Plus",
+        title: "Internet plans",
         sub_title: "SME Plus Combo Bundles",
     },
     {
         id: "2",
+        href: "/",
         img: test2,
-        title: "Webwiz",
+        title: "Internet Payments",
         sub_title: "Web design and hosting",
     },
     {
         id: "3",
+        href: "/",
         img: test3,
-        title: "Business Messenger",
+        title: "New Installation",
         sub_title: "Business Communications",
     },
     {
         id: "4",
+        href: "/",
         img: service_1,
-        title: "Business Manager",
-        sub_title: "Inventory Management",
-    },
-    {
-        id: "5",
-        img: service_1,
-        title: "Business Manager",
-        sub_title: "Inventory Management",
-    },
-    {
-        id: "6",
-        img: service_1,
-        title: "Business Manager",
+        title: "Request Support",
         sub_title: "Inventory Management",
     },
 ]
