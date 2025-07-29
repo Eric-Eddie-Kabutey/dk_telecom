@@ -12,6 +12,7 @@ const nearbys = [
         "Sunyani Municipal, Ghana",
         "Sunyani COCOBOD, Sunyani, Ghana",
         "Sunyani Road, Kumasi, Ghana",
+        "Sunyani Kumasi Road, Kumasi, Ghana",
     ]
 
 function TypolocationMain() {
