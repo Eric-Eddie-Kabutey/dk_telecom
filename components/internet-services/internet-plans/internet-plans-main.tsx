@@ -3,7 +3,6 @@ import React from 'react'
 import internetImg from "@/public/assets/images/internet-services/internet-main.jpg"
 import Image from 'next/image'
 import Typography from '@/components/shared/typography'
-import { Button } from '@/components/ui/button';
 import { Compass } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
