@@ -1,6 +1,6 @@
 'use client';
 import React from 'react'
-import internetImg from "@/public/assets/images/internet-services/internet-main.jpg"
+import internetImg from "@/public/assets/images/internet-services/internet-main.png"
 import Image from 'next/image'
 import Typography from '@/components/shared/typography'
 import { Compass } from 'lucide-react';
