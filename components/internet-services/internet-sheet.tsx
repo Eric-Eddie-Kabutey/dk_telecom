@@ -1,9 +1,5 @@
-import {
-  Sheet,
-  SheetContent,
-  SheetFooter,
-  SheetHeader,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader } from "../ui/sheet-plans";
+
 
 type ModalProp = {
     open: boolean;
@@ -39,9 +35,7 @@ export function InternetSheet({open, setOpen}: ModalProp) {
             Logout
           </button>
         </div>
-        <SheetFooter>
-          
-        </SheetFooter>
+        
       </SheetContent>
     </Sheet>
   )
