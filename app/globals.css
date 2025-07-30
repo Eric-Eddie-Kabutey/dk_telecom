@@ -97,6 +97,14 @@
   background-position-x: right;
 }
 
+.connectivity-bg {
+  background: linear-gradient(rgba(1, 40, 82, 0.7)), url('/assets/images/company/company-1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

@@ -68,7 +68,7 @@ export const internet_services = [
     },
     {
         id: "3",
-        href: "/",
+        href: "/new-installation",
         img: test3,
         title: "New Installation",
         sub_title: "Business Communications",
