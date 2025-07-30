@@ -3,10 +3,13 @@ import Typography from '@/components/shared/typography'
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { PackagesModal } from '@/modal/packages-modal';
 import { Play } from 'lucide-react';
-import React from 'react'
+import React, { useState } from 'react';
 
 function InternetPlansMain() {
+  const [openPackages, setOpenPackages] = useState(false);
+
   return (
     <div className='w-full py-12'>
       <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex flex-col gap-6'>
@@ -67,6 +70,7 @@ function InternetPlansMain() {
                 </Button> */}
                 <Button
                   variant="primary"
+                  onClick={() => setOpenPackages(true)}
                   className='flex-1 rounded-sm'
                 >
                   Learn more
@@ -131,6 +135,10 @@ function InternetPlansMain() {
           </div>
         </div>
       </section>
+      <PackagesModal 
+        open={openPackages}
+        setOpen={setOpenPackages}
+      />
     </div>
   )
 }

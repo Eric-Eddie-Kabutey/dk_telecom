@@ -21,3 +21,54 @@ export const languages = [
     { id: "5", name: "Japan", flag: japanFlag, label: "JA", code: "ja" },
     { id: "6", name: "Nederland", flag: nederlandFlag, label: "NE", code: "nl" },
   ];
+
+export const pricing = [
+    {
+        id: "1",
+        title: "Weelkly",
+        sub_title: "Essential features for newcomers, with limited transcription and basic support.",
+        monthly: "D2,500",
+        yearly: "80.87",
+        availability: "Free 14 days. Cancel at any time",
+        includes: [
+            "5Mbps Shared Bandwidth",
+            "Free installations",
+            "Router",
+            "Handpicked vendors",
+            "Premium support",
+            "24/7 helpdesk support",
+        ],
+    },
+    {
+        id: "2",
+        title: "Monthly",
+        sub_title: "Essential features for newcomers, with limited transcription and basic support.",
+        monthly: "D3,500",
+        yearly: "80.87",
+        availability: "Premium option",
+        includes: [
+            "7Mbps Shared Bandwidth",
+            "Free installations",
+            "Router",
+            "Handpicked vendors",
+            "Premium support",
+            "24/7 helpdesk support",
+        ],
+    },
+    {
+        id: "3",
+        title: "Yearly",
+        sub_title: "Essential features for newcomers, with limited transcription and basic support.",
+        monthly: "D5,000",
+        yearly: "80.87",
+        availability: "Endless Availability",
+        includes: [
+            "5Mbps Shared Bandwidth",
+            "Free installations",
+            "Router",
+            "Handpicked vendors",
+            "Premium support",
+            "24/7 helpdesk support",
+        ],
+    },
+]
