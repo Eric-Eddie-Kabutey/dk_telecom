@@ -106,6 +106,7 @@ function InternetPlansMain() {
                 </Select>
                 <Button
                   variant="primary"
+                  onClick={() => setOpenPackages(true)}
                   className='flex-1 rounded-sm'
                 >
                   Learn more

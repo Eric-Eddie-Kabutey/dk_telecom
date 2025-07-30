@@ -23,7 +23,7 @@ export function PackagesModal({open, setOpen}: ModalProp) {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="sm:max-w-[425px] lg:max-h-[800px] lg:h-[80vh] h-[75vh] overflow-auto">
-          <DialogHeader className="pt-8">
+          <DialogHeader className="pt-">
             <div className='flex flex-col items-center gap-3'>
                 <Typography
                     typo="header-4-medium"
