@@ -18,7 +18,7 @@ function ConnectivityPlans() {
                     className='w-[80%]'
                 >
                     Streaming, video calls, online gaming, remote working and more are now possible in even the most remote 
-                    locations thanks to the world's most advanced internet system.
+                    locations thanks to the world&apos;s most advanced internet system.
                 </Typography>
             </div>
         </section>
