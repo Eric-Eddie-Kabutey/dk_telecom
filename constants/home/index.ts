@@ -1,9 +1,20 @@
-import client_1 from "@/public/assets/images/home/client-1.png"
-import client_2 from "@/public/assets/images/home/client-2.png"
-import client_3 from "@/public/assets/images/home/client-3.png"
-import client_4 from "@/public/assets/images/home/client-4.png"
-import client_5 from "@/public/assets/images/home/client-5.png"
-import client_6 from "@/public/assets/images/home/client-6.png"
+import client_1 from "@/public/assets/images/Partner_logos/Brussels_airlines.jpg"
+import client_2 from "@/public/assets/images/Partner_logos/CFA-Logo_RGB_hi-res.png"
+import client_3 from "@/public/assets/images/Partner_logos/GCCI2.webp"
+import client_4 from "@/public/assets/images/Partner_logos/GIA.png"
+import client_5 from "@/public/assets/images/Partner_logos/IOM.png"
+import client_6 from "@/public/assets/images/Partner_logos/MORLG_Logo.png"
+import client_7 from "@/public/assets/images/Partner_logos/Millennium_Challenge_corporation.png"
+import client_8 from "@/public/assets/images/Partner_logos/Ministry_of_Defence.png"
+import client_9 from "@/public/assets/images/Partner_logos/Ministry_of_interior.png"
+import client_10 from "@/public/assets/images/Partner_logos/NEA.png"
+import client_11 from "@/public/assets/images/Partner_logos/Red_Cross.jpg"
+import client_12 from "@/public/assets/images/Partner_logos/Trust_Bank.jpg"
+import client_13 from "@/public/assets/images/Partner_logos/Trust_Bank_tree.jpg"
+import client_14 from "@/public/assets/images/Partner_logos/Turkish_Airlines.png"
+import client_15 from "@/public/assets/images/Partner_logos/UTG.png"
+import client_16 from "@/public/assets/images/Partner_logos/ministry_of_communications_and_digital_economy.png"
+import client_17 from "@/public/assets/images/Partner_logos/sosgambialogo_original.png"
 
 import service_1 from "@/public/assets/images/home/home_service-1.png"
 import service_2 from "@/public/assets/images/home/home_service-2.png"
@@ -183,5 +194,49 @@ export const clients_logo = [
     {
         id: "6",
         img: client_6,
+    },
+    {
+        id: "7",
+        img: client_7,
+    },
+    {
+        id: "8",
+        img: client_8,
+    },
+    {
+        id: "9",
+        img: client_9,
+    },
+    {
+        id: "10",
+        img: client_10,
+    },
+    {
+        id: "11",
+        img: client_11,
+    },
+    {
+        id: "12",
+        img: client_12,
+    },
+    {
+        id: "13",
+        img: client_13,
+    },
+    {
+        id: "14",
+        img: client_14,
+    },
+    {
+        id: "15",
+        img: client_15,
+    },
+    {
+        id: "16",
+        img: client_16,
+    },
+    {
+        id: "17",
+        img: client_17,
     },
 ]

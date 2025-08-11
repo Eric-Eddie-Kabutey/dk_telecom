@@ -18,10 +18,10 @@ const HomeClients = () => {
         <motion.div
           className="flex space-x-16 w-max"
           animate={{ x: ["0", "-33.3333%"] }}
-          transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
+          transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
         >
           {tripleLogos.map((logo, index) => (
-            <div key={logo.id} className="lg:w-32 w-16 h-fit flex items-center md:justify-center text-gray-500">
+            <div key={logo.id} className="w-fit h-10 flex items-center md:justify-center text-gray-500">
               <Image 
                 src={logo.img}
                 alt={`Brand logo ${index}`}

@@ -25,12 +25,12 @@ function Partners() {
                 </Typography>
             </div>
             <motion.div
-                className="py-12 flex space-x-16"
+                className="py-12 flex space-x-16 "
                 animate={{ x: ["0", "-33.3333%"] }}
                 transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
             >
                 {tripleLogos.map((logo, index) => (
-                <div key={logo.id} className="lg:min-w-32 min-w-16 h-fit flex items-center md:justify-center text-gray-500">
+                <div key={logo.id} className="w-fit h-10 flex items-center md:justify-center text-gray-500">
                     <Image
                     src={logo.img}
                     alt={`Brand logo ${index}`}
@@ -40,12 +40,12 @@ function Partners() {
                 ))}
             </motion.div>
             <motion.div
-                className="pb-12 flex space-x-16"
+                className="pb-12 flex space-x-16 "
                 animate={{ x: ["0", "33.3333%"] }}
                 transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
             >
                 {tripleLogos.map((logo, index) => (
-                <div key={logo.id} className="lg:min-w-32 min-w-16 h-fit flex items-center md:justify-center text-gray-500">
+                <div key={logo.id} className="w-fit h-10 flex items-center md:justify-center text-gray-500">
                     <Image
                     src={logo.img}
                     alt={`Brand logo ${index}`}
