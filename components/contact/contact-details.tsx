@@ -1,7 +1,7 @@
 'use client';
 import React from 'react'
 import Typography from '../shared/typography'
-import { Facebook, Instagram, Linkedin, X } from 'lucide-react';
+// import { Facebook, Instagram, Linkedin, X } from 'lucide-react';
 
 function ContactDetails() {
   return (

@@ -27,7 +27,7 @@ function DkTalentWelcome() {
                         </Typography>
                         <Typography>
                             At DK Telecom, we grow with our people. The Talent Hub is your space to explore new career paths, 
-                            gain real skills, and connect with opportunities that make a difference. We're here to help you 
+                            gain real skills, and connect with opportunities that make a difference. We&apos;re here to help you 
                             move forward with purpose.
                         </Typography>
                     </div>
