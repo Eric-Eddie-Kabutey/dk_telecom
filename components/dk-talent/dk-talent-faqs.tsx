@@ -8,51 +8,18 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '..
 const talent_faqs = [
     {
         id: "1",
-        question: `How can I enroll into i-Academy?`,
-        answer: `Fill and submit the online application form - Take and pass all assessment tests - Complete enrolment/onboarding 
-                    on the LMS and begin your learning journey.`,
+        question: `Who can join the Talent Hub?`,
+        answer: `Anyone looking to grow their skills or explore a career in tech and telecom.`,
     },
     {
         id: "2",
-        question: `What do I need to be able to learn?`,
-        answer: `Access to a functional laptop (minimum of Intel Core i5 8th generation or newer, 8 GB RAM) with good 
-                    internet connectivity is a necessity.`,
+        question: `Is there a cost?`,
+        answer: `Some programs are free; others come with affordable fees or sponsorships.`,
     },
     {
         id: "3",
-        question: `When will classes for this Cohort start?`,
-        answer: `Classes for this cohort will start in March 2025. It is also important to check your email frequently 
-                because various information will be duly communicated with applicants and successful candidates.`,
-    },
-    {
-        id: "4",
-        question: `How long is the Supplementary Technical Engineering Program (STEP)?`,
-        answer: `The duration of the Supplementary Technical Engineering Program (STEP) 2025 is 3 months.`,
-    },
-    {
-        id: "5",
-        question: `How much is the tuition fee?`,
-        answer: `It is FREE!`,
-    },
-    {
-        id: "6",
-        question: `Will I get a Certificate at the end of the training?`,
-        answer: `Yes. Upon successful completion of the 3 months training, participants will gain a certificate of completion 
-                    and participation. If you’re interested in taking the main certification exam (which is a paid exam), 
-                    Heirs Technologies provides access to discounted exam vouchers.`,
-    },
-    {
-        id: "7",
-        question: `Will I receive any assistance in securing a job after completion of the program?`,
-        answer: `You will be placed in our Talent Pool to be considered if job opportunities arise.`,
-    },
-    {
-        id: "8",
-        question: `How and where will the classes take place?`,
-        answer: `Classes will be hybrid for those in Lagos (4 days remote,1 day onsite held at Heirs Technologies training 
-                    centre from 9 am – 12 noon), and fully virtual for those out of Lagos. Your attendance and participation 
-                    will be monitored both online and onsite. So, take your lessons seriously and participate in all your 
-                    learning activities and assessments.`,
+        question: `Will I get a job after training?`,
+        answer: `We offer placement support, but outcomes depend on your performance and market needs.`,
     },
 ]
 
@@ -77,7 +44,7 @@ function DkTalentFaqs() {
                     typo="body-medium-regular"
                     className='text-gray-600'
                 >
-                    At i-academy, we believe in equipping individuals and organisations with the tools to excel in today&apos;s 
+                    At DK TalentHub, we believe in equipping individuals and organisations with the tools to excel in today&apos;s 
                     technology-driven world. Our Supplementary Technical Engineering Programme is designed to bridge skill 
                     gaps, foster innovation, and create future-ready professionals.
                 </Typography>
@@ -86,7 +53,7 @@ function DkTalentFaqs() {
                         variant="primary"
                         className='w-fit '
                     >
-                        Get expert advice
+                        Contact us
                         <ArrowRight />
                     </Button>
                 </div>
@@ -105,7 +72,7 @@ function DkTalentFaqs() {
                             className='px-6 rounded-xl bg-white'
                         >
                             <AccordionTrigger
-                                className='text-base font-normal'
+                                className='text-lg font-smeibold'
                             >{data.question}</AccordionTrigger>
                             <AccordionContent className="flex flex-col gap-4 text-balance">
                                 <p className='text-base'>

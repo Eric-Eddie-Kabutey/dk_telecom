@@ -7,25 +7,27 @@ import slide_5 from "@/public/assets/images/company/company-5.png"
 import excellence_icon from "@/public/assets/icons/excellence_icon.png"
 import enterprise_icon from "@/public/assets/icons/enterprise.png"
 import execution_icon from "@/public/assets/icons/execution_icon.png"
+import { Lightbulb, ShieldCheck, Users } from "@phosphor-icons/react";
 
 export const core_values = [
     {
         id: "1",
-        icon: excellence_icon,
-        title: "Excellence",
-        description: `Delivering outstandingly, and consistently. Excellence is a mantra embedded in the heart of every employee. We go several steps beyond the norm to provide measurable value to our stakeholders.`,
+        icon: Lightbulb,
+        title: "Innovation That Serves",
+        description: `We use technology to solve real problems. Finding better, faster, and smarter ways to connect people and power progress.`,
     },
     {
         id: "2",
-        icon: enterprise_icon,
-        title: "Enterprise",
-        description: `In a competitive business environment, what sets us apart is the responsibility to take ownership of our deliverables and lead innovative initiatives.`,
+        icon: ShieldCheck,
+        title: "Integrity You Can Count On",
+        description: `We believe in doing the right thing, always. That means being honest, accountable, and transparent 
+                        in how we operate and serve.`,
     },
     {
         id: "3",
-        icon: execution_icon,
-        title: "Execution",
-        description: `A burning desire to always see things through to completion in a timely, efficient and effective manner. We believe in hard work and seeing ideas through from conception all through to achieving excellent results.`,
+        icon: Users,
+        title: "Putting People First",
+        description: `Our customers come first. We listen, adapt, and evolve—because true impact starts with understanding the people we serve and the challenges they face.`,
     },
 ]
 

@@ -56,10 +56,8 @@ function DkkTalentElevate() {
                 <Typography
                     className='flex-1'
                 >
-                    At i-Academy, we believe in the power of education to change lives. Our comprehensive training programs 
-                    are built with the understanding that real-world experience, combined with expert-led instruction, leads 
-                    to true mastery. From foundational IT skills to advanced technical support, our courses are designed to 
-                    equip you with the tools you need to thrive in today&apos;s dynamic tech environment.
+                    No matter where you are on your professional journey, we help you define and reach your goals. 
+                    From skill development to career placement, DK Talent Hub supports you every step of the way.
                 </Typography>
             </div>
             <div className='w-full py-16 grid grid-cols-9 gap-4'>

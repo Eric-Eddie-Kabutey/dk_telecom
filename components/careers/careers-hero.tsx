@@ -23,14 +23,15 @@ function CareersHero() {
                         typo="header-2-semibold"
                         className='!leading-11 text-center text-gray-600'
                     >
-                        Welcome to Heirs Technologies!
+                        Welcome to DK Telecom
                     </Typography>
                 </div>
                 <Typography
                     className='max-w-[630px] text-center text-gray-500'
                 >
-                    Join a team that values creativity, innovation, and continuous growth. We’re looking for passionate 
-                    individuals ready to make a difference. Apply to get started on your journey with Heirs Technologies.
+                    Welcome to DK Telecom; a corporation where innovation meets impact. Join a passionate team driving Gambia’s 
+                    digital future with smart, reliable tech solutions. Grow with us, make a difference, and be part of 
+                    something bigger.
                 </Typography>
                 <Button
                     variant="primary"

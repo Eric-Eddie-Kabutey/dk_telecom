@@ -17,19 +17,20 @@ function DkTalentHero() {
                         typo="body-medium-medium"
                         className='text-center text-app-primary'
                     >
-                        DK Talent
+                        DK TalentHub
                     </Typography>
                     <Typography
                         typo="header-2-semibold"
                         className='!leading-11 text-center text-gray-600'
                     >
-                        Heirs Technologies&apos; Training Centre
+                        DK Telecom Mentorship Centre
                     </Typography>
                 </div>
                 <Typography
                     className='max-w-[500px] text-center text-gray-500'
                 >
-                    Unlock your potential with our Supplementary Technical Engineering Program (STEP)
+                    DK Telecom&apos;s Talent Hub is our gateway for discovering, developing, and connecting people to the 
+                    future of work in tech and telecom.
                 </Typography>
                 <Button
                     variant="primary"
@@ -39,11 +40,11 @@ function DkTalentHero() {
                     <ArrowRight />
                 </Button>
             </div>
-            <div className='md:block hidden w-full h-fit'>
+            <div className='md:block hidden w-full h-[650px]'>
                 <Image 
                     src={gridImages}
                     alt='Grid images'
-                    className='w-full h-full'
+                    className='w-full h-full rounded-2xl object-cover'
                 />
             </div>
             <div className='md:hidden block w-full h-fit'>

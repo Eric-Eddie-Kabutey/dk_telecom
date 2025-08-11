@@ -69,11 +69,9 @@ function CompanyHero() {
                 </div>
                 <Typography
                     typo="body-medium-light"
-                    className='max-w-[680px]'
+                    className='max-w-[60%]'
                 >
-                    Heirs Technologies is more than a technology provider - we are architects of Africa&apos;s digital future . 
-                    With a deep understanding of the continent&apos;s unique business landscape, we deliver innovative, tailored 
-                    solutions that empower organisations to thrive in an ever - evolving digital economy
+                    DK Telecom is a Gambian-owned telecom and tech company, providing fast, reliable, and affordable internet services nationwide. We offer 4G LTE, enterprise connectivity, managed IT solutions, and value-added services like CCTV, power backups, website and app development just to name a few. With a focus on service, innovation, and community, we’re building Gambia’s digital future, one connection at a time.
                 </Typography>
                 <Button
                     variant="primary"
@@ -100,7 +98,7 @@ function CompanyHero() {
                 </div>
             </div>
             <div className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
-                <div className='max-w-[590px] flex flex-col gap-8 '>
+                <div className='max-w-[70%] flex flex-col gap-8 '>
                     <div className='flex flex-col text-white z-[50]'>
                         <Typography
                             typo="header-3-semibold"
@@ -113,16 +111,40 @@ function CompanyHero() {
                             Africapitalism
                         </Typography>
                     </div>
-                    <Typography
-                        typo="body-medium-regular"
-                        className='text-gray-300 z-[50]'
-                    >
-                        Africapitalism is the economic philosophy developed by our Founder, Mr. Tony O. Elumelu, CFR, and is 
-                        predicated on the belief that Africa&apos;s private sector can and must play a leading role in the 
-                        continent&apos;s development. At the core of our mission lies the aspiration to establish Heirs 
-                        Technologies as a sustainable investment fostering economic prosperity and social wealth across Africa. 
-                        This commitment is encapsulated in our tagline: &apos;World class expertise, local accessibility.&apos;
-                    </Typography>
+                    <div className='flex flex-col gap-3'>
+                        <Typography
+                            typo="body-medium-regular"
+                            className='text-gray-300 z-[50]'
+                        >
+                            At DK Telecom, we believe business can be a powerful force for positive change. Guided by the principles 
+                            of Africapitalism, we’re committed to creating economic value that directly benefits The Gambia and 
+                            its people.
+
+                        </Typography>
+                        <Typography
+                            typo="body-medium-regular"
+                            className='text-gray-300 z-[50]'
+                        >
+                            Our mission goes beyond providing fast, reliable internet—we’re here to unlock opportunities for 
+                            individuals, entrepreneurs, and communities across the nation. By investing in local infrastructure, 
+                            empowering small businesses with digital tools, and supporting education through connectivity, we fuel
+                            a cycle of growth that lifts everyone.
+                        </Typography>
+                        <Typography
+                            typo="body-medium-regular"
+                            className='text-gray-300 z-[50]'
+                        >
+                            We see technology as the key to unlocking Africa’s potential, and through responsible, inclusive 
+                            innovation, DK Telecom is proud to play a vital role in driving sustainable prosperity for The 
+                            Gambia and beyond.
+                        </Typography>
+                        <Typography
+                            typo="body-medium-semibold"
+                            className='text-white z-[50]'
+                        >
+                            Together, we connect more than networks — we connect dreams, ambitions, and futures.
+                        </Typography>
+                    </div>
                 </div>
 
                 <div className='w-full py-16 grid grid-cols-9 gap-4'>

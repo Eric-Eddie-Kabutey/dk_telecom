@@ -13,24 +13,20 @@ function CoreValues() {
                     typo="header-3-medium"
                     className='text-gray-600'
                 >
-                    Our Core Values
+                    The DK Difference
                 </Typography>
                 <Typography
                     typo="body-medium-regular"
                     className='text-center text-gray-600'
                 >
-                    We understand the importance of ethics in our business and our values form our corporate culture. This culture is anchored on our 3 Es.
+                    At DK Telecom, our values guide how we work, serve, and grow—with our customers and for our country.
                 </Typography>
             </div>
             <div className='w-full pt-12 grid md:grid-cols-3 xl:gap-16 lg:gap-8 md:gap-4 gap-10'>
                 {core_values.map((data, index) => (
                     <div key={data.id} className='flex flex-col items-center gap-6'>
-                        <div className='w-24 h-fit'>
-                            <Image 
-                                src={data.icon}
-                                alt={`Core value ${index+1}`}
-                                className='w-full h-full'
-                            />
+                        <div className='w-20 h-fit'>
+                            <data.icon color='#0b55a5' className='w-full h-full text-app-secondary' />
                         </div>
                         <div className='flex flex-col items-center gap-3'>
                             <Typography

@@ -7,37 +7,25 @@ function ContactDetails() {
   return (
     <div className='w-full py-16 bg-app-black-bg'>
         <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex flex-col gap-6'>
-            <div className='flex flex-col gap-4'>
-                <Typography
-                    typo="body-medium-medium"
-                    className='text-app-primary'
-                >Contact details</Typography>
-                <Typography
-                    typo="header-3-semibold"
-                    className='text-white'
-                >
-                    Contact details
-                </Typography>
-            </div>
+            
             <div className='w-full pb-12 flex sm:flex-row flex-col justify-between gap-8'>
                 <div className='flex-1 flex flex-col gap-5 text-white'>
                     <Typography
-                        typo="header-5-regular"
-                    >
-                        Head Office:
-                    </Typography>
+                    typo="header-3-semibold"
+                    className='text-white'
+                >
+                    Head Office
+                </Typography>
                     <div className='flex flex-col gap-2'>
                         <Typography
                             typo="body-medium-regular"
-                        >support@heirstechnologies.com</Typography>
+                        >DK Telecom, Bijilo – The Gambia</Typography>
                         <Typography
                             typo="body-medium-regular"
-                        >+234-0201 888 9719</Typography>
-                        <Typography
-                            typo="body-medium-regular"
-                        >220B, Ikorodu Road, Palmgroove, Lagos</Typography>
+                        >Monday to Saturday | 9:00 AM – 5:00 PM</Typography>
+                        
                     </div>
-                    <div className='flex items-center gap-4'>
+                    {/* <div className='flex items-center gap-4'>
                         <button type='button'>
                             <Facebook size={20} />
                         </button>
@@ -50,28 +38,51 @@ function ContactDetails() {
                         <button type='button'>
                             <X size={20} />
                         </button>
-                    </div>
+                    </div> */}
                 </div>
                 <div className='flex-1 flex flex-col gap-5 text-white'>
                     <Typography
-                        typo="header-5-regular"
+                        typo="header-3-semibold"
+                        className='text-white'
                     >
-                        Abuja Office:
+                        Reach us on:
                     </Typography>
-                    <div className='flex flex-col gap-2'>
-                        <Typography
-                            typo="body-medium-regular"
-                        >+234 703 312 3358</Typography>
-                        <div className='flex flex-col'>
+                    <div className='flex flex-col gap-1'>
+                        <div className='flex items-center gap-3'>
+                            <Typography
+                                typo="body-medium-semibold"
+                            >Phone:</Typography>
                             <Typography
                                 typo="body-medium-regular"
-                            >2nd floor, Churchgate Tower, Plot 473 Constitution Avenue,</Typography>
+                            >+220 954 4000 </Typography>
+
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <Typography
+                                typo="body-medium-semibold"
+                            >Call Center:</Typography>
                             <Typography
                                 typo="body-medium-regular"
-                            >Central Business District, Abuja 900211,</Typography>
+                            >1331</Typography>
+
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <Typography
+                                typo="body-medium-semibold"
+                            >Email:</Typography>
                             <Typography
                                 typo="body-medium-regular"
-                            >Federal Capital Territory</Typography>
+                            >info@dktelecom.gm</Typography>
+
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <Typography
+                                typo="body-medium-semibold"
+                            >WhatsApp:</Typography>
+                            <Typography
+                                typo="body-medium-regular"
+                            >+220 954 4000</Typography>
+
                         </div>
                     </div>
                     
@@ -81,7 +92,7 @@ function ContactDetails() {
             <div className='w-full sm:h-[400px] h-[300px] rounded-2xl overflow-hidden'>
                 <iframe
                   title="Heirs Technologies Lagos Office Map"
-                  src="https://www.google.com/maps?q=220B,+Ikorodu+Road,+Palmgroove,+Lagos&output=embed"
+                src="https://www.google.com/maps?q=Banjul,+Gambia&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

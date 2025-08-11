@@ -34,8 +34,8 @@ function CareersInsider() {
                         typo="body-medium-regular"
                         className='text-gray-600'
                     >
-                        Want to join us one day? Heirs Technologies Insiders are future team members who stay connected with us, 
-                        get a peek into our culture, and are the first to hear about job openings.
+                        Thinking about joining us in the future? DK Insiders stay connected, get an inside look at our culture, 
+                        and are the first to know about new opportunities to be part of our growing team.
                     </Typography>
                     <div className='w-[50%] mx-auto h-fit'>
                         <Image 

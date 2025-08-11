@@ -84,15 +84,16 @@ function CompanyPurpose() {
               />
         </div>
         <div className='flex-1 lg:pt-6'>
-          <div className='xl:w-[75%] lg:w-[80%] flex flex-col xl:gap-8 md:gap-4 gap-8'>
+          <div className='xl:w-[90%] lg:w-[80%] flex flex-col xl:gap-8 md:gap-4 gap-8'>
             <Typography
               typo="body-medium-regular"
               className='!leading-relaxed text-gray-600'
             >
-              Our expertise spans Managed Services , Business Transformation and Consulting , and Licensing and Renewals, 
-              establishing us as a trusted partner for businesses seeking efficiency, growth, and resilience . With a 
-              strong pipeline of skilled technical engineers, we are transforming Africa&apos;s technology ecosystem and 
-              shaping a future where African businesses set the global benchmark for digital excellence
+              At DK Telecom, we believe that the future of The Gambia lies in its ability to stay connected — not just to the 
+              world, but to opportunity, progress, and each other. As a proudly Gambian-owned company, our work goes beyond 
+              business. It’s about creating access, building digital bridges, and supporting the people and enterprises shaping 
+              tomorrow’s Gambia. Our commitment is simple: technology that empowers, service that delivers, and solutions 
+              designed for the real needs of our communities.
             </Typography>
             <Separator />
             <div className='flex flex-col gap-4'>
@@ -106,7 +107,8 @@ function CompanyPurpose() {
                 typo="body-medium-regular"
                 className='!leading-relaxed text-gray-600'
               >
-                To empower Africa&apos;s digital transformation through innovative and locally tailored solutions
+                To connect communities, grow businesses, and support national progress through accessible, reliable 
+                technology made for The Gambia.
               </Typography>
             </div>
             <Separator />
@@ -121,7 +123,8 @@ function CompanyPurpose() {
                 typo="body-medium-regular"
                 className='!leading-relaxed text-gray-600'
               >
-                Become a Trusted Advisor and Deliver Value that is not just Transactional.
+                We deliver dependable internet, practical ICT solutions, and responsive support because our customers 
+                deserve connections they can count on, and service that puts them first.
               </Typography>
             </div>
           </div>

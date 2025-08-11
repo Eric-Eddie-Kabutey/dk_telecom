@@ -4,6 +4,8 @@ import Typography from '../shared/typography'
 import { work_reasons } from '@/constants';
 import { Card, CardContent, CardFooter, CardHeader } from '../ui/card';
 import Image from 'next/image';
+import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
 
 function CareersWhyWork() {
   return (
@@ -15,50 +17,58 @@ function CareersWhyWork() {
             >
                 Why You&apos;ll Love Working Here
             </Typography>
-            <div className='w-full py-6 overflow-auto'>
-                <div className='w-fit px-4 flex items-center gap-6 flex-nowrap'>
-                    {work_reasons.map((data, index) => (
-                        <Card
-                            key={data.id}
-                            className='w-[700px] p-3 flex justify-between gap-2 bg-white'
-                        >
-                            <div className='flex-1 flex flex-col gap-2'>
-                                <CardHeader className='pb-0'>
-                                    <div className='w-16 h-fit'>
+            <div className='w-full py-6 '>
+                <Carousel
+                    plugins={[
+                        Autoplay({
+                            delay: 2000,
+                        })
+                    ]}
+                >
+                    <CarouselContent className='w-fit px-4 flex items-center gap-8'>
+                        {work_reasons.map((data, index) => (
+                            <CarouselItem key={data.id} className='lg:basis-1/2'>
+                                <Card
+                                    className='w- p-3 flex justify-between gap-2 bg-white'
+                                >
+                                    <div className='flex-1 flex flex-col gap-2'>
+                                        <CardHeader className='pb-0'>
+                                            <div className='w-12 h-fit'>
+                                                <data.icon
+                                                    color='#0c55a5'
+                                                    className='w-full h-full'
+                                                />
+                                            </div>
+                                        </CardHeader>
+                                        <CardContent className='pb-2'>
+                                            <Typography
+                                                typo="header-6-semibold"
+                                                className='text-gray-600'
+                                            >
+                                                {data.title}
+                                            </Typography>
+                                        </CardContent>
+                                        <CardFooter>
+                                            <Typography
+                                                typo="body-small-regular"
+                                                className='!leading-snug text-gray-600'
+                                            >
+                                                {data.description}
+                                            </Typography>
+                                        </CardFooter>
+                                    </div>
+                                    <div className='flex-1 h-[300px]'>
                                         <Image 
-                                            src={data.icon}
-                                            alt={`Working icon ${index+1}`}
-                                            className='w-full h-full'
+                                            src={data.img}
+                                            alt={`Working ${index+1}`}
+                                            className='w-full h-full object-cover rounded-2xl'
                                         />
                                     </div>
-                                </CardHeader>
-                                <CardContent className='pb-2'>
-                                    <Typography
-                                        typo="header-6-semibold"
-                                        className='text-gray-600'
-                                    >
-                                        {data.title}
-                                    </Typography>
-                                </CardContent>
-                                <CardFooter>
-                                    <Typography
-                                        typo="body-small-regular"
-                                        className='!leading-snug text-gray-600'
-                                    >
-                                        {data.description}
-                                    </Typography>
-                                </CardFooter>
-                            </div>
-                            <div className='flex-1 h-[350px]'>
-                                <Image 
-                                    src={data.img}
-                                    alt={`Working ${index+1}`}
-                                    className='w-full h-full object-cover rounded-2xl'
-                                />
-                            </div>
-                        </Card>
-                    ))}
-                </div>
+                                </Card>
+                            </CarouselItem>
+                        ))}
+                    </CarouselContent>
+                </Carousel>
             </div>
         </section>
     </div>

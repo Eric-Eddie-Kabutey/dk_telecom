@@ -29,7 +29,8 @@ function ContactMain() {
                         <Image 
                             src={contactImg}
                             alt='Contact image'
-                            className='w-full h-full object-cover rounded-full'
+                            className='w-full h-full object-cover rounded-full '
+                            style={{ transform: 'scaleX(-1)' }}
                         />
                     </div>
                 </div>

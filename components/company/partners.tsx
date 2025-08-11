@@ -19,9 +19,9 @@ function Partners() {
                 <Typography
                     typo="body-medium-regular"
                 >
-                    At Heirs Technologies, we collaborate with industry-leading partners to deliver top-notch services and 
-                    solutions. Our partnerships with global technology giants enable us to provide our clients with the best 
-                    resources and insights needed to achieve their goals.
+                    We&apos;re proud to collaborate with organizations that share our vision for innovation, connectivity, and 
+                    community growth. These partnerships help us deliver more value to our customers and expand our impact 
+                    across The Gambia and beyond.
                 </Typography>
             </div>
             <motion.div

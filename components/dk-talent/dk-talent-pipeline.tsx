@@ -1,7 +1,7 @@
 'use client';
 import React from 'react'
 import Typography from '../shared/typography'
-import pipelineImg from "@/public/assets/images/dk-talent/academy-ready-pipeline.png";
+import pipelineImg from "@/public/assets/images/company/company-2.png";
 import Image from 'next/image';
 import { Button } from '../ui/button';
 
@@ -15,7 +15,7 @@ function DkTalentPipeline() {
                         <Typography
                             typo="body-medium-regular"
                         >
-                            Hire from us
+                            Hire from Us
                         </Typography>
                         <Typography
                             typo="header-3-regular"
@@ -27,14 +27,12 @@ function DkTalentPipeline() {
                         <Typography
                             typo="body-medium-light"
                         >
-                            Build exceptional teams with top-tier, rigorously vetted tech professionals from our growing tech talent pipeline.
+                            Looking for dependable, well-trained talent? 
                         </Typography>
                         <Typography
                             typo="body-medium-light"
                         >
-                            We help organisations globally with flexible and dependable talent outsourcing solutions. Whether 
-                            you&apos;re looking for project-based hires, managed teams, or long-term staff, we have the 
-                            expertise to meet your needs.
+                            DK Talent Hub connects you with job-ready professionals trained in digital services, support, customer care, and more.
                         </Typography>
                         <Typography
                             typo="body-medium-semibold"

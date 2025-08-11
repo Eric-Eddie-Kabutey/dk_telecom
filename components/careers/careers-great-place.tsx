@@ -20,10 +20,10 @@ function CareersGreatPlace() {
                         typo="body-medium-regular"
                         className='flex-1 text-gray-400'
                     >
-                        We&apos;re all about driving Africa&apos;s digital transformation, and we do it by delivering world class 
-                        solutions that is not just transactional. This means that when you join Heirs Technologies, you are not 
-                        just getting a job – you are becoming part of something bigger. Here, your work will have a direct impact 
-                        on businesses, communities, and economies across the continent. Exciting, right?
+                        We are working in a workplace where staff bonds like a family built on mutual respect and shared goals. 
+                        A corporation where your ideas matter and your growth is a priority. The culture blends professionalism 
+                        with genuine care and support.Team spirit is strong, and every success is celebrated together. 
+                        Here you don&apos;t just clock in, the culture makes you belong.
                     </Typography>
                 </div>
             </section>

@@ -2,7 +2,7 @@
 import React from 'react'
 import Typography from '../shared/typography'
 import Image from 'next/image'
-import joinImg from '@/public/assets/images/careers/join-us-img.png'
+import joinImg from '@/public/assets/images/company/company_hero.png'
 import { Button } from '../ui/button';
 import { ArrowRight } from 'lucide-react';
 
@@ -25,13 +25,11 @@ function DkTalentJoin() {
                     typo="header-4-medium"
                     className='text-gray-600'
                 >
-                    Join DK TalentHub
+                    Join DK Talent Hub
                 </Typography>
                     <Typography>
-                        Joining i-Academy means more than just acquiring new skills. It&apos;s about being part of a vibrant 
-                        community of tech enthusiasts and professionals who are passionate about making an impact. Our inclusive 
-                        environment fosters collaboration, innovation, and personal growth, ensuring that you&apos;re not just 
-                        prepared for the tech industry but ready to lead it.
+                        Ready to grow? Sign up and gain access to training, mentorship, and real job opportunities within 
+                        DK Telecom and our trusted partners.
                     </Typography>
                     <div className='flex flex-col lg:gap-6 gap-3'>
                         <div className='lg:pb-6 pb-5 flex flex-col lg:gap-5 gap-3 border-b'>

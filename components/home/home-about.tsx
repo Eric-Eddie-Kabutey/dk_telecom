@@ -96,13 +96,18 @@ function HomeAbout() {
                     typo="header-3-medium"
                     className='text-gray-600 md:!text-[2.2rem]  !leading-snug'
                 >
-                    Innovating Today for Africa’s Digital Future
+                    Your number one internet service provider.
                 </Typography>
                 <Typography
                     typo="body-medium-regular"
                     className='w-[90%] !font-extralight'
                 >
-                    At DK Telecom, we believe the internet is more than just a connection—it’s a bridge to opportunity. From city streets to rural villages, we deliver fast, reliable, and affordable internet that empowers people, businesses, and communities across The Gambia. Proudly local, passionately driven, and committed to keeping you connected.
+                    At DK Telecom LTD, we’re dedicated to bridging the gap between innovation and connectivity. With our 
+                    cutting-edge technology and unwavering commitment to customer satisfaction, we’re redefining 
+                    telecommunications.
+                    From seamless network solutions to personalized customer care, we’re here to empower your digital journey. 
+                    Join us as we pave the way for a connected future. 
+
                 </Typography>
             </div>
         </section>

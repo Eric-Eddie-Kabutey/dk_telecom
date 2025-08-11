@@ -28,9 +28,9 @@ function CareersJoinUs() {
                 </div>
                 <div className='flex-1 flex flex-col gap-12'>
                     <Typography>
-                        Now that you know a bit more about who we are, how about taking the next step? If you&apos;re excited 
-                        about making a real difference, growing your career, and working with a team that&apos;s passionate 
-                        about Africa&apos;s digital transformation, then we want to hear from you.
+                        Now that you know what we stand for, why not take the next step? Join a passionate team driving Gambia’s 
+                        digital future with smart, reliable tech solutions.
+                        Grow with us, make a difference, and be part of something bigger.
                     </Typography>
                     <div className='flex flex-col lg:gap-6 gap-3'>
                         <div className='lg:pb-10 pb-5 flex flex-col lg:gap-5 gap-3 border-b'>
