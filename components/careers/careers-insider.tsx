@@ -1,7 +1,7 @@
 'use client';
 import React from 'react'
 import Typography from '../shared/typography'
-import insiderImg from "@/public/assets/images/careers/insider_img.png";
+import insiderImg from "@/public/assets/images/careers/insider1_img.png";
 import Image from 'next/image';
 import { useForm } from 'react-hook-form';
 import { Form, FormControl, FormField, FormItem, FormLabel } from '../ui/form';

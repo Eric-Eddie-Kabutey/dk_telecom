@@ -23,7 +23,6 @@ function Partners() {
         </div>
 
         <div className='w-full py-12 flex flex-col gap-10'>
-          {/* Row 1 - scroll left */}
           <motion.div
             className="flex space-x-16 w-max"
             animate={{ x: ["0%", "-50%"] }} 
