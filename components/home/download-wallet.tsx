@@ -7,11 +7,10 @@ import { CircleCheck, Info } from 'lucide-react';
 import qrCodeImg from "@/public/assets/images/qr_code_img.png";
 import applestoreImg from "@/public/assets/icons/apple_store.png"
 import playstoreImg from "@/public/assets/icons/playstore.png"
-import mobileImg from "@/public/assets/images/home/mobile_app.png";
-import mobilebackImg from "@/public/assets/images/home/mobile_back_1.png";
 import SlidingCountries from '../reusable/sliding-countries';
 import SlidingRight from '../reusable/sliding-right';
 import * as THREE from 'three';
+import dkpayImg from "@/public/assets/images/home/dk_payImg.png"
 
 const features = [
   "Send Money", "Pay Bills", "Receive Payment", "Withdraw Money",
@@ -83,8 +82,8 @@ function DownloadWallet() {
   }, []);
 
   return (
-    <div className='w-full pt-8 pb-24'>
-      <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex xl:flex-row flex-col justify-between items-stretch gap-32'>
+    <div className='w-full pt-8 pb-24 '>
+      <section className='max-container 2xl:w-[85%] w-[95%] mx-auto p-12 flex xl:flex-row flex-col justify-between items-stretch gap-12 bg-gradient-to-t from-app-deep-blue via-app-deep-blue to-[#19b5f0] rounded-2xl'>
         <div className='flex-1 flex flex-col gap-6 rounded-lg bg-white'>
           <div className='w-full pt-6 px-10 flex flex-col gap-2'>
             <div className='flex justify-between gap-3'>
@@ -142,9 +141,9 @@ function DownloadWallet() {
           </div>
         </div>
         <div className='flex-1 flex flex-col gap-'>
-          <div className='w-full px-8 sm:pt-16 pt-16 flex flex-col justify-end rounded-t-lg bg-app-deep-blue overflow-hidden'>
-            <div className='sm:w-[90%] w-full mx-auto -mb-24 relative flex justify-between items-end'>
-              <div className='w-[50%] h-fit mt-16'>
+          <div className='w-full px-8 sm:pt-16 pt-16 flex flex-col justify-end rounded-t-lg bg-[#e6e6e6] overflow-hidden'>
+            <div className='sm:w-full w-full mx-auto -mb-24 relative flex justify-between items-end'>
+              {/* <div className='w-[50%] h-fit mt-16'>
                 <Image src={mobilebackImg} alt='Mobile back' className='w-full h-full' />
               </div>
               <div className='w-[50%] h-fit'>
@@ -152,7 +151,12 @@ function DownloadWallet() {
               </div>
               <div className='w-[70%] h-fit absolute top-0 right-1/2 left-1/2 -translate-x-1/2'>
                 <Image src={mobileImg} alt="Mobile app" className='w-full h-full' />
-              </div>
+              </div> */}
+              <Image 
+                src={dkpayImg}
+                alt='DK Pay image'
+                className='w-full h-full'
+              />
             </div>
           </div>
           <div className='w-full py-8 px-12 flex xs:flex-row flex-col items-center gap-8 rounded-b-lg bg-[#19b5f0]'>

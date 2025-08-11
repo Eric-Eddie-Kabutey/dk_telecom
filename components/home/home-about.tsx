@@ -102,7 +102,7 @@ function HomeAbout() {
                     typo="body-medium-regular"
                     className='w-[90%] !font-extralight'
                 >
-                    Heirs Technologies is Africa&apos;s premier technology company dedicated to delivering cutting-edge solutions tailored for the African market. We are revolutionising the technology landscape with a strong pipeline of technical engineers to support Africa’s digital transformation.
+                    At DK Telecom, we believe the internet is more than just a connection—it’s a bridge to opportunity. From city streets to rural villages, we deliver fast, reliable, and affordable internet that empowers people, businesses, and communities across The Gambia. Proudly local, passionately driven, and committed to keeping you connected.
                 </Typography>
             </div>
         </section>

@@ -11,8 +11,8 @@ import { Pause } from 'lucide-react';
 
 function BookNow() {
   return (
-    <div className='w-full flex lg:flex-row flex-col justify-between '>
-        <section className='book-bg  pt-10 pb-16 flex-1 flex justify-end'>
+    <div className='w-full pb-32 flex lg:flex-row flex-col justify-between '>
+        {/* <section className='book-bg  pt-10 pb-16 flex-1 flex justify-end'>
             <div className='pops lg:w-[450px] w-[90%] sm:pr-20 pr-6 flex flex-col justify-between gap-6 text-white'>
                 <Typography
                     typo="body-small-regular"
@@ -33,7 +33,7 @@ function BookNow() {
                     Book now
                 </Button>
             </div>
-        </section>
+        </section> */}
         {/* <section className='flex-1 pt-10 pb-16 bg-[#E7E7E7]'>
             <div className='pops lg:w-[450px] w-[90%] sm:pl-20 pl-6 flex flex-col justify-between gap-6'>
                 <Typography
@@ -56,7 +56,7 @@ function BookNow() {
                 </Button>
             </div>
         </section> */}
-        <div className='hidden flex-1 mx-auto xs:flex flex-col gap-6 bg-white overflow-hidden'>
+        <div className='hidden w-[800px] mx-auto xs:flex flex-col gap-6 bg-white overflow-hidden'>
             <Carousel 
                 plugins={[
                     Autoplay({
@@ -67,7 +67,7 @@ function BookNow() {
             >
                 <CarouselContent>
                     {testimonial_clients.map((data, index) => (
-                        <CarouselItem key={data.id}>
+                        <CarouselItem key={data.id} className=''>
                             <Card
                                 className='w-full h-full sm:p-4 flex md:flex-row flex-col justify-between sm:items-stretch sm:gap-8 gap-4 border-none bg-white'
                             >

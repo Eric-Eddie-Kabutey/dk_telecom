@@ -57,28 +57,28 @@ export const internet_services = [
         href: "/internet-plans",
         img: test1,
         title: "Internet plans",
-        sub_title: "SME Plus Combo Bundles",
+        sub_title: "Fast affordable internet for every need.",
     },
     {
         id: "2",
         href: "/",
         img: test2,
         title: "Internet Payments",
-        sub_title: "Web design and hosting",
+        sub_title: "Simple, secure, and flexible bill payments.",
     },
     {
         id: "3",
         href: "/new-installation",
         img: test3,
         title: "New Installation",
-        sub_title: "Business Communications",
+        sub_title: "Quick setup, anywhere you need internet.",
     },
     {
         id: "4",
         href: "/",
         img: service_1,
         title: "Request Support",
-        sub_title: "Inventory Management",
+        sub_title: "Friendly help whenever you need it.",
     },
 ]
 

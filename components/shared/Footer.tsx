@@ -46,7 +46,6 @@ export default function Footer() {
                                 <li className="text-sm text-gray-300">Company</li>
                                 <li className="text-sm text-gray-300">Insights</li>
                                 <li className="text-sm text-gray-300">Careers</li>
-                                <li className="text-sm text-gray-300">i-Academy</li>
                             </ul>
                         </div>
                         <div className="flex flex-col gap-6 col-span-2 sm:col-span-2">
@@ -55,10 +54,9 @@ export default function Footer() {
                                 className="text-white"
                             >Our Service</Typography>
                             <ul className="flex flex-col gap-3">
-                                <li className="text-sm text-gray-300">Business Transformation & Consulting</li>
-                                <li className="text-sm text-gray-300">Managed services</li>
-                                <li className="text-sm text-gray-300">Licensing and Renewals</li>
-                                <li className="text-sm text-gray-300">FAQs</li>
+                                <li className="text-sm text-gray-300">DK Internet</li>
+                                <li className="text-sm text-gray-300">Digital Solutions</li>
+                                <li className="text-sm text-gray-300">DK TalentHub</li>
                             </ul>
                         </div>
                         <div className="flex flex-col gap-6 col-span-3 sm:col-span-3">
@@ -78,7 +76,7 @@ export default function Footer() {
                 </div>
                 <div className="w-full pt-3 pb-8 flex sm:flex-row flex-col justify-between items-center gap-4">
                     <div className="flex flex-col gap-1">
-                        <span className="text-sm text-white">© 2025, Heirs Technologies Ltd. All Rights Reserved.</span>
+                        <span className="text-sm text-white">© 2025, DK Telecom. All Rights Reserved.</span>
                         <div className="flex items-center gap-3 text-gray-300 text-[13px]">
                             <span>Cookie Policy</span>
                             <span>|</span>

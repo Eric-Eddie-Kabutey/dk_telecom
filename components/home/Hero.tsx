@@ -41,26 +41,25 @@ function HomeHero() {
                     <Typography
                         typo="header-2-medium"
                         className='!leading-11 md:!text-[3rem]'
-                    >
-                        Driving Africa&apos;s
+                    >   Proudly Gambian. Powered 
                     </Typography>
                     <Typography
                         typo="header-2-medium"
                         className='!leading-11 md:!text-[3rem]'
                     >
-                        Digital Transformation
+                        by innovation. Committed to you. 
                     </Typography>
                 </div>
                 <Typography
                     typo="body-large-regular"
                 >
-                    Your Partner in Business Transformation & Consulting, Licensing & Renewals and Managed Services
+                    Connecting Every Corner of The Gambia—One Home, One Business, One Heart at a Time.
                 </Typography>
                 <Button
                     variant="primary"
                     className='w-fit py-3 px-5 font-medium'
                 >
-                    <span>Explore more</span>
+                    <span>Get Connected Today</span>
                     <ArrowRight />
                 </Button>
             </div>

@@ -50,13 +50,13 @@ function InternetServices() {
                                                 className='w-full h-full object-cover rounded-lg'
                                             />
                                         </CardHeader>
-                                        <CardContent className='px-0 pt-4 xl:pb-2 pb-0 flex flex-col'>
+                                        <CardContent className='w-[80%] px-0 pt-4 xl:pb-2 pb-0 flex flex-col'>
                                             <Typography 
                                                 typo="body-large-semibold"
                                                 className='pb-2 !leading-none group-hover:text-white'>{data.title}</Typography>
                                                 <Typography
                                                     typo="body-small-regular"
-                                                    className='text-gray-500  line-clamp-1 group-hover:text-gray-200'
+                                                    className='text-gray-500 !leading-normal group-hover:text-gray-200'
                                                 >
                                                     {data.sub_title}
                                                 </Typography>

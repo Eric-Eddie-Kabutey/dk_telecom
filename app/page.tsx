@@ -11,7 +11,6 @@ import Image from "next/image";
 import BlogPost from "@/components/home/blog-posts";
 import InternetServices from "@/components/home/internet-services";
 import DownloadWallet from "@/components/home/download-wallet";
-import Packages from "@/components/home/packages";
 
 export default function Home() {
   const [minimized, setMinimized] = useState(false);
@@ -28,7 +27,7 @@ export default function Home() {
       <InternetServices />
       {/* <OurServices /> */}
       <HomeCaseStudies />
-      <Packages />
+      {/* <Packages /> */}
       <BlogPost />
       <DownloadWallet />
       {/* <Testimonial /> */}
