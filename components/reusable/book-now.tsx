@@ -1,7 +1,6 @@
 'use client';
 import React from 'react'
 import Typography from '../shared/typography'
-import { Button } from '../ui/button';
 import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import { testimonial_clients } from '@/constants';
