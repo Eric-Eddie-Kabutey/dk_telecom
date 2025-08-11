@@ -2,7 +2,6 @@
 import React from 'react'
 import Typography from '../shared/typography'
 import { core_values } from '@/constants';
-import Image from 'next/image';
 
 function CoreValues() {
   return (
@@ -23,7 +22,7 @@ function CoreValues() {
                 </Typography>
             </div>
             <div className='w-full pt-12 grid md:grid-cols-3 xl:gap-16 lg:gap-8 md:gap-4 gap-10'>
-                {core_values.map((data, index) => (
+                {core_values.map((data) => (
                     <div key={data.id} className='flex flex-col items-center gap-6'>
                         <div className='w-20 h-fit'>
                             <data.icon color='#0b55a5' className='w-full h-full text-app-secondary' />
