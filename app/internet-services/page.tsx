@@ -1,18 +1,21 @@
-import Testimonial from '@/components/home/testimonial'
-import ConsultingServices from '@/components/it-consulting/consulting-services'
-import ItConsultingHero from '@/components/it-consulting/it-consulting-hero'
-import WhyBusiness from '@/components/it-consulting/why-business'
-import BookNow from '@/components/reusable/book-now'
-import React from 'react'
+import { HighSpeedInternetHero } from '@/components/internet-services/hero'
+import { Locations } from '@/components/internet-services/locations'
+import { PricingPlans } from '@/components/internet-services/pricing-plans'
+import { DownloadAppSection } from '@/components/shared/download-app'
 
 function ItConsultingPage() {
   return (
     <div>
-        <ItConsultingHero />
-        <ConsultingServices />
-        <WhyBusiness />
-        <Testimonial />
-        <BookNow />
+      {/* hero section */}
+        <HighSpeedInternetHero />
+       
+      {/* pricing plans */}
+      <PricingPlans />
+      
+      {/* our locations */}
+      <Locations />
+      {/* reusable - download our wallet app */}
+      <DownloadAppSection />
     </div>
   )
 }
