@@ -4,15 +4,14 @@ import { ArrowUpRight } from "lucide-react";
 
 export function HighSpeedInternetHero() {
   return (
-    <section className="bg-cyan-50/40 py-20 md:py-28">
+    <section className="bg-cyan-50/40 py-20">
       <div className="max-container 2xl:w-[85%] w-[95%] mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
           {/* Left Column: Text Content */}
           <div className="text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              High-Speed Internet
-              <br />
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-wide leading-10">
+              High-Speed Internet              
               Around The Gambia
             </h1>
             <p className="mt-6 text-lg text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
