@@ -1,16 +1,16 @@
 'use client';
-import Hero from "@/components/home/Hero";
-import HomeClients from "@/components/home/clients";
-import HomeAbout from "@/components/home/home-about";
-import HomeCaseStudies from "@/components/home/home-case-studies";
-import BookNow from "@/components/reusable/book-now";
 import { FaWhatsapp } from "react-icons/fa";
 import { useState } from "react";
 import dklogo from "@/public/assets/images/dk_logo.png"
 import Image from "next/image";
-import BlogPost from "@/components/home/blog-posts";
-import InternetServices from "@/components/home/internet-services";
-import DownloadWallet from "@/components/home/download-wallet";
+import { DownloadAppSection } from "@/components/shared/download-app";
+import { SendMoneySection } from "@/components/sample/send-money";
+import { BlogSection } from "@/components/sample/blogs";
+import { TestimonialsSection } from "@/components/sample/testimonial";
+import { CaseStudiesSection } from "@/components/sample/case-studies";
+import { ServicesSection } from "@/components/sample/service";
+import { AboutSection } from "@/components/sample/about";
+
 
 export default function Home() {
   const [minimized, setMinimized] = useState(false);
@@ -21,20 +21,29 @@ export default function Home() {
 
   return (
     <div className="relative bg-[#F6F6F6]">
-      <Hero />
-      <HomeClients />
-      <HomeAbout />
-      <InternetServices />
-      {/* <OurServices /> */}
-      <HomeCaseStudies />
-      {/* <Packages /> */}
-      <BlogPost />
-      <DownloadWallet />
-      {/* <Testimonial /> */}
-      <BookNow />
+      
+      <AboutSection />
+      
+      {/* service section */}
+      <ServicesSection />
+
+      {/* case studies  */}
+      <CaseStudiesSection />
+
+      {/* testimonials */}
+      <TestimonialsSection />
+
+      {/* blog */}
+      <BlogSection />
+
+      {/* send money */}
+      <SendMoneySection />
+
+      {/* download wallet  */}
+      <DownloadAppSection />
 
       <div
-        className={`fixed bottom-24 right-6 z-50 transition-all duration-700 ${minimized ? 'w-52 h-12' : 'w-80 h-32'} bg-white shadow-lg rounded-xl flex items-center cursor-pointer border border-gray-200 animate-[floatY_2.5s_ease-in-out_infinite]`}
+        className={`hidden fixed bottom-24 right-6 z-50 transition-all duration-700 ${minimized ? 'w-52 h-12' : 'w-80 h-32'} bg-white shadow-lg rounded-xl flex items-center cursor-pointer border border-gray-200 animate-[floatY_2.5s_ease-in-out_infinite]`}
         onClick={handleCardClick}
         style={{ boxShadow: '0 4px 24px rgba(0,0,0,0.12)' }}
       >
@@ -86,7 +95,7 @@ export default function Home() {
         href="https://wa.me/233243333333"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300"
+        className="hidden fixed bottom-6 right-6 z-50 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300"
       >
         <FaWhatsapp size={24} />
       </a>
