@@ -31,7 +31,7 @@ const links: { title: string; href: string; description: string, links?: { title
     links: [
       {
         title: "Internet services",
-        href: "/internet-plans",
+        href: "/internet-services",
         description:
           "Re-usable components built using Radix UI and Tailwind CSS.",
       },
