@@ -6,8 +6,7 @@ import {
     NavbarLeft,
     NavbarRight,
 } from "@/components/ui/navbar";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Globe, Menu } from "lucide-react";
+import { Globe } from "lucide-react";
 import Link from "next/link";
 import dk_logo from "@/public/assets/images/dk_logo_blue.png"
 import Image from "next/image";
@@ -15,6 +14,8 @@ import Typography from "./typography";
 import { useEffect, useState } from "react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger } from "../ui/dropdown-menu";
 import { languages } from "@/constants";
+import { MobileNav } from "./mobile";
+
 
 
 export default function Navbar() {
@@ -77,8 +78,9 @@ export default function Navbar() {
         window.location.reload();
       };
     return (
-        <header className="py-2 sticky top-0 z-50 px-4 flex flex-col justify-center">
-            <div className=" absolute left-0 h-full w-full bg-background/60 backdrop-blur-md"></div>
+        <header className="py-2 sticky top-0 z-50 px-4 flex flex-col justify-center bg-transparent">
+            {/* bg-background/60 backdrop-blur-md */}
+            {/* <div className=" absolute left-0 h-full w-full transparent"></div> */}
             <div className="max-container relative 2xl:w-[85%] w-[95%] mx-auto">
                 <NavbarComponent>
                     <NavbarLeft>
@@ -90,13 +92,7 @@ export default function Navbar() {
                                 src={dk_logo}
                                 alt="Heirs logo"
                                 className="w-fit sm:h-12 h-6"
-                            />
-                            {/* <Typography
-                                typo="header-6-semibold"
-                                className="public text-app-primary"
-                            >
-                                DK Telecom
-                            </Typography> */}
+                            />                           
                         </Link>
                     </NavbarLeft>
                     <Navigation />
@@ -149,47 +145,8 @@ export default function Navbar() {
                                 </DropdownMenuContent>
                             </DropdownMenu>
                         </div>    
-                        
-                        <Sheet>
-                            <SheetTrigger asChild>
-                                <Button
-                                    variant="ghost"
-                                    size="icon"
-                                    className="shrink-0 md:hidden"
-                                >
-                                    <Menu className="h-5 w-5" />
-                                    <span className="sr-only">Toggle navigation menu</span>
-                                </Button>
-                            </SheetTrigger>
-                            <SheetContent side="right">
-                                <nav className="grid gap-6 text-lg font-medium">
-                                    <Link
-                                        href="/"
-                                        className="flex items-center gap-2 text-xl font-bold"
-                                    >
-                                        <span>Heirs Technologies</span>
-                                    </Link>
-                                    <Link
-                                        href="/"
-                                        className="text-muted-foreground hover:text-foreground"
-                                    >
-                                        Getting Started
-                                    </Link>
-                                    <Link
-                                        href="/"
-                                        className="text-muted-foreground hover:text-foreground"
-                                    >
-                                        Components
-                                    </Link>
-                                    <Link
-                                        href="/contact-us"
-                                        className="text-muted-foreground hover:text-foreground"
-                                    >
-                                        Contact Us
-                                    </Link>
-                                </nav>
-                            </SheetContent>
-                        </Sheet>
+                        {/* mobile navigation */}
+                        <MobileNav />                        
                     </NavbarRight>
                 </NavbarComponent>
             </div>
