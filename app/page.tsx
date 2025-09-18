@@ -10,6 +10,8 @@ import { TestimonialsSection } from "@/components/sample/testimonial";
 import { CaseStudiesSection } from "@/components/sample/case-studies";
 import { ServicesSection } from "@/components/sample/service";
 import { AboutSection } from "@/components/sample/about";
+import { CompanyHero } from "@/components/home/Hero";
+import { NextGeneration } from "@/components/home/NextGeneration";
 
 
 export default function Home() {
@@ -21,6 +23,11 @@ export default function Home() {
 
   return (
     <div className="relative bg-[#F6F6F6]">
+      {/* company hero */}
+      <CompanyHero />
+
+      {/* The next generation  */}
+      <NextGeneration />
       
       <AboutSection />
       
