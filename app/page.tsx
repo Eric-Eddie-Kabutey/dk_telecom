@@ -12,6 +12,12 @@ import { ServicesSection } from "@/components/sample/service";
 import { AboutSection } from "@/components/sample/about";
 import { CompanyHero } from "@/components/home/Hero";
 import { NextGeneration } from "@/components/home/NextGeneration";
+import { Impact } from "@/components/home/Impact";
+import { OurClients } from "@/components/home/OurClients";
+import { CaseStudySlider } from "@/components/home/CaseStudySlider";
+import { SolvingProblems } from "@/components/home/SolvingProblems";
+import { TestimonialSliderSection } from "@/components/home/TestimonialSection";
+import { CtaSection } from "@/components/home/CtaSection";
 
 
 export default function Home() {
@@ -28,6 +34,21 @@ export default function Home() {
 
       {/* The next generation  */}
       <NextGeneration />
+
+      {/* our impact */}
+      <Impact />
+
+      {/* our clients */}
+      <OurClients />
+
+      {/* case studies slider */}
+      <CaseStudySlider />
+
+      {/* solving problems */}
+      <SolvingProblems />
+
+      {/* testimonial sliderSection */}
+      <TestimonialSliderSection />
       
       <AboutSection />
       
@@ -48,6 +69,7 @@ export default function Home() {
 
       {/* download wallet  */}
       <DownloadAppSection />
+      <CtaSection />
 
       <div
         className={`hidden fixed bottom-24 right-6 z-50 transition-all duration-700 ${minimized ? 'w-52 h-12' : 'w-80 h-32'} bg-white shadow-lg rounded-xl flex items-center cursor-pointer border border-gray-200 animate-[floatY_2.5s_ease-in-out_infinite]`}
