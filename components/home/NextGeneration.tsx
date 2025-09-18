@@ -24,7 +24,7 @@ export function NextGeneration() {
 
           {/* Right Column: Text Content */}
           <div className="flex flex-col text-center lg:text-left">           
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-semibold tracking-tight">
               Your number one internet service provider.
             </h2>
 
