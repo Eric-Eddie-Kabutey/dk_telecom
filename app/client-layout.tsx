@@ -1,6 +1,7 @@
 'use client';
-import Footer  from '@/components/footer';
+
 import Navbar from '@/components/shared/Navbar';
+import { Footer } from '@/components/footer';
 import { usePathname } from 'next/navigation';
 import React from 'react'
 
