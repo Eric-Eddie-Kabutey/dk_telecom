@@ -8,3 +8,18 @@ export type TeamMember = {
     img: StaticImageData;
     description: string[];
 }
+
+export type CaseStudies = {
+    id: number;
+    title: string;
+    href: string;
+    imageUrl: StaticImageData | string;
+    imageAlt: string;
+    tag: string;
+    description: string;
+}
+
+export type ProblemData = {
+    id: number;
+    text: string;
+}
