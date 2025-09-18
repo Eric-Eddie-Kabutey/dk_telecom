@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/navbar";
 import { Globe } from "lucide-react";
 import Link from "next/link";
-import dk_logo from "@/public/assets/images/dk_logo_blue.png"
+import dk_logo from "@/public/assets/images/dk_logo_white.png"
 import Image from "next/image";
 import Typography from "./typography";
 import { useEffect, useState } from "react";
@@ -78,7 +78,7 @@ export default function Navbar() {
         window.location.reload();
       };
     return (
-        <header className="py-2 sticky top-0 z-50 px-4 flex flex-col justify-center bg-transparent">
+        <header className="py-2 sticky top-0 z-50 px-4 flex flex-col justify-center bg-[#130B54] text-white">
             {/* bg-background/60 backdrop-blur-md */}
             {/* <div className=" absolute left-0 h-full w-full transparent"></div> */}
             <div className="max-container relative 2xl:w-[85%] w-[95%] mx-auto">
@@ -100,13 +100,13 @@ export default function Navbar() {
                         
                         <Button variant="outline" asChild className="sm:flex hidden">
                             <Link href="/locate-branch"
-                                className="pops text-app-primary font-light bg-transparent"
+                                className="pops text-white font-light bg-transparent rounded-lg hover:text-white"
                             >Locate Branch</Link>
                         </Button>
                         <Button variant="primary" asChild className="sm:flex hidden">
                             <Link 
                                 href="/"
-                                className="pops bg-orange-500"
+                                className="pops bg-orange-500 rounded-lg"
                             >Customer Portal</Link>
                         </Button>
                         <div className="">
