@@ -1,126 +1,155 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-
-import white_logo from "@/public/assets/images/dk_logo_white.png";
+import Image from 'next/image'
+import Link from 'next/link'
 
 // --- Data for Footer Links ---
 const companyLinks = [
-  { href: "/", label: "Home" },
-  { href: "/company", label: "Company" },
-  { href: "/insights", label: "Insights" },
-  { href: "/careers", label: "Careers" },
-];
+	{ href: '/', label: 'Home' },
+	{ href: '/company', label: 'Company' },
+	{ href: '/insights', label: 'Insights' },
+	{ href: '/careers', label: 'Careers' },
+]
 
 const serviceLinks = [
-  { href: "/internet-services", label: "DK Internet" },
-  { href: "/digital-solutions", label: "Digital Solutions" },
-  { href: "/talent-hub", label: "DK TalentHub" },
-];
+	{ href: '/internet-services', label: 'DK Internet' },
+	{ href: '/digital-solutions', label: 'Digital Solutions' },
+	{ href: '/talent-hub', label: 'DK TalentHub' },
+]
 
-
+const legalLinks = [
+	{ href: '/privacy-policy', label: 'Privacy Policy' },
+	{ href: '/terms-of-use', label: 'Terms of Use' },
+]
 
 const socialLinks = [
-  { href: "#", label: "X", icon: "/assets/logos/x.png" },
-  { href: "#", label: "LinkedIn", icon: "/assets/logos/linkedin.png" },
-  { href: "#", label: "Instagram", icon: "/assets/logos/instagram.png" },
-  { href: "#", label: "GitHub", icon: "/assets/logos/github.png" },
-];
+	{ href: '#', label: 'X', iconSrc: '/assets/logos/x.png' },
+	{
+		href: '#',
+		label: 'LinkedIn',
+		iconSrc: '/assets/logos/linkedin.png',
+	},
+	{
+		href: '#',
+		label: 'Instagram',
+		iconSrc: '/assets/logos/instagram.png',
+	},
+	{ href: '#', label: 'GitHub', iconSrc: '/assets/logos/github.png' },
+]
 
+export function Footer() {
+	return (
+		<footer>
+			{/* top footer */}
+			<div className='bg-[#130B54] text-white'>
+				<div className='container mx-auto px-6 pt-16'>
+					{/* Top Section */}
+					<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-10 md:py-16'>
+						{/* Column 1: Logo & Tagline */}
+						<div className='col-span-1 md:col-span-2 lg:col-span-1'>
+							<Image
+								src='/assets/images/dk_logo_white.png'
+								alt='DK Telecom Ltd. Logo'
+								width={180}
+								height={40}
+							/>
+							<p className='mt-4 text-indigo-200/80'>
+								Connecting Every Corner of The Gambia, One Home, One Business,
+								One Heart at a Time.
+							</p>
+						</div>
+						{/* Column 2: Company */}
+						<div>
+							<h3 className='font-semibold mb-4'>Company</h3>
+							<ul className='space-y-3'>
+								{companyLinks.map((link) => (
+									<li key={link.label}>
+										<Link
+											href={link.href}
+											className='text-indigo-200/80 hover:text-white transition-colors'>
+											{link.label}
+										</Link>
+									</li>
+								))}
+							</ul>
+						</div>
+						{/* Column 3: Service */}
+						<div>
+							<h3 className='font-semibold mb-4'>Our Service</h3>
+							<ul className='space-y-3'>
+								{serviceLinks.map((link) => (
+									<li key={link.label}>
+										<Link
+											href={link.href}
+											className='text-indigo-200/80 hover:text-white transition-colors'>
+											{link.label}
+										</Link>
+									</li>
+								))}
+							</ul>
+						</div>
+						
+						<div>
+							<h3 className='font-semibold mb-4'>Legal</h3>
+							<ul className='space-y-3'>
+								{legalLinks.map((link) => (
+									<li key={link.label}>
+										<Link
+											href={link.href}
+											className='text-indigo-200/80 hover:text-white transition-colors'>
+											{link.label}
+										</Link>
+									</li>
+								))}
+							</ul>
+						</div>
+					</div>
 
-export default function Footer() {
-  return (
-    <footer className="bg-black text-white">
-      <div className="container mx-auto px-6 pt-16 pb-8">
-        {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-y-10 gap-x-8 mb-12">
-          
-          {/* Column 1: Contact & Socials (Spans more width on larger screens) */}
-          <div className="col-span-1 md:col-span-2 lg:col-span-2 space-y-8">
-            <Image
-              src={white_logo}
-              alt="DK Telecom Ltd. Logo"
-              width={180}
-              height={40}
-            />
-            <div className="relative max-w-sm">
-              <Input
-                type="email"
-                placeholder="Enter your email address"
-                className="bg-white border-gray-700 rounded-xl h-14 pr-16 text-black placeholder:text-gray-700 focus:ring-blue-500 focus:border-blue-500"
-              />
-              <Button type="submit" size="icon" className="absolute right-2 top-1/2 -translate-y-1/2 h-10 w-10 md:w-14 bg-[#0D55A5] hover:bg-[#0D55A2] rounded-lg">
-                <ArrowRight className="h-5 w-5" />
-                <span className="sr-only">Submit email</span>
-              </Button>
+					{/* Divider */}
+					<hr className='-mb-10 border-indigo-800' />
+
+					{/* Middle Section: Socials & Contacts */}
+					<div className='flex flex-col items-center justify-center gap-8 py-4'>						
+
+						<div className='flex items-center gap-4'>
+							{socialLinks.map((social) => (
+								<Link
+									key={social.label}
+									href={social.href}
+									aria-label={social.label}
+									className='rounded-full p-[2px] bg-gradient-to-br from-yellow-400 to-indigo-400 transition-transform hover:scale-110'>
+									<div className='bg-indigo-900 rounded-full p-2'>
+										<Image
+											src={social.iconSrc}
+											alt={`${social.label} icon`}
+											width={24}
+											height={24}
+											className='h-6 w-6'
+										/>
+									</div>
+								</Link>
+							))}
+						</div>
+
+            <div className="flex items-center justify-center gap-4">
+              <Link
+							href='/contact-us'
+							className='text-lg font-medium hover:text-yellow-300 transition-colors'>
+							Contact Us
+						</Link>
+						<Link
+							href='#'
+							className='text-lg font-medium hover:text-yellow-300 transition-colors'>
+							Follow Us
+						</Link>
             </div>
-            <div>
-              <p className="text-sm text-gray-400 mb-4">Follow us on</p>
-              <div className="flex items-center gap-3">
-                {socialLinks.map((social) => (
-                  <Link
-                    key={social.label}
-                    href={social.href}
-                    aria-label={social.label}
-                    className="h-10 w-10 flex items-center justify-center rounded-full bg-gray-800/60 text-gray-300 hover:bg-gray-700 transition-colors"
-                    >
-                        <Image
-                    src={social.icon}
-                    alt={social.label}
-                    width={24}
-                    height={24}
-                  />
-                </Link>
-              ))}
-            </div>
-              </div>
-          </div>
+					</div>
+				</div>
+			</div>
 
-          {/* Spacer Column for better desktop layout */}
-          <div className="hidden lg:block"></div>
-
-          {/* Column 2: Company Links */}
-          <div className="col-span-1">
-            <h3 className="font-semibold mb-4">Company</h3>
-            <ul className="space-y-3">
-              {companyLinks.map((link) => (
-                <li key={link.label}>
-                  <Link href={link.href} className="text-gray-400 hover:text-white transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 3: Service Links */}
-          <div className="col-span-1">
-            <h3 className="font-semibold mb-4">Our Service</h3>
-            <ul className="space-y-3">
-              {serviceLinks.map((link) => (
-                <li key={link.label}>
-                  <Link href={link.href} className="text-gray-400 hover:text-white transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        {/* Bottom Bar */}
-        <hr className="border-gray-800" />
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 text-sm text-gray-400">
-          <p>&copy; {new Date().getFullYear()} DK Telecom ltd.</p>
-          <div className="flex items-center gap-6">
-            <Link href="/terms" className="hover:text-white transition-colors">Terms and conditions</Link>
-            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-          </div>
-        </div>
-
-      </div>
-    </footer>
-  );
+			{/* Bottom Section: Copyright */}
+			<div className='py-4 px-2 bg-white text-sm text-black border-t border-indigo-800'>
+				Copyright &copy; {new Date().getFullYear()} DK Telecoms. All rights
+				reserved.
+			</div>
+		</footer>
+	)
 }
