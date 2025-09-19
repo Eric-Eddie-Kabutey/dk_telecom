@@ -71,6 +71,19 @@ const links: { title: string; href: string; description: string, links?: { title
     href: "/careers",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
+    links: [
+      {
+        title: "Join Us",
+        description: "In-depth analyses of our client projects showcasing challenges, solutions, and ",
+        href: "/careers"
+      },
+      {
+        title: "Talent Hub",
+        description: "In-depth analyses of our client projects showcasing challenges, solutions, and ",
+        href: "/talent-hub"
+      },
+  
+    ]
   },
   {
     title: "Contact us",
