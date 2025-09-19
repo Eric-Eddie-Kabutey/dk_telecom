@@ -3,13 +3,6 @@ import { FaWhatsapp } from "react-icons/fa";
 import { useState } from "react";
 import dklogo from "@/public/assets/images/dk_logo.png"
 import Image from "next/image";
-import { DownloadAppSection } from "@/components/shared/download-app";
-import { SendMoneySection } from "@/components/sample/send-money";
-import { BlogSection } from "@/components/sample/blogs";
-import { TestimonialsSection } from "@/components/sample/testimonial";
-import { CaseStudiesSection } from "@/components/sample/case-studies";
-import { ServicesSection } from "@/components/sample/service";
-import { AboutSection } from "@/components/sample/about";
 import { CompanyHero } from "@/components/home/Hero";
 import { NextGeneration } from "@/components/home/NextGeneration";
 import { Impact } from "@/components/home/Impact";
@@ -50,25 +43,7 @@ export default function Home() {
       {/* testimonial sliderSection */}
       <TestimonialSliderSection />
       
-      <AboutSection />
-      
-      {/* service section */}
-      <ServicesSection />
-
-      {/* case studies  */}
-      <CaseStudiesSection />
-
-      {/* testimonials */}
-      <TestimonialsSection />
-
-      {/* blog */}
-      <BlogSection />
-
-      {/* send money */}
-      <SendMoneySection />
-
-      {/* download wallet  */}
-      <DownloadAppSection />
+    
       <CtaSection />
 
       <div
