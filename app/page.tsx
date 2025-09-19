@@ -11,6 +11,7 @@ import { CaseStudySlider } from "@/components/home/CaseStudySlider";
 import { SolvingProblems } from "@/components/home/SolvingProblems";
 import { TestimonialSliderSection } from "@/components/home/TestimonialSection";
 import { CtaSection } from "@/components/home/CtaSection";
+import { SolutionsOrbitSection } from "@/components/home/SolutionsOrbitSection";
 
 
 export default function Home() {
@@ -36,6 +37,11 @@ export default function Home() {
 
       {/* case studies slider */}
       <CaseStudySlider />
+
+      {/* Orbit */}
+      {/* <OrbitalSolutionsSection /> */}
+
+      <SolutionsOrbitSection />
 
       {/* solving problems */}
       <SolvingProblems />
