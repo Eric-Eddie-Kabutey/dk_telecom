@@ -40,11 +40,11 @@ export function Footer() {
 		<footer>
 			{/* top footer */}
 			<div className='bg-[#130B54] text-white'>
-				<div className='container mx-auto px-6 pt-16'>
+				<div className='max-container px-6 lg:px-8 py-6'>
 					{/* Top Section */}
-					<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-10 md:py-16'>
+					<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-10 md:py-16 lg:py-32'>
 						{/* Column 1: Logo & Tagline */}
-						<div className='col-span-1 md:col-span-2 lg:col-span-1'>
+						<div className='col-span-1 md:col-span-2 lg:col-span-1 lg:-mt-14'>
 							<Image
 								src='/assets/images/dk_logo_white.png'
 								alt='DK Telecom Ltd. Logo'
