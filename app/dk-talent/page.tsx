@@ -10,6 +10,8 @@ import DkTalentWelcome from '@/components/dk-talent/dk-talent-welcome'
 import BookNow from '@/components/reusable/book-now'
 import React from 'react'
 
+// career _ join us (career) and talent (talent hub)
+
 function DkTalentPage() {
   return (
     <div>
