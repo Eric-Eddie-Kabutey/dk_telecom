@@ -67,7 +67,7 @@ export function OurClients() {
                   alt={logo.alt}
                   width={logo.width}
                   height={logo.height}
-                  className="h-10 w-auto object-contain"
+                  className="h-10 lg:h-16 w-auto object-contain"
                 />
               </div>
             ))}
