@@ -80,7 +80,7 @@ const links: { title: string; href: string; description: string, links?: { title
       {
         title: "Talent Hub",
         description: "In-depth analyses of our client projects showcasing challenges, solutions, and ",
-        href: "/talent-hub"
+        href: "/dk-talent"
       },
   
     ]
