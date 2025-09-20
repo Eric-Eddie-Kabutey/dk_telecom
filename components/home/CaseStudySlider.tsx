@@ -78,7 +78,7 @@ export function CaseStudySlider() {
             align: "start",
             loop: true,
           }}
-          className="mx-16"
+          className="md:mx-16"
         >
           <CarouselContent className="-ml-4">
              {caseStudiesData.map((study) => (
