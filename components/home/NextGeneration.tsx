@@ -85,7 +85,7 @@ export function NextGeneration() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-center mt-12">
             
                 {/* Left Column: Visual Content */}
-                <div className="hidden lg:block relative h-[400px]">
+                <div className="hidden lg:block relative h-[500px]">
                     <motion.div style={{ y: stackY }} className="absolute inset-0 flex items-center justify-center">
                         {/* Layer 1 (Base) */}
                         <motion.div 
