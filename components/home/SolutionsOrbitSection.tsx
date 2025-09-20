@@ -28,7 +28,7 @@ const sectors = [
 
 export function SolutionsOrbitSection() {
   return (
-    <section className="relative w-full flex items-center justify-center bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#160C64] to-black text-white py-20 px-6 overflow-hidden">
+    <section className="relative w-full flex items-center justify-center bg-[#160C64] text-white py-20 px-6 overflow-hidden">
       <div className="absolute inset-0 z-0 [background-image:radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.05)_1px,transparent_0)] [background-size:2rem_2rem]"></div>
       
       <div className="flex flex-col items-center gap-12 w-full">
