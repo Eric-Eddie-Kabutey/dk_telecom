@@ -25,7 +25,7 @@ function CaseStudyCard({ study }: { study: typeof caseStudiesData[0] }) {
             src={study.imageUrl}
             alt={study.imageAlt}
             fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            className="object-cover transition-transform duration-300 group-hover:scale-105 rounded-lg"
             />
             <div className="absolute bottom-3 left-3">
             <span className="bg-white/80 backdrop-blur-sm text-blue-600 font-semibold text-xs px-3 py-1 rounded-full">
