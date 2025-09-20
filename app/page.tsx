@@ -27,7 +27,7 @@ export default function Home() {
       <CompanyHero />
 
       {/* The next generation  */}
-      <NextGeneration />
+      <NextGeneration />      
 
       {/* our impact */}
       <Impact />
