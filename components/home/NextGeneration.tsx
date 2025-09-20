@@ -49,9 +49,35 @@ export function NextGeneration() {
   return (
     <section 
       ref={targetRef} 
-      className="relative h-[400vh] bg-[#130B54] text-white py-16"
+      className="relative lg:h-[400vh] bg-[#130B54] text-white py-16"
     >
-      <div className="sticky top-0 h-screen flex flex-col justify-center overflow-hidden">
+
+      {/* mobile */}
+       {/* Right Column: Text Content */}
+      <div className="container mx-auto text-center py-6 px-4 lg:hidden">  
+        {/* The Header Pill is now at the top of the content area */}
+            <HeaderPillLine text="Next-Gen Telecommunications" />
+                    <h2 className="text-3xl  font-semibold tracking-tight mt-12">
+                        Your number one internet service provider.
+                    </h2>
+                    <div className="mt-8 space-y-6 text-lg text-blue-200/90">
+                        <p>At DK Telecom LTD, we’re dedicated to bridging the gap between innovation and connectivity.</p>
+                        <p>With our cutting-edge technology and unwavering commitment to customer satisfaction, we’re redefining telecommunications.</p>
+                        <p>From seamless network solutions to personalised customer care, we’re here to empower your digital journey.</p>
+                        <p>Join us as we pave the way for a connected future.</p>
+                    </div>
+                    <div className="flex flex-col sm:flex-row items-center gap-4 mt-12">
+                        <Button size="lg" className="bg-yellow-400 text-black hover:bg-yellow-500 rounded-lg w-full sm:w-auto">
+                            Get Connected Today <ArrowUpRight className="ml-2 h-5 w-5" />
+                        </Button>
+                        <Button size="lg" variant="outline" className="bg-transparent border-blue-400/50 hover:bg-blue-400/10 text-white rounded-lg w-full sm:w-auto">
+                            Download Brochure
+                        </Button>
+                    </div>
+                </div>
+
+      {/* desktop  */}
+      <div className="hidden sticky top-0 h-screen lg:flex flex-col justify-center overflow-hidden">
         <div className="container mx-auto px-6">
             {/* The Header Pill is now at the top of the content area */}
             <HeaderPillLine text="Next-Gen Telecommunications" />
@@ -59,7 +85,7 @@ export function NextGeneration() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-center mt-12">
             
                 {/* Left Column: Visual Content */}
-                <div className="relative h-[400px]">
+                <div className="hidden lg:block relative h-[400px]">
                     <motion.div style={{ y: stackY }} className="absolute inset-0 flex items-center justify-center">
                         {/* Layer 1 (Base) */}
                         <motion.div 
