@@ -64,7 +64,7 @@ export function SolutionsOrbitSection() {
             </Link>
           </div>
           
-          {/* REFACTORED: Orbit Rings with thin gradient borders */}
+          {/* Orbit Rings with thin gradient borders */}
           {Array.from({ length: ORBIT_COUNT }).map((_, index) => {
             const size = (START_RADIUS + (index * ORBIT_INCREMENT)) * 2;
             return (
@@ -97,7 +97,7 @@ export function SolutionsOrbitSection() {
                     style={{ transform: `rotate(-${sector.angle}deg)` }}
                   >
                     <div className={`flex-shrink-0 rounded-full shadow-lg shadow-black/30 transition-all duration-300 group-hover:scale-110 ${sector.size} ${sector.color}`}></div>
-                    <div className={`absolute left-1/2 -translate-x-1/2 w-48 text-center ${sector.textPos}`}>
+                    <div className={`absolute -bottom-10 left-1/2 -translate-x-1/2 w-48 text-center ${sector.textPos}`}>
                       <p className="font-bold text-xs text-indigo-100/80">{sector.name}</p>
                       {sector.subtext && <p className="text-[10px] text-indigo-200/60">{sector.subtext}</p>}
                     </div>
