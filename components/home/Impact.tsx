@@ -35,7 +35,8 @@ const statsData = [
 
 export function Impact() {
   return (
-    <section className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-950 via-indigo-950 to-black text-white py-20 md:py-28">
+    <section className="bg-[#130B54]  text-white py-20 md:py-28">
+      {/* bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-950 via-indigo-950 to-black */}
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto">

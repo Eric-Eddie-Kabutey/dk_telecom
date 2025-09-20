@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export function CompanyHero() {
 	return (
-		<section className='relative w-full min-h-screen flex items-center justify-center text-white bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#130B54] via-[#130B64] to-black/95 py-20 px-6 overflow-hidden'>
+		<section className='relative w-full min-h-screen flex items-center justify-center text-white bg-[#130B54] py-20 px-6 overflow-hidden'>
 			{/* svg of colored-lines */}
 			<HeroSVG />
 			<div className='flex flex-col items-center text-center gap-12 z-10'>
