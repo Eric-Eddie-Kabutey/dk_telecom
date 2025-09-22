@@ -133,7 +133,7 @@ export function PricingPlans() {
               className={cn(
                 "rounded-2xl p-8 border h-full flex flex-col",
                 plan.isFeatured
-                  ? "bg-blue-700 text-white border-blue-800 shadow-xl "
+                  ? "bg-[#130B54] text-white border-[#130B84] shadow-xl "
                   : "bg-white border-gray-200 shadow-md"
               )}
             >
@@ -161,7 +161,7 @@ export function PricingPlans() {
                 <p className="text-3xl font-bold">
                    {typeof plan.prices.setup === 'number' ? `D${plan.prices.setup.toLocaleString()}` : plan.prices.setup}
                 </p>
-                <p className={cn("text-sm mt-1", plan.isFeatured ? "text-blue-200" : "text-gray-500")}>
+                <p className={cn("text-sm mt-1", plan.isFeatured ? "text-[#130B54" : "text-gray-500")}>
                   1 Router (One time) / Per user.
                 </p>
               </div>
@@ -191,7 +191,7 @@ export function PricingPlans() {
                 className={cn(
                   "w-full mt-8", 
                   plan.isFeatured 
-                    ? "bg-white text-blue-700 hover:bg-gray-100" 
+                    ? "bg-white text-[#130B54] hover:bg-gray-100" 
                     : "bg-white text-gray-800 border border-gray-300 hover:bg-gray-50"
                 )}
               >
