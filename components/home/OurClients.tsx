@@ -28,7 +28,7 @@ const marqueeVariants: Variants = {
 
 export function OurClients() {
   return (
-    <section className="bg-indigo-50 py-20 md:py-28 px-6 overflow-hidden">
+    <section className="bg-indigo-50 py-10 md:py-18 px-6 overflow-hidden">
       <div className="max-container mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto">
@@ -67,7 +67,7 @@ export function OurClients() {
                   alt={logo.alt}
                   width={logo.width}
                   height={logo.height}
-                  className="h-10 lg:h-16 w-auto object-contain"
+                  className="h-15 lg:h-24 w-auto object-contain"
                 />
               </div>
             ))}
