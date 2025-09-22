@@ -18,7 +18,7 @@ export function DownloadAppSection() {
   return (
     <section className="py-16 md:py-24">
       <div className="max-container 2xl:w-[85%] w-[95%] mx-auto px-4">
-        <div className="bg-gradient-to-br from-blue-800 to-blue-900 text-white rounded-3xl py-10 px-6 md:p-12 lg:p-16">
+        <div className="bg-[#130B54] text-white rounded-3xl py-10 px-6 md:p-12 lg:p-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             
             {/* Left Column: Text Content & QR */}
