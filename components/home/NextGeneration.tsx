@@ -17,8 +17,8 @@ const HeaderPillLine = ({ text }: { text: string }) => (
     <div className="max-w-3xl mx-auto flex items-center">
       <div className="flex-grow h-px bg-[#3423c6]"></div>
       <div className="flex-shrink-0 flex items-center gap-2 border border-blue-400/30 bg-white/10 px-4 py-2 md:py-4 rounded-lg backdrop-blur-sm">
-        <Zap className="h-4 w-4 text-yellow-300" />
-        <span className="text-sm font-medium uppercase tracking-wider text-blue-100">{text}</span>
+        <Zap className="h-4 w-4 text-yellow-300" />            
+            <p className="text-lg lg:text-2xl font-semibold uppercase tracking-wider text-white">{text}</p>
       </div>
       <div className="flex-grow h-px bg-[#3423c6]"></div>
     </div>
@@ -49,7 +49,7 @@ export function NextGeneration() {
   return (
     <section 
       ref={targetRef} 
-      className="relative lg:h-[400vh] bg-[#130B54] text-white py-6 lg:py-16 px-4"
+      className="relative lg:h-[400vh] bg-[#130B54] text-white px-4"
     >
 
       {/* mobile */}
