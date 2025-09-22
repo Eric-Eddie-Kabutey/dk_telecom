@@ -40,12 +40,7 @@ export function PlansSheet({open, setOpen}: ModalProp) {
             className="w-full text-left text-black  uppercase"
           >
             Service plans
-          </button>
-          <button
-            className="w-full text-left text-black  uppercase"
-          >
-            Technology
-          </button>
+          </button>         
         </div>
         <SheetFooter>
           

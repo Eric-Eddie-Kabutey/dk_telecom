@@ -1,13 +1,13 @@
 import type React from "react"
 import "@/app/globals.css"
 import { Inter } from "next/font/google"
-import InternetNavbar from "@/components/internet-services/internet-navbar"
-import InternetFooter from "@/components/internet-services/internet-footer"
+import PlansNavbar from "@/components/internet-plans/plans-navbar"
+import PlansFooter from "@/components/internet-plans/plans-footer"
 
 const inter = Inter({ subsets: ["latin"] })
 
 
-export default function InternetLayout({
+export default function PlansLayout({
   children,
 }: {
   children: React.ReactNode
@@ -15,11 +15,11 @@ export default function InternetLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <InternetNavbar />
+        <PlansNavbar />
         <main>
             {children}
         </main>
-        <InternetFooter />
+        <PlansFooter />
       </body>
     </html>
   )

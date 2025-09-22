@@ -1,9 +1,11 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
-import { generateMetadata } from "./metadata";
-import ClientLayout from "./client-layout";
+import { generateMetadata } from "../metadata";
+import Navbar from "@/components/shared/Navbar";
+import { Footer } from "@/components/footer";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -55,10 +57,10 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-        >
-          <ClientLayout>
+        >          
+            <Navbar />
             {children}
-          </ClientLayout>
+            <Footer />          
           <Toaster />
         </ThemeProvider>
       </body>

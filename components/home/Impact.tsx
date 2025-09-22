@@ -52,8 +52,8 @@ export function Impact() {
             </div>           
             <div className="flex-grow h-px bg-blue-700/50"></div>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-semibold tracking-wide leading-10  text-blue-white">
-           Connecting people and businesses with reliable, <br /> high-speed internet connectivity.
+          <h2 className="max-w-3xl mx-auto text-4xl md:text-7xl font-semibold tracking-tight leading-10">
+           High-speed Internet Around the Gambia.
           </h2>
         </div>
 
