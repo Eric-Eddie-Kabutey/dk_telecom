@@ -52,9 +52,9 @@ export function Impact() {
             </div>           
             <div className="flex-grow h-px bg-blue-700/50"></div>
           </div>
-          <p className="text-xl text-blue-200/90">
-            Our network spans the globe, connecting people and businesses with reliable, high-speed telecommunications.
-          </p>
+          <h2 className="text-4xl lg:text-5xl font-semibold tracking-wide leading-10  text-blue-white">
+           Connecting people and businesses with reliable, <br /> high-speed internet connectivity.
+          </h2>
         </div>
 
         {/* Stats Grid */}
