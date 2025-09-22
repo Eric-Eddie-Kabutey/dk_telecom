@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
+import HeroSVG from "./HeroSvg";
 
 export function CtaSection() {
   return (
-    <section className="bg-[#130B54] text-white">
+    <section className="relative bg-[#130B54] text-white">
+      <HeroSVG />
       <div className="container mx-auto px-6 py-20 text-center">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight leading-10 md:leading-snug">
           Ready to Experience the Speed
