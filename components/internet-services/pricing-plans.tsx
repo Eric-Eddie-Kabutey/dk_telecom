@@ -93,7 +93,7 @@ export function PricingPlans() {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "annual">("monthly");
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section id="internet-plans" className="py-16 md:py-24 bg-white">
       <div className="max-container 2xl:w-[85%] w-[95%] mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">
