@@ -20,7 +20,7 @@ function ItConsultingPage() {
       <DownloadAppSection />
 
       {/* CTA */}
-      {/* <CtaSection /> */}
+      <CtaSection />
     </div>
   )
 }
