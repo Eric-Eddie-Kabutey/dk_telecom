@@ -15,7 +15,7 @@ export function CtaSection() {
         <p className="mt-4 text-lg text-indigo-200/90">
           Let&apos;s power your world with seamless internet.
         </p>
-        <Button size="lg" className="mt-8 bg-yellow-400 text-black hover:bg-yellow-500 rounded-lg h-12 px-8 text-base">
+        <Button size="lg" className="mt-8 bg-[#F8D653] text-black hover:bg-[#F8D633] rounded-lg h-12 px-8 text-base">
           Get Connected Today
           <ArrowUpRight className="ml-2 h-5 w-5" />
         </Button>
