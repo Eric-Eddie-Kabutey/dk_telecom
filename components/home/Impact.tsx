@@ -35,12 +35,12 @@ const statsData = [
 
 export function Impact() {
   return (
-    <section className="bg-[#130B54]  text-white py-20 md:py-28">
+    <section className="bg-[#130B54]  text-white py-20 md:py-28 px-6">
       {/* bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-950 via-indigo-950 to-black */}
-      <div className="container mx-auto px-6">
+      <div className="max-container">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto">
-          <div className="flex items-center justify-center gap-4 mb-6">
+        <div className="text-center max-w-4xl mx-auto">
+          <div className="flex items-center justify-center mb-6">
                       <div className="flex-grow h-px bg-blue-700/50"></div>
                       {/* pill header */}
                       <div className="flex-shrink-0 rounded-full p-[2px] bg-gradient-to-br from-yellow-400 to-indigo-400">

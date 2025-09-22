@@ -28,8 +28,8 @@ const marqueeVariants: Variants = {
 
 export function OurClients() {
   return (
-    <section className="bg-indigo-50 py-20 md:py-28 overflow-hidden">
-      <div className="container mx-auto px-6">
+    <section className="bg-indigo-50 py-20 md:py-28 px-6 overflow-hidden">
+      <div className="max-container mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto">
           <div className="flex items-center justify-center gap-4 mb-6">
