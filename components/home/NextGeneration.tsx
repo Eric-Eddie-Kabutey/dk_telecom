@@ -14,13 +14,13 @@ const stackingImages = [
 ];
 
 const HeaderPillLine = ({ text }: { text: string }) => (
-    <div className="flex items-center gap-4">
-      <div className="flex-grow h-px bg-[#130B54]"></div>
-      <div className="flex-shrink-0 flex items-center gap-2 border border-blue-400/30 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
+    <div className="flex items-center">
+      <div className="flex-grow h-px bg-[#3423c6]"></div>
+      <div className="flex-shrink-0 flex items-center gap-2 border border-blue-400/30 bg-white/10 px-4 py-2 md:py-4 rounded-lg backdrop-blur-sm">
         <Zap className="h-4 w-4 text-yellow-300" />
         <span className="text-sm font-medium uppercase tracking-wider text-blue-100">{text}</span>
       </div>
-      <div className="flex-grow h-px bg-[#130B54]"></div>
+      <div className="flex-grow h-px bg-[#3423c6]"></div>
     </div>
 );
 
@@ -49,12 +49,12 @@ export function NextGeneration() {
   return (
     <section 
       ref={targetRef} 
-      className="relative lg:h-[400vh] bg-[#130B54] text-white py-16"
+      className="relative lg:h-[400vh] bg-[#130B54] text-white py-6 lg:py-16 px-4"
     >
 
       {/* mobile */}
        {/* Right Column: Text Content */}
-      <div className="container mx-auto text-center py-6 px-4 lg:hidden">  
+      <div className="max-container text-center lg:hidden">  
         {/* The Header Pill is now at the top of the content area */}
             <HeaderPillLine text="Next-Gen Telecommunications" />
                     <h2 className="text-3xl  font-semibold tracking-tight mt-12">
@@ -74,15 +74,15 @@ export function NextGeneration() {
                             Download Brochure
                         </Button>
                     </div>
-                </div>
+        </div>
 
       {/* desktop  */}
       <div className="hidden sticky top-0 h-screen lg:flex flex-col justify-center overflow-hidden">
-        <div className="container mx-auto px-6">
+        <div className="max-container">
             {/* The Header Pill is now at the top of the content area */}
             <HeaderPillLine text="Next-Gen Telecommunications" />
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-center mt-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-center md:mt-8">
             
                 {/* Left Column: Visual Content */}
                 <div className="hidden lg:block relative h-[500px]">
@@ -123,7 +123,7 @@ export function NextGeneration() {
 
                 {/* Right Column: Text Content */}
                 <div className="relative">              
-                    <h2 className="text-3xl md:text-5xl font-semibold tracking-tight">
+                    <h2 className="text-3xl lg:text-4xl font-semibold tracking-tight">
                         Your number one internet service provider.
                     </h2>
                     <div className="mt-8 space-y-6 text-lg text-blue-200/90">
