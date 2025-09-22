@@ -66,7 +66,7 @@ export function NextGeneration() {
                         <p>From seamless network solutions to personalised customer care, we’re here to empower your digital journey.</p>
                         <p>Join us as we pave the way for a connected future.</p>
                     </div>
-                    <div className="flex flex-col sm:flex-row items-center gap-4 mt-12">
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
                         <Button size="lg" className="bg-yellow-400 text-black hover:bg-yellow-500 rounded-lg w-full sm:w-auto">
                             Get Connected Today <ArrowUpRight className="ml-2 h-5 w-5" />
                         </Button>
