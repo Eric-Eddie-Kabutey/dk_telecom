@@ -1,3 +1,4 @@
+"use client";
 export default function HeroSVG() {
   return (
 	  <div className="animation absolute inset-0 overflow-hidden">
