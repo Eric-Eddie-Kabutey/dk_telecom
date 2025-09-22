@@ -5,10 +5,10 @@ import Image from 'next/image'
 
 export function CompanyHero() {
 	return (
-		<section className='relative w-full min-h-screen flex items-center justify-center text-white bg-[#130B54] py-20 px-6 overflow-hidden'>
+		<section className='relative w-full min-h-[75vh] lg:min-h-screen flex items-center justify-center text-white bg-[#130B54] pt-6 md:pt-10 px-6 overflow-hidden'>
 			{/* svg of colored-lines */}
 			<HeroSVG />
-			<div className='flex flex-col items-center text-center gap-12 z-10'>
+			<div className='max-container mt-auto md: flex flex-col items-center text-center gap-6 md:gap-12 z-10'>
 				{/* News Alert Banner */}
 				<Link
 					href='#'
@@ -26,7 +26,7 @@ export function CompanyHero() {
 
 				{/* Main Text Content */}
 				<div className='space-y-4'>
-					<h1 className='text-5xl md:text-7xl font-semibold tracking-tight'>
+					<h1 className='text-4xl md:text-7xl font-semibold tracking-tight leading-10'>
 						Proudly Gambian Owned.
 						<br />
 						Committed to you.
@@ -39,12 +39,12 @@ export function CompanyHero() {
 				</div>
 
 				{/* Infographic image */}
-				<div className='w-full max-w-7xl mt-8 md:mt-12 lg:mt-20'>
+				<div className='hidden lg:block  w-full max-w-7xl md:mt-10'>
 					<Image
 						src='/assets/images/infographic-hero.png'
 						alt='Abstract visual representing the flow of data from servers through the internet to users.'
 						width={1920}
-                        height={480}                        
+						height={480}
 						className='w-full h-auto rounded-lg'
 					/>
 				</div>
