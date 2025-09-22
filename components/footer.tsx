@@ -146,7 +146,7 @@ export function Footer() {
 			</div>
 
 			{/* Bottom Section: Copyright */}
-			<div className='py-4 px-2 bg-white text-sm text-black border-t border-indigo-800'>
+			<div className='max-container py-6 px-2 bg-white text-sm text-black border-t border-indigo-800'>
 				Copyright &copy; {new Date().getFullYear()} DK Telecoms. All rights
 				reserved.
 			</div>
