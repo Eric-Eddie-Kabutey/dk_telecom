@@ -14,7 +14,7 @@ const stackingImages = [
 ];
 
 const HeaderPillLine = ({ text }: { text: string }) => (
-    <div className="flex items-center">
+    <div className="max-w-3xl mx-auto flex items-center">
       <div className="flex-grow h-px bg-[#3423c6]"></div>
       <div className="flex-shrink-0 flex items-center gap-2 border border-blue-400/30 bg-white/10 px-4 py-2 md:py-4 rounded-lg backdrop-blur-sm">
         <Zap className="h-4 w-4 text-yellow-300" />
