@@ -38,7 +38,7 @@ function ContactMain() {
                     <div className='flex flex-col gap-4'>
                         <Typography
                             typo="body-medium-medium"
-                            className='text-app-primary'
+                            className='text-[#130B54]'
                         >Contact Us</Typography>
                         <Typography
                             typo="header-4-semibold"
@@ -131,7 +131,7 @@ function ContactMain() {
                                 />
                                 <div className="flex items-center gap-3">
                                     <Checkbox id="terms-2" defaultChecked 
-                                        className='data-[state=checked]:border-blue-600 data-[state=checked]:bg-blue-600 data-[state=checked]:text-white dark:data-[state=checked]:border-blue-700 dark:data-[state=checked]:bg-blue-700'
+                                        className='data-[state=checked]:border-[#130B54] data-[state=checked]:bg-[#130B54] data-[state=checked]:text-white dark:data-[state=checked]:border-[#150B54] dark:data-[state=checked]:bg-[#10B54]'
                                     />
                                     <p className="text-muted-foreground text-sm">
                                         By clicking on Submit, you are agreeing that Heirs Technologies can store your personal 
@@ -143,7 +143,7 @@ function ContactMain() {
                                 
                                 <Button
                                     variant="primary"
-                                    className='w-fit md:py-2 !px-8 text-lg !rounded-full'
+                                    className='w-fit md:py-2 !px-8 text-lg bg-[#130B54] !rounded-full'
                                 >
                                     Submit
                                     <ArrowRight />

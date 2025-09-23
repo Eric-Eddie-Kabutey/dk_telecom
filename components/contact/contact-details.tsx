@@ -5,7 +5,7 @@ import Typography from '../shared/typography'
 
 function ContactDetails() {
   return (
-    <div className='w-full py-16 bg-app-black-bg'>
+    <div className='w-full py-16 bg-[#130B54]'>
         <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex flex-col gap-6'>
             
             <div className='w-full pb-12 flex sm:flex-row flex-col justify-between gap-8'>
