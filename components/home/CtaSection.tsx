@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import HeroSVG from "./HeroSvg";
+import Link from "next/link";
 
 export function CtaSection() {
   return (
@@ -16,8 +17,10 @@ export function CtaSection() {
           Let&apos;s power your world with seamless internet.
         </p>
         <Button size="lg" className="mt-8 bg-[#F8D653] text-black hover:bg-[#F8D633] rounded-lg h-12 px-8 text-base">
+          <Link href='#' className="flex items-center gap-2">
           Get Connected Today
           <ArrowUpRight className="ml-2 h-5 w-5" />
+          </Link>
         </Button>
       </div>
     </section>
