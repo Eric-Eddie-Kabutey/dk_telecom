@@ -5,7 +5,7 @@ import { DownloadAppSection } from '@/components/shared/download-app'
 import { CtaSection } from "@/components/home/CtaSection";
 import { Hero } from '@/components/internet-services/Hero';
 
-function ItConsultingPage() {
+function InternetServicePage() {
   return (
     <div>
       {/* hero section */}      
@@ -26,4 +26,4 @@ function ItConsultingPage() {
   )
 }
 
-export default ItConsultingPage
+export default InternetServicePage;
