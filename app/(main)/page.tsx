@@ -5,13 +5,13 @@ import dklogo from "@/public/assets/images/dk_logo.png"
 import Image from "next/image";
 import { CompanyHero } from "@/components/home/Hero";
 import { NextGeneration } from "@/components/home/NextGeneration";
-import { Impact } from "@/components/home/Impact";
 import { OurClients } from "@/components/home/OurClients";
 import { CaseStudySlider } from "@/components/home/CaseStudySlider";
 import { SolvingProblems } from "@/components/home/SolvingProblems";
 import { TestimonialSliderSection } from "@/components/home/TestimonialSection";
 import { CtaSection } from "@/components/home/CtaSection";
 import { SolutionsOrbitSection } from "@/components/home/SolutionsOrbitSection";
+import { NewImpact } from "@/components/home/NewImpact";
 
 
 export default function Home() {
@@ -30,7 +30,10 @@ export default function Home() {
       <NextGeneration />      
 
       {/* our impact */}
-      <Impact />
+      {/* <Impact /> */}
+
+      {/* new impact */}
+      <NewImpact />
 
       {/* our clients */}
       <OurClients />
