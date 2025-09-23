@@ -305,3 +305,30 @@
   0% { transform: translateX(-80%); }
   100% { transform: translateX(100%); }
 }
+
+
+/* key pillars svg  */
+.analytics-svg {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.analytics-svg path {
+  transition: all 0.3s ease;
+}
+
+.analytics-svg:hover path[fill="#7668F0"],
+.analytics-svg:hover path[fill="#3538FF"] {
+  transform: scale(1.02);
+  filter: brightness(1.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
