@@ -34,7 +34,7 @@ const servicesData = {
 export function ServicesSection() {
   return (
     <section className="bg-gray-50 py-20 md:py-28">
-      <div className="max-container px-6 lg:px-0">
+      <div className="max-container px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <p className="font-semibold text-blue-600 mb-2">Internet Services</p>
@@ -132,9 +132,11 @@ export function ServicesSection() {
 
         {/* CTA Button */}
         <div className="text-center mt-16">
-          <Button size="lg" className="bg-blue-700 hover:bg-blue-800 rounded-lg">
-            View Other Solutions
-            <ArrowUpRight className="ml-2 h-5 w-5" />
+          <Button size="lg" className="bg-[#130B54] hover:bg-[#160B54] rounded-lg">
+            <Link href='#' className="flex items-center gap-2">
+              View Other Solutions
+              <ArrowUpRight className="ml-2 h-5 w-5" />
+            </Link>
           </Button>
         </div>
 
