@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, Zap } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
 
 const stackingImages = [
   { src: "/assets/icons/stack-1.png", alt: "Base layer of the technology stack" },
@@ -67,11 +68,15 @@ export function NextGeneration() {
                         <p>Join us as we pave the way for a connected future.</p>
                     </div>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
-                        <Button size="lg" className="bg-yellow-400 text-black hover:bg-yellow-500 rounded-lg w-full sm:w-auto">
-                            Get Connected Today <ArrowUpRight className="ml-2 h-5 w-5" />
+                  <Button size="lg" className="bg-yellow-400 text-black hover:bg-yellow-500 rounded-lg w-full sm:w-auto">
+                      <Link href=''>
+                        Get Connected Today <ArrowUpRight className="ml-2 h-5 w-5" />
+                      </Link>
                         </Button>
-                        <Button size="lg" variant="outline" className="bg-transparent border-blue-400/50 hover:bg-blue-400/10 text-white rounded-lg w-full sm:w-auto">
-                            Download Brochure
+                  <Button size="lg" variant="outline" className="bg-transparent border-blue-400/50 hover:bg-blue-400/10 text-white rounded-lg w-full sm:w-auto">
+                      <Link href='/read' target="/read">
+                            Read Brochure
+                      </Link>
                         </Button>
                     </div>
         </div>
