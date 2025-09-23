@@ -10,7 +10,7 @@ import { SolvingProblems } from "@/components/home/SolvingProblems";
 import { TestimonialSliderSection } from "@/components/home/TestimonialSection";
 import { CtaSection } from "@/components/home/CtaSection";
 import { SolutionsOrbitSection } from "@/components/home/SolutionsOrbitSection";
-import { NewImpact } from "@/components/home/NewImpact";
+import { Impact } from "@/components/home/Impact";
 import { ClientsLogo } from "@/components/home/ClientsLogo";
 
 
@@ -29,11 +29,8 @@ export default function Home() {
       {/* The next generation  */}
       <NextGeneration />      
 
-      {/* our impact */}
-      {/* <Impact /> */}
-
-      {/* new impact */}
-      <NewImpact />
+      {/* our impact */}     
+      <Impact />
 
       {/* clients logo */}    
       <ClientsLogo />
@@ -41,9 +38,7 @@ export default function Home() {
       {/* case studies slider */}
       <CaseStudySlider />
 
-      {/* Orbit */}
-      {/* <OrbitalSolutionsSection /> */}
-
+      {/* Orbit */}      
       <SolutionsOrbitSection />
 
       {/* solving problems */}
