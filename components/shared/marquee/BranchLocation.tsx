@@ -44,6 +44,7 @@ interface MarqueeProps {
 	items: string[]
 }
 
+
 const Marquee = ({ items }: MarqueeProps) => {
 	return (
 		<div className='flex flex-col gap-4'>
