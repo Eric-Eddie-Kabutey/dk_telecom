@@ -1,14 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
-import HeroSVG from "./HeroSvg";
 import Link from "next/link";
+import CtaSVG from "../svg/cta";
 
 export function CtaSection() {
   return (
     <section className="relative bg-[#130B54] text-white">
-      <HeroSVG />
+      {/* <HeroSVG /> */}
+      <CtaSVG />
       <div className="container mx-auto px-6 py-20 text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold tracking-tight leading-10 md:leading-snug">
+        <h2 className="text-4xl md:text-7xl font-semibold tracking-tight leading-10">
           Ready to Experience the Speed
           <br />
           That Redefines Connectivity?
