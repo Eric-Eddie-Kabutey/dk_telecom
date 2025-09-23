@@ -49,13 +49,13 @@ function CompanyHero() {
 
   return (
     <div className='w-full'>
-        <section className='w-[95%] max-h-[700px] h-[90vh] relative mx-auto z-10'>
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/5 to-black/50 z-10 rounded-[1.2rem]"></div>
+        <section className='w-full max-h-[700px] h-[90vh] relative mx-auto z-10'>
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/5 to-black/50 z-10 "></div>
             <div className='w-full h-full'>
                 <Image
                     src={company_hero}
                     alt='Hero image 1'
-                    className='w-full h-full object-cover rounded-[1.2rem]'
+                    className='w-full h-full object-cover'
                 />
             </div>
             <div className='pops absolute bottom-16 inset-x-0 max-container 2xl:w-[85%] w-[95%] flex flex-col gap-6 text-white z-20'>
@@ -82,7 +82,7 @@ function CompanyHero() {
                 </Button>
             </div>
         </section>
-        <div className='w-full -mt-60 relative pt-80 pb-12 bg-[#3D3D3D] overflow-hidden'>
+        <div className='w-full  -mt-60 relative pt-80 pb-12 bg-[#130B54] overflow-hidden'>
             <div className='md:w-[650px] sm:w-[500px] w-[80%] h-fit absolute top-24 -right-32'>
                 <div className='w-full h-full relative'>
                     <Image 
@@ -92,7 +92,7 @@ function CompanyHero() {
                     />
                     <div className={`
                         absolute inset-0 
-                        bg-[#3D3D3D]/60
+                        bg-transparent
                         flex items-center justify-center
                     `}></div>
                 </div>
