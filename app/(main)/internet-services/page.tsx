@@ -1,4 +1,4 @@
-import { PaymentsHeroSection } from '@/components/internet-services/NewHero'
+import { Hero } from '@/components/internet-services/Hero'
 import { PricingPlans } from '@/components/internet-services/pricing-plans'
 import { ServicesSection } from '@/components/internet-services/ServiceSection'
 import { DownloadAppSection } from '@/components/shared/download-app'
@@ -8,7 +8,7 @@ function ItConsultingPage() {
   return (
     <div>
       {/* hero section */}      
-      <PaymentsHeroSection />
+      <Hero />
 
       {/* internet service */}
       <ServicesSection />
