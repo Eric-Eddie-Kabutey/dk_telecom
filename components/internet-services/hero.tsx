@@ -1,41 +1,91 @@
-import Image from "next/image";
+"use client";
+
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, MapPin } from "lucide-react";
+import { motion, Variants } from "framer-motion";
 
-export function HighSpeedInternetHero() {
+// --- Data for Locations ---
+const locationsRow1 = [ "Bakau", "Banjul", "Basse", "Brikama", "Brufut", "Brusub", "Bundung", "Faraba" ];
+const locationsRow2 = [ "Busumbala", "Gunjur", "Kartong", "Kotu", "Kerewan", "Faraba", "Numuyel", "Yundum" ];
+const locationsRow3 = [ "Nyofeleh", "Salagi", "Sanyang", "Serrekunda", "Sinchu", "Tanji", "Tippa", "Garage" ];
+
+interface MarqueeProps {
+  items: string[];
+  direction?: "left" | "right";
+  speed?: "normal" | "slow" | "fast";
+}
+
+const Marquee = ({ items, direction = "left", speed = "normal" }: MarqueeProps) => {
+  const duration = speed === "fast" ? 20 : speed === "slow" ? 80 : 40;
+  
+  const marqueeVariants: Variants = {
+    animate: {
+      x: direction === "left" ? "-100%" : "100%",
+      transition: {
+        x: {
+          repeat: Infinity,
+          repeatType: "loop",
+          duration: duration,
+          ease: "linear",
+        },
+      },
+    },
+  };
+
   return (
-    <section className="bg-cyan-50/40 py-20">
-      <div className="max-container 2xl:w-[85%] w-[95%] mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          
-          {/* Left Column: Text Content */}
-          <div className="text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-wide leading-10">
-              High-Speed Internet              
-              Around The Gambia
-            </h1>
-            <p className="mt-6 text-lg text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              We are the bolt in the ISP arena. Our internet speed is trusted for all your home and office uses. Download, stream or upload any file size effortlessly. Because we are part of the average Gambia circle, we tailor our prices to suit your abilities. Affordable internet services for everyone. Our target is to connect every home, business and office in the country!
-            </p>
-            <Button size="lg" className="mt-8 bg-blue-700 hover:bg-blue-800 rounded-lg">
-              Get Connected Today
-              <ArrowUpRight className="ml-2 h-5 w-5" />
-            </Button>
+    <div className="w-full overflow-hidden">
+      <motion.div
+        className="flex"
+        variants={marqueeVariants}
+        animate="animate"
+      >
+        {[...items, ...items].map((item, index) => (
+          <div key={index} className="flex-shrink-0 mx-2">
+            <div className="flex items-center gap-2 bg-white/80 backdrop-blur-sm text-gray-700 px-4 py-2 rounded-lg shadow-sm">
+                <MapPin className="h-4 w-4 text-red-500" />
+                <span className="font-medium">{item}</span>
+            </div>
           </div>
+        ))}
+      </motion.div>
+    </div>
+  );
+};
 
-          {/* Right Column: Image Content */}
-          <div className="flex justify-center lg:justify-end">
-            <Image
-              src="/assets/images/internet-services/hero-illustration.png" 
-              alt="Illustration of people using high-speed internet around the globe"
-              width={500}
-              height={500}
-              className="w-full h-auto max-w-md lg:max-w-lg"
-            />
-          </div>
 
-        </div>
+export function Hero() {
+  return (
+    <section className="relative w-full min-h-screen flex flex-col justify-center items-center bg-gray-50 text-center py-20 md:py-28 px-6 overflow-hidden">
+      
+      {/* Blue Radial Gradient Background */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[60vh] md:h-[70vh] bg-blue-300/50 rounded-full blur-3xl -z-1"></div>
+
+      {/* Text Content */}
+      <div className="z-10">
+        <h1 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
+          Made For <span className="italic font-serif">You</span>
+          <br />
+          Easy, Fast and Smart Payments.
+        </h1>
+        <p className="mt-6 text-lg text-gray-600 max-w-xl mx-auto">
+          Tailored technology services to accelerate your business growth
+        </p>
+        <Button size="lg" className="mt-8 bg-[#130B54] hover:bg-[#120B54] rounded-lg h-12 px-8">
+          Get Started
+          <ArrowUpRight className="ml-2 h-5 w-5" />
+        </Button>
       </div>
+
+      {/* Visual Content: Multi-Row Marquee */}
+      <div className="relative w-full max-h-container px-6 mt-20 space-y-4">
+         {/* Fade-out effect using mask-image */}
+         <div className="absolute inset-0 z-20 [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]"></div>
+         
+         <Marquee items={locationsRow1} direction="left" speed="normal" />
+         <Marquee items={locationsRow2} direction="right" speed="normal" />
+         <Marquee items={locationsRow3} direction="left" speed="normal" />
+      </div>
+
     </section>
   );
 }
