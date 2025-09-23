@@ -5,6 +5,7 @@ import Typography from '../shared/typography';
 import { Button } from '../ui/button';
 import dynamic from 'next/dynamic';
 import type { Map as LeafletMap } from 'leaflet';
+import { LocationsSkeleton } from './location-skeleton';
 
 // Dynamically import leaflet components for client-side rendering
 const MapContainer = dynamic(() => import('react-leaflet').then(mod => mod.MapContainer), { ssr: false });
@@ -66,11 +67,11 @@ const LocateBranchMain: React.FC = () => {
     window.open(`https://www.openstreetmap.org/directions?from=&to=${location.lat},${location.lng}`, '_blank');
   };
 
-  if (!isClient) return <div>Loading map...</div>;
+  if (!isClient) return <LocationsSkeleton />;
 
   return (
     <div className='w-full md:h-[100vh] py-12'>
-      <section className='h-full w-full mx-auto flex flex-col md:flex-row gap-6'>
+      <section className='h-full max-container mx-auto px-6 flex flex-col md:flex-row gap-6'>
         <div className='w-full max-w-[600px] md:w-[30%] px-5 flex flex-col'>
           <Typography typo="header-4-semibold"
             className='pb-4'
@@ -79,7 +80,7 @@ const LocateBranchMain: React.FC = () => {
           <div className='mb-4'>
             <input 
               placeholder='Search location...'
-              className='w-full px-4 py-2 border border-gray-600 rounded-md outline-none focus:outline-none focus:ring-0'
+              className='w-full px-4 py-2 border border-gray-600 text-white rounded-md outline-none focus:outline-none focus:ring-0'
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -93,7 +94,7 @@ const LocateBranchMain: React.FC = () => {
                   className={`w-full py-2 px-3 flex flex-col hover:bg-gray-100 border-b cursor-pointer ${selectedLocation?.id === data.id ? 'bg-blue-50' : ''}`}
                   onClick={() => handleLocationClick(data)}
                 >
-                  <Typography typo="header-6-medium" className='text-app-primary'>
+                  <Typography typo="header-6-medium" className='text-[#130B54]'>
                     {data.location}
                   </Typography>
                   <Typography typo="body-medium-medium" className='text-gray-600'>
@@ -105,7 +106,7 @@ const LocateBranchMain: React.FC = () => {
                   <div className='py-2'>
                     <Button
                       variant="primary"
-                      className='w-fit text-base rounded-md'
+                      className='w-fit bg-[#130B54] text-base text-white rounded-md hover:bg-[#150B54]'
                       onClick={(e) => {
                         e.stopPropagation();
                         handleGetDirections(data);
