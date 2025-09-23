@@ -33,7 +33,7 @@ export default function Home() {
       <Impact />
 
       {/* clients logo */}    
-      <ClientsLogo />
+      <ClientsLogo />     
 
       {/* case studies slider */}
       <CaseStudySlider />
