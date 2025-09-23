@@ -1,56 +1,8 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, MapPin } from "lucide-react";
-import { motion, Variants } from "framer-motion";
-
-// --- Data for Locations ---
-const locationsRow1 = [ "Bakau", "Banjul", "Basse", "Brikama", "Brufut", "Brusub", "Bundung", "Faraba" ];
-const locationsRow2 = [ "Busumbala", "Gunjur", "Kartong", "Kotu", "Kerewan", "Faraba", "Numuyel", "Yundum" ];
-const locationsRow3 = [ "Nyofeleh", "Salagi", "Sanyang", "Serrekunda", "Sinchu", "Tanji", "Tippa", "Garage" ];
-
-interface MarqueeProps {
-  items: string[];
-  direction?: "left" | "right";
-  speed?: "normal" | "slow" | "fast";
-}
-
-const Marquee = ({ items, direction = "left", speed = "normal" }: MarqueeProps) => {
-  const duration = speed === "fast" ? 20 : speed === "slow" ? 80 : 40;
-  
-  const marqueeVariants: Variants = {
-    animate: {
-      x: direction === "left" ? "-100%" : "100%",
-      transition: {
-        x: {
-          repeat: Infinity,
-          repeatType: "loop",
-          duration: duration,
-          ease: "linear",
-        },
-      },
-    },
-  };
-
-  return (
-    <div className="w-full overflow-hidden">
-      <motion.div
-        className="flex"
-        variants={marqueeVariants}
-        animate="animate"
-      >
-        {[...items, ...items].map((item, index) => (
-          <div key={index} className="flex-shrink-0 mx-2">
-            <div className="flex items-center gap-2 bg-white/80 backdrop-blur-sm text-gray-700 px-4 py-2 rounded-lg shadow-sm">
-                <MapPin className="h-4 w-4 text-red-500" />
-                <span className="font-medium">{item}</span>
-            </div>
-          </div>
-        ))}
-      </motion.div>
-    </div>
-  );
-};
+import { ArrowUpRight } from "lucide-react";
+import { BranchLocation } from "../shared/marquee/BranchLocation";
 
 
 export function Hero() {
@@ -77,13 +29,14 @@ export function Hero() {
       </div>
 
       {/* Visual Content: Multi-Row Marquee */}
-      <div className="relative w-full max-h-container px-6 mt-20 space-y-4">
+      <div className="relative w-full max-h-container mt-20 space-y-4">
          {/* Fade-out effect using mask-image */}
          <div className="absolute inset-0 z-20 [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]"></div>
          
-         <Marquee items={locationsRow1} direction="left" speed="normal" />
+        <BranchLocation /> 
+        {/* <Marquee items={locationsRow1} direction="left" speed="normal" />
          <Marquee items={locationsRow2} direction="right" speed="normal" />
-         <Marquee items={locationsRow3} direction="left" speed="normal" />
+         <Marquee items={locationsRow3} direction="left" speed="normal" /> */}
       </div>
 
     </section>
