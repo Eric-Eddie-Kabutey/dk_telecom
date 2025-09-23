@@ -1,3 +1,5 @@
+'use client';
+
 import { country_flags } from '@/constants';
 import React from 'react'
 import { motion } from "framer-motion";
