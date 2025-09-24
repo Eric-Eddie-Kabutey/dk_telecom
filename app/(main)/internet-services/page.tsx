@@ -3,7 +3,8 @@ import { PricingPlans } from '@/components/internet-services/pricing-plans'
 import { ServicesSection } from '@/components/internet-services/ServiceSection'
 import { DownloadAppSection } from '@/components/shared/download-app'
 import { CtaSection } from "@/components/home/CtaSection";
-import { Hero } from '@/components/internet-services/Hero';
+import { Hero } from '@/components/internet-services/hero';
+
 
 function InternetServicePage() {
   return (
