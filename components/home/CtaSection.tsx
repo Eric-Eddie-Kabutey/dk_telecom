@@ -2,13 +2,14 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import CtaSVG from "../svg/cta";
+import FooterDividerSVG from "../svg/footer-divider";
 
 export function CtaSection() {
   return (
     <section className="relative bg-[#130B54] text-white">
       {/* <HeroSVG /> */}
       <CtaSVG />
-      <div className="container mx-auto px-6 py-20 text-center">
+      <div className="container mx-auto px-6 py-20 text-center outline">
         <h2 className="text-4xl md:text-7xl font-semibold tracking-tight leading-10">
           Ready to Experience the Speed
           <br />
@@ -24,6 +25,9 @@ export function CtaSection() {
           </Link>
         </Button>
       </div>
+
+      {/* CTA animated line */}
+      <FooterDividerSVG />
     </section>
   );
 }
