@@ -25,7 +25,7 @@ const HeaderPillLine = ({ text }: { text: string }) => (
 );
 
 export function NextGen() {
-    const pdfUrl = "/docs/sample.pdf";
+    const pdfUrl = "/docs/dk-telecom-company-profile-2025.pdf";
     
   const content = (
     <>
