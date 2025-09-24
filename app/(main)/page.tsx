@@ -19,7 +19,7 @@ export default function Home() {
       <NextGen />
 
       {/* our impact */}     
-      <Impact />
+      <Impact />      
 
       {/* clients logo */}    
       <ClientsLogo />     

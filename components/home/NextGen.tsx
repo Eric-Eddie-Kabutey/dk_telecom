@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowUpRight, Zap } from "lucide-react";
+import {  ArrowUpRight, Zap } from "lucide-react";
+import NextGenOrbit from "./NextGenOrbit";
 
 // --- Data for the corner "planets" ---
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const cornerOrbits = [
   { text: "Connectivity", position: "top-0 left-0 -translate-x-1/2 -translate-y-1/2" },
   { text: "Security", position: "top-0 right-0 translate-x-1/2 -translate-y-1/2" },
@@ -58,35 +58,7 @@ export function NextGen() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center mt-16 lg:mt-24">
           
           {/* Left Column: New Orbital Square Visual */}
-          <div className="relative flex justify-center items-center h-[400px] lg:h-[500px]">
-            {/* The main square with gradient border */}
-            <div className="relative w-64 h-64 md:w-[284px] md:h-[284px] p-1 rounded-2xl bg-gradient-to-br from-yellow-400 to-indigo-400">
-              <div className="w-full h-full bg-[#3423c6] rounded-[14px]"></div>
-            {/* Corner Orbits */}
-            {cornerOrbits.map((orbit) => (
-                <div key={orbit.text} className={`absolute w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400/20 to-indigo-400/20 backdrop-blur-sm ${orbit.position}`}>
-                    <span className='text-lg text-white absolute top-8 left-0'>{orbit.text}</span>
-                </div>
-            ))}
-            </div>
-
-            
-            {/* Central Content */}
-            <div className="absolute flex flex-col items-center text-center">
-                <Image
-                    src="/assets/images/dk_logo_white.png"
-                    alt="DK Telecom Ltd Logo"
-                    width={180}
-                    height={40}
-                />
-                <p className="mt-4 text-sm max-w-[250px] text-white">
-                    Empowering Your IT Infrastructure with Scalable, Secure, and Digital Reliable Solutions
-                </p>
-                <Link href="/solutions" className="mt-4 inline-flex items-center gap-2 font-semibold text-sm text-yellow-300 hover:text-yellow-200 transition-colors">
-                    Discover More <ArrowRight className="h-4 w-4" />
-                </Link>
-            </div>
-          </div>
+          <NextGenOrbit />
 
           {/* Right Column: Text Content */}
           <div className="text-center lg:text-left">
