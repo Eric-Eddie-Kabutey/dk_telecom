@@ -9,7 +9,7 @@ export function CompanyHero() {
 			{/* svg of colored-lines */}
 			<HeroSVG />
 			<div className='max-container mt-auto md: flex flex-col gap-6 md:gap-12 z-10'>
-				<div className='self-center'>
+				<div className='text-center'>
 
 					{/* News Alert Banner */}
 					<Link
@@ -28,7 +28,7 @@ export function CompanyHero() {
 
 					{/* Main Text Content */}
 					<div className='space-y-4'>
-						<h1 className='text-4xl md:text-7xl font-semibold tracking-tight leading-10'>
+						<h1 className='text-4xl md:text-7xl font-semibold tracking-tight leading-10 mt-6'>
 							Proudly Gambian Owned.
 							<br />
 							Committed to you.
@@ -42,7 +42,7 @@ export function CompanyHero() {
 				</div>
 
 				{/* Infographic image */}
-				<div className='hidden lg:block  w-full max-container md:mt-10 border border-[#FBD956] rounded-lg'>
+				<div className='hidden lg:block  w-full max-w-4xl md:mt-10 border border-[#FBD956] rounded-lg'>
 					<Image
 						src='/assets/images/hero-image.png'
 						alt='Abstract visual representing the flow of data from servers through the internet to users.'
