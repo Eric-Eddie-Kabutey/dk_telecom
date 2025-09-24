@@ -9,7 +9,7 @@ export function CtaSection() {
     <section className="relative bg-[#130B54] text-white">
       {/* <HeroSVG /> */}
       <CtaSVG />
-      <div className="container mx-auto px-6 py-20 text-center outline">
+      <div className="container mx-auto px-6 py-20 text-center">
         <h2 className="text-4xl md:text-7xl font-semibold tracking-tight leading-10">
           Ready to Experience the Speed
           <br />

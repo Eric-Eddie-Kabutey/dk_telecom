@@ -114,7 +114,7 @@ export function KeyPillarsSection() {
         </div>
       </div>
 
-      <div className="absolute right-2/3 -bottom-60 z-0 overflow-hidden outline">
+      <div className="absolute right-2/3 -bottom-60 z-0 overflow-hidden">
         <WaterfallSVG />        
       </div>
     </section>
