@@ -48,17 +48,17 @@ function CompanyHero() {
     }, []);
 
   return (
-    <div className='w-full'>
-        <section className='w-full max-h-[700px] h-[90vh] relative mx-auto z-10'>
+    <div className='pt-8 rounded-[1.2rem]'>
+        <section className='max-container px-6 max-h-[700px] h-[90vh] relative z-10 rounded-[1.2rem]'>
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/5 to-black/50 z-10 "></div>
-            <div className='w-full h-full'>
+            <div className='max-container px-6 h-full'>
                 <Image
                     src={company_hero}
                     alt='Hero image 1'
                     className='w-full h-full object-cover'
                 />
             </div>
-            <div className='pops absolute bottom-16 inset-x-0 max-container 2xl:w-[85%] w-[95%] flex flex-col gap-6 text-white z-20'>
+            <div className='pops absolute bottom-16 inset-x-0 max-container px-6 2xl:w-[85%] w-[95%] flex flex-col gap-6 text-white z-20'>
                 <div className='flex flex-col '>
                     <Typography
                         typo="header-2-medium"
@@ -82,8 +82,10 @@ function CompanyHero() {
                 </Button>
             </div>
         </section>
-        <div className='w-full  -mt-60 relative pt-80 pb-12 bg-[#130B54] overflow-hidden'>
-            <div className='md:w-[650px] sm:w-[500px] w-[80%] h-fit absolute top-24 -right-32'>
+          
+          {/* Aligned with Africapitalism */}
+        <div className='  -mt-60 relative pt-80 pb-12 bg-[#130B54] overflow-hidden'>
+            <div className='h-fit absolute top-24 -right-32'>
                 <div className='w-full h-full relative'>
                     <Image 
                         src={globeImg}
@@ -97,7 +99,7 @@ function CompanyHero() {
                     `}></div>
                 </div>
             </div>
-            <div className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
+            <div className='max-container px-6 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
                 <div className='max-w-[70%] flex flex-col gap-8 '>
                     <div className='flex flex-col text-white z-[50]'>
                         <Typography
