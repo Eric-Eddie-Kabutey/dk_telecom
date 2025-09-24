@@ -4,7 +4,8 @@ import { Button } from "@/components/ui/button";
 import { CircleDot } from "lucide-react";
 import DigitalizingValueInEquityCredit from "../svg/digitalize-values";
 import { HeaderPillLine } from "../shared/HeaderPillLine";
-import WaterfallSVG from "../svg/waterfalll";
+import WaterfallSVG from "../svg/waterfall-svg";
+
 
 // --- Data for the Platform Pillars ---
 const pillarsData = [
@@ -52,8 +53,7 @@ export function KeyPillarsSection() {
     <section className="relative bg-[#130B54] text-white py-20 md:py-28 overflow-hidden">
       {/* Container for your background SVG */}
       <div className="absolute right-2/3 -top-10 z-0 overflow-hidden">
-        <WaterfallSVG />
-        {/* <Image src="/path/to/your/background.svg" alt="" fill className="object-cover opacity-10" /> */}
+        <WaterfallSVG />        
       </div>
 
       <div className="max-container relative z-10 px-6">
@@ -114,9 +114,8 @@ export function KeyPillarsSection() {
         </div>
       </div>
 
-      <div className="absolute right-2/3 -bottom-20 z-0 overflow-hidden">
-        <WaterfallSVG />
-        {/* <Image src="/path/to/your/background.svg" alt="" fill className="object-cover opacity-10" /> */}
+      <div className="absolute right-2/3 -bottom-60 z-0 overflow-hidden outline">
+        <WaterfallSVG />        
       </div>
     </section>
   );
