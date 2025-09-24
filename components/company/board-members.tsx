@@ -9,8 +9,8 @@ import marketingManagerImage from "@/public/assets/images/company/team/Marketing
 import salesManagerImage from "@/public/assets/images/company/team/sales-Mariama-Camara.jpeg"
 import customerCareMangerImage from "@/public/assets/images/company/team/customer-care-Ramatolie-cole.png"
 
-import fumbiImg from "@/public/assets/images/company/team/fumbi.png"
-import samuelImg from "@/public/assets/images/company/team/samuel.png"
+import fumbiImg from "@/public/assets/images/dk_logo.png"
+import samuelImg from "@/public/assets/images/dk_logo.png"
 import { LeadershipModal } from './leadership-modal'
 
 
