@@ -48,17 +48,17 @@ function CompanyHero() {
     }, []);
 
   return (
-    <div className='pt-8 rounded-[1.2rem]'>
-        <section className='max-container px-6 max-h-[700px] h-[90vh] relative z-10 rounded-[1.2rem]'>
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/5 to-black/50 z-10 "></div>
-            <div className='max-container px-6 h-full'>
+    <div className='pt-4 rounded-[1.2rem]'>
+        <section className='container mx-auto max-h-[700px] h-[90vh] relative z-10 rounded-[1.2rem]'>
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/5 to-black/50 z-10"></div>
+            <div className='w-full h-full'>
                 <Image
                     src={company_hero}
                     alt='Hero image 1'
                     className='w-full h-full object-cover'
                 />
             </div>
-            <div className='pops absolute bottom-16 inset-x-0 max-container px-6 2xl:w-[85%] w-[95%] flex flex-col gap-6 text-white z-20'>
+            <div className='pops absolute bottom-16 inset-x-0 2xl:w-[85%] w-[95%] flex flex-col gap-6 text-white z-20 px-6'>
                 <div className='flex flex-col '>
                     <Typography
                         typo="header-2-medium"
