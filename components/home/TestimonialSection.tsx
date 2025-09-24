@@ -34,7 +34,7 @@ export function TestimonialSliderSection() {
 
   return (
     <section className="bg-white py-20 md:py-28">
-      <div className="container mx-auto px-6">
+      <div className="max-container px-6">
         <Carousel
           setApi={setApi}
           opts={{
