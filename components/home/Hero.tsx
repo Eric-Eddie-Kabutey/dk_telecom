@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import HeroSVG from './HeroSvg'
 import Image from 'next/image'
+import GlowingRotatingBorder from '../svg/gloming-rotation'
 
 export function CompanyHero() {
 	return (
@@ -41,16 +42,18 @@ export function CompanyHero() {
 					</div>
 				</div>
 
-				{/* Infographic image */}
-				<div className='hidden lg:block  w-full max-w-4xl md:mt-10 border border-[#FBD956] rounded-lg'>
-					<Image
-						src='/assets/images/hero-image.png'
-						alt='Abstract visual representing the flow of data from servers through the internet to users.'
-						width={1920}
-						height={480}
-						className='w-full h-auto'
-					/>
-				</div>
+				{/* Infographic image: border border-[#FBD956] rounded-lg */}
+					<div className='hidden lg:block  w-full max-w-4xl md:mt-10 '>
+						<GlowingRotatingBorder className='w-full h-full rounded-[6xp]'>
+							<Image
+								src='/assets/images/hero-image.png'
+								alt='Abstract visual representing the flow of data from servers through the internet to users.'
+								width={1920}
+								height={480}
+								className='w-full h-auto rounded-[6xp]'
+							/>
+						</GlowingRotatingBorder>
+					</div>
 			</div>
 		</section>
 	)
