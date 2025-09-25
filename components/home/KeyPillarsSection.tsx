@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import { CircleDot } from "lucide-react";
-import DigitalizingValueInEquityCredit from "../svg/digitalize-values";
 import { HeaderPillLine } from "../shared/HeaderPillLine";
 import WaterfallSVG from "../svg/waterfall-svg";
 import Image from "next/image";

@@ -3,7 +3,7 @@ import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel'
 import { Card, CardContent, CardHeader } from '../ui/card';
 import Typography from '../shared/typography';
 import { Button } from '../ui/button';
-import { ArrowRight, Calendar, Plus } from 'lucide-react';
+import { ArrowRight, Calendar } from 'lucide-react';
 import Image from 'next/image';
 import Autoplay from 'embla-carousel-autoplay';
 import { insights_events } from '@/constants';
