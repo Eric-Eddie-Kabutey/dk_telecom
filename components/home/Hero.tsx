@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link'
-import { ArrowLeft, ArrowRight, Building2, House, Landmark, UserRound } from 'lucide-react'
+import { ArrowDown, ArrowLeft, ArrowRight, ArrowUp, Building2, House, Landmark, UserRound } from 'lucide-react'
 import HeroSVG from './HeroSvg'
 import GlowingRotatingBorder from '../svg/gloming-rotation'
 import Typography from '../shared/typography'
@@ -72,12 +72,12 @@ export function CompanyHero() {
 			</section>
 			<div className='w-full relative min-h-[45vh] flex flex-col justify-center'>
 				<HeroSVG />
-				<div className='max-container relative mx-auto w-full flex justify-between items-center '>
-					<GlowingRotatingBorder className='w-[35%]'>
+				<div className='max-container 2xl:w-[85%] w-[95%] relative mx-auto flex md:flex-row flex-col justify-between items-center'>
+					<GlowingRotatingBorder className='lg:w-[35%] md:w-[50%] w-full'>
 						<div className='w-full h-[300px] p-1 ibm'>
 							<div className='w-full h-full p-3 flex flex-col justify-between gap-8 bg-[#130B54] rounded-xl text-white	'>
 								<div className='h-[50%] flex justify-between items-center gap-3'>
-									<div className='h-full flex-1 flex items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
+									<div className='h-full flex-1 flex xs:flex-row flex-col items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
 										<House />
 										<Typography
 											typo="header-6-medium"
@@ -85,7 +85,7 @@ export function CompanyHero() {
 											Home
 										</Typography>
 									</div>
-									<div className='h-full flex-1 flex items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
+									<div className='h-full flex-1 flex xs:flex-row flex-col items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
 										<Landmark />
 										<Typography
 											typo="header-6-medium"
@@ -95,7 +95,7 @@ export function CompanyHero() {
 									</div>
 								</div>
 								<div className='h-[50%] flex justify-between items-center gap-3'>
-									<div className='h-full flex-1 flex items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
+									<div className='h-full flex-1 flex xs:flex-row flex-col items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
 										<Building2 />
 										<Typography
 											typo="header-6-medium"
@@ -103,7 +103,7 @@ export function CompanyHero() {
 											Companies
 										</Typography>
 									</div>
-									<div className='h-full flex-1 flex items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
+									<div className='h-full flex-1 flex xs:flex-row flex-col items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
 										<UserRound />
 										<Typography
 											typo="header-6-medium"
@@ -116,22 +116,24 @@ export function CompanyHero() {
 							</div>
 						</div>
 					</GlowingRotatingBorder>
-					<div className='flex-1 h-4'>
-						<div className='flex justify-between items-center '>
-							<ArrowLeft className="w-6 h-6" stroke="url(#glow-gradient)" />
+					<div className='flex-1 h-4 '>
+						<div className='flex md:flex-row flex-col justify-between items-center '>
+							<ArrowLeft className="w-6 h-6 md:block hidden" stroke="url(#glow-gradient)" />
+							<ArrowUp className="w-6 h-6 md:hidden block" stroke="url(#glow-gradient)" />
 
-							<GlowingRotatingBorder className='w-full'>
-							<div className='h-1 flex-1'></div>
+							<GlowingRotatingBorder className='md:w-full w-[3px]'>
+							<div className='md:h-1 h-20 flex-1'></div>
 							</GlowingRotatingBorder>
 
-							<ArrowRight className="w-6 h-6" stroke="url(#glow-gradient)" />
+							<ArrowDown className="w-6 h-6 md:hidden block" stroke="url(#glow-gradient)" />
+							<ArrowRight className="w-6 h-6 md:block hidden" stroke="url(#glow-gradient)" />
 						</div>
 					</div>
-					<GlowingRotatingBorder className='w-[35%]'>
+					<GlowingRotatingBorder className='lg:w-[35%] md:w-[50%] w-full'>
 						<div className='w-full h-[300px] p-1'>
 							<div className='w-full h-full p-3 flex flex-col justify-between gap-8 bg-[#130B54] rounded-xl text-white	'>
 								<div className='h-[50%] flex justify-between items-center gap-3'>
-									<div className='h-full flex-1 flex items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
+									<div className='h-full flex-1 flex xs:flex-row flex-col items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
 										<House />
 										<Typography
 											typo="header-6-medium"
@@ -139,7 +141,7 @@ export function CompanyHero() {
 											Home
 										</Typography>
 									</div>
-									<div className='h-full flex-1 flex items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
+									<div className='h-full flex-1 flex xs:flex-row flex-col items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
 										<Landmark />
 										<Typography
 											typo="header-6-medium"
@@ -149,7 +151,7 @@ export function CompanyHero() {
 									</div>
 								</div>
 								<div className='h-[50%] flex justify-between items-center gap-3'>
-									<div className='h-full flex-1 flex items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
+									<div className='h-full flex-1 flex xs:flex-row flex-col items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
 										<Building2 />
 										<Typography
 											typo="header-6-medium"
@@ -157,7 +159,7 @@ export function CompanyHero() {
 											Companies
 										</Typography>
 									</div>
-									<div className='h-full flex-1 flex items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
+									<div className='h-full flex-1 flex xs:flex-row flex-col items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
 										<UserRound />
 										<Typography
 											typo="header-6-medium"

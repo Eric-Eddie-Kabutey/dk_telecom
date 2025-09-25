@@ -6,9 +6,9 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const cornerOrbits = [
-  { text: "Connectivity", position: "top-5 -left-4 -translate-x-1/2 -translate-y-1/2", bgColor: "bg-yellow-500" },
+  { text: "Connectivity", position: "top-5 xs:-left-4 left-5 -translate-x-1/2 -translate-y-1/2", bgColor: "bg-yellow-500" },
   { text: "Security", position: "top-5 right-7 translate-x-1/2 -translate-y-1/2", bgColor: "bg-green-500" },
-  { text: "Reliability", position: "-bottom-5 -left-4 -translate-x-1/2 translate-y-1/2", bgColor: "bg-orange-500" },
+  { text: "Reliability", position: "-bottom-5 xs:-left-4 left-5 -translate-x-1/2 translate-y-1/2", bgColor: "bg-orange-500" },
   { text: "Scalability", position: "-bottom-5 right-7 translate-x-1/2 translate-y-1/2", bgColor: "bg-purple-500" },
 ];
 
@@ -63,14 +63,16 @@ export default function NextGenOrbit() {
       </div>
 
       {/* Central Content */}
-      <div className="absolute flex flex-col items-center text-center p-2 z-20">
-        <Image
-          src="/assets/images/dk_logo_white.png"
-          alt="DK Telecom Ltd Logo"
-          width={180}
-          height={40}
-        />
-        <p className="mt-4 text-sm max-w-[250px] text-white">
+      <div className="absolute pt-8 flex flex-col items-center text-center p-2 z-20">
+        <div className="xs:w-[180px] w-[90px] xs:h-[60px] h-[30px] relative">
+          <Image
+            src="/assets/images/dk_logo_white.png"
+            alt="DK Telecom Ltd Logo"
+            fill
+            className="w-full h-full"
+          />
+        </div>
+        <p className="mt-4 text-sm max-w-[250px] text-white xs:line-clamp-3 line-clamp-2">
           Empowering Your IT Infrastructure with Scalable, Secure, and Digital
           Reliable Solutions
         </p>
