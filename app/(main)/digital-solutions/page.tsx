@@ -12,7 +12,7 @@ function ManagedServicesPage() {
         <ManagedServicesMain />
         <WhyManagedServices />
         <Testimonial />
-        <BookNow />
+        {/* <BookNow /> */}
     </div>
   )
 }
