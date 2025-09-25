@@ -91,7 +91,7 @@ export default function Navbar() {
                             <Image 
                                 src={dk_logo}
                                 alt="Heirs logo"
-                                className="w-fit sm:h-12 h-6"
+                                className="w-fit md:h-12 h-8"
                             />                           
                         </Link>
                     </NavbarLeft>
@@ -100,7 +100,7 @@ export default function Navbar() {
                         
                         <Button variant="outline" asChild className="sm:flex hidden">
                             <Link href="/locate-branch"
-                                className="pops text-white font-light bg-transparent rounded-lg hover:text-white"
+                                className="pops text-white md:text-base text-sm font-light bg-transparent rounded-lg hover:text-white"
                             >Locate Branch</Link>
                         </Button>
                         <Button variant="primary" asChild className="sm:flex hidden">
