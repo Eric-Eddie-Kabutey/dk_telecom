@@ -7,8 +7,8 @@ import Typography from '../shared/typography'
 
 export function CompanyHero() {
 	return (
-		<div className='ibm pt-12 flex flex-col gap-6 bg-[#130B54] '>
-			<section className='relative w-full flex items-center justify-center text-white bg-[#130B54] pt-6 md:pt-12 pb-8 px-6 overflow-hidden'>
+		<div className='ibm pt-10 flex flex-col gap-6 bg-[#130B54] '>
+			<section className='relative w-full flex items-center justify-center text-white bg-[#130B54] pt-6 md:pt-12 pb-6 px-6 overflow-hidden'>
 				{/* svg of colored-lines */}
 				<svg width="0" height="0">
 					<defs>
@@ -70,7 +70,7 @@ export function CompanyHero() {
 					</div> */}
 				</div>
 			</section>
-			<div className='w-full relative min-h-[55vh] flex flex-col justify-center'>
+			<div className='w-full relative min-h-[45vh] flex flex-col justify-center'>
 				<HeroSVG />
 				<div className='max-container relative mx-auto w-full flex justify-between items-center '>
 					<GlowingRotatingBorder className='w-[35%]'>

@@ -6,9 +6,9 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const cornerOrbits = [
-  { text: "Connectivity", position: "top-5 left-0 -translate-x-1/2 -translate-y-1/2", bgColor: "bg-yellow-500" },
+  { text: "Connectivity", position: "top-5 -left-4 -translate-x-1/2 -translate-y-1/2", bgColor: "bg-yellow-500" },
   { text: "Security", position: "top-5 right-7 translate-x-1/2 -translate-y-1/2", bgColor: "bg-green-500" },
-  { text: "Reliability", position: "-bottom-5 left-0 -translate-x-1/2 translate-y-1/2", bgColor: "bg-orange-500" },
+  { text: "Reliability", position: "-bottom-5 -left-4 -translate-x-1/2 translate-y-1/2", bgColor: "bg-orange-500" },
   { text: "Scalability", position: "-bottom-5 right-7 translate-x-1/2 translate-y-1/2", bgColor: "bg-purple-500" },
 ];
 
@@ -46,7 +46,7 @@ export default function NextGenOrbit() {
       />
 
       {/* Orbit 1 (your main content with gradient border & central content) */}
-      <div className="relative w-64 h-64 md:w-[284px] md:h-[284px] p-1 rounded-2xl  z-10">
+      <div className="relative w-60 h-60 md:w-[284px] md:h-[284px] p-1 flex items-center justify-center rounded-2xl  z-10">
         <div className="w-full h-full bg-[#130B54] rounded-full"></div>
 
         {/* Corner Orbits bg-gradient-to-br from-yellow-400/20 to-indigo-400/20 */}
@@ -55,7 +55,7 @@ export default function NextGenOrbit() {
             key={orbit.text}
             className={`absolute w-10 h-10 rounded-full ${orbit.bgColor}  backdrop-blur-sm ${orbit.position}`}
           >
-            <span className="text-lg text-white absolute top-8 left-0">
+            <span className="text-lg text-white absolute top-11 -left-4">
               {orbit.text}
             </span>
           </div>

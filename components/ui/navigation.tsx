@@ -13,84 +13,90 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "./navigation-menu";
+import { Article, Briefcase, Buildings, Calendar, ChartBar, DeviceMobile, Phone, Presentation, UserPlus, UsersThree, WifiHigh, Wrench } from "@phosphor-icons/react";
 
 
-const links: { title: string; href: string; description: string, links?: { title: string; href: string; description: string }[] }[] = [
+const links: { title: string; href: string; description: string, icon: React.ElementType, links?: { title: string; href: string; description: string; icon: React.ElementType }[] }[] = [
   
   {
     title: "Company",
     href: "/company",
-    description:
-      "For sighted users to preview content available behind a link.",
+    description: "Learn more about our mission, vision, and who we are.",
+    icon: Buildings,
   },
   {
     title: "Service",
     href: "/services",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    description: "Explore the services we provide to individuals and businesses.",
+    icon: Wrench,
     links: [
       {
-        title: "Internet services",
+        title: "Internet Services",
         href: "/internet-services",
-        description:
-          "Re-usable components built using Radix UI and Tailwind CSS.",
+        description: "Fast, reliable, and secure internet for homes and businesses.",
+        icon: WifiHigh,
       },
       {
-        title: "Digital solutions",
+        title: "Digital Solutions",
         href: "/digital-solutions",
-        description:
-          "How to install dependencies and structure your app.",
+        description: "Innovative digital products tailored to your needs.",
+        icon: DeviceMobile,
       },
-    ]
+    ],
   },
   {
     title: "Insights",
     href: "/insights",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    description: "Stay informed with our latest updates and expert analysis.",
+    icon: ChartBar,
     links: [
       {
         title: "Blog",
-        description: "In-depth analyses of our client projects showcasing challenges, solutions, and ",
-        href: "/insights?tab=blog"
+        href: "/insights?tab=blog",
+        description: "Articles on technology, connectivity, and industry trends.",
+        icon: Article,
       },
       {
         title: "Case Studies",
-        description: "In-depth analyses of our client projects showcasing challenges, solutions, and ",
-        href: "/insights?tab=case-studies"
+        href: "/insights?tab=case-studies",
+        description: "Deep dives into real client projects and success stories.",
+        icon: Presentation,
       },
       {
         title: "Events",
-        description: "Upcoming webinars, conferences, and workshops where we share ",
-        href: "/insights?tab=events"
-      }
-    ]
+        href: "/insights?tab=events",
+        description: "Upcoming conferences, webinars, and community workshops.",
+        icon: Calendar,
+      },
+    ],
   },
   {
     title: "Careers",
     href: "/careers",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    description: "Be part of our journey and help shape the future of connectivity.",
+    icon: Briefcase,
     links: [
       {
         title: "Join Us",
-        description: "In-depth analyses of our client projects showcasing challenges, solutions, and ",
-        href: "/careers"
+        href: "/careers",
+        description: "Explore open positions and grow your career with us.",
+        icon: UserPlus,
       },
       {
         title: "Talent Hub",
-        description: "In-depth analyses of our client projects showcasing challenges, solutions, and ",
-        href: "/dk-talent"
+        href: "/dk-talent",
+        description: "Connect with us and be part of our professional community.",
+        icon: UsersThree,
       },
-  
-    ]
+    ],
   },
   {
-    title: "Contact us",
+    title: "Contact Us",
     href: "/contact-us",
-    description:
-      "Get in touch with our team for any questions or inquiries.",
+    description: "Get in touch with our team for any questions or inquiries.",
+    icon: Phone,
   },
+
 ];
 
 export default function Navigation() {
@@ -110,8 +116,13 @@ export default function Navigation() {
                 <NavigationMenuContent>
                   <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[400px] ">
                     {link.links.map((sublink) => (
-                      <ListItem key={sublink.href} href={sublink.href} title={sublink.title}>
-                        {/* {sublink.description} */}
+                      <ListItem
+                        key={sublink.href}
+                        href={sublink.href}
+                        title={sublink.title}
+                        icon={sublink.icon}
+                      >
+                        {sublink.description}
                       </ListItem>
                     ))}
                   </ul>
@@ -134,28 +145,40 @@ export default function Navigation() {
   );
 }
 
-const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className,
-          )}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </a>
-      </NavigationMenuLink>
-    </li>
-  );
-});
-ListItem.displayName = "ListItem";
+type ListItemProps = React.ComponentPropsWithoutRef<"a"> & {
+  title: string
+  icon?: React.ElementType
+}
+
+const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(
+  ({ className, title, children, icon: Icon, ...props }, ref) => {
+    return (
+      <li>
+        <NavigationMenuLink asChild>
+          <a
+            ref={ref}
+            className={cn(
+              "ibm flex items-start gap-3 rounded-md p-3 no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground",
+              className
+            )}
+            {...props}
+          >
+            {Icon && (
+              <div className="px-1 py-[1px] border border-[#c4c1e6]">
+                <Icon size={26} weight="thin" className="shrink-0 mt-1" />
+              </div>
+            )}
+            <div className="flex flex-col gap-2">
+              <div className="text-base font-medium leading-none text-[#140c59]">{title}</div>
+              <p className="line-clamp-2 text-sm font-regular leading-snug text-[#140c59]">
+                {children}
+              </p>
+            </div>
+          </a>
+        </NavigationMenuLink>
+      </li>
+    )
+  }
+)
+
+ListItem.displayName = "ListItem"
