@@ -52,15 +52,15 @@ function CaseStudyCard({ study }: { study: typeof caseStudiesData[0] }) {
 // --- Main Section Component ---
 export function CaseStudySlider() {
   return (
-    <section className="bg-indigo-50 py-20 md:py-28 px-6">
+    <section className="ibm bg-indigo-50 py-20 md:py-28 px-6">
       <div className="max-container">
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto mb-16 md:mb-24">
           <div className="flex items-center justify-center mb-6">
             <div className="flex-grow h-px bg-indigo-200"></div>
-            <div className="flex-shrink-0 rounded-full p-[2px] bg-gradient-to-br from-yellow-400 to-indigo-400">
-              <div className="bg-white rounded-full px-6 py-2">
-                <span className="text-sm font-medium uppercase tracking-widest text-[#140C55]">
+            <div className="flex-shrink-0 rounded-full p-[1px] bg-gradient-to-br from-yellow-400 to-indigo-400">
+              <div className="bg-white rounded-full px-4 py-[2px]">
+                <span className="py-[0.5px] text-[11px] font-medium uppercase tracking-widest text-[#140C55]">
                   Our Case Study
                 </span>
               </div>

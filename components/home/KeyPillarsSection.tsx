@@ -50,7 +50,7 @@ const pillarsData = [
 
 export function KeyPillarsSection() {
   return (
-    <section className="relative bg-[#130B54] text-white py-20 md:py-28 overflow-hidden">
+    <section className="ibm relative bg-[#130B54] text-white py-20 md:py-28 overflow-hidden">
       {/* Container for your background SVG */}
       <div className="absolute right-2/3 -top-10 z-0 overflow-hidden">
         <WaterfallSVG />        
@@ -60,8 +60,8 @@ export function KeyPillarsSection() {
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto mb-16 lg:mb-24">         
           <HeaderPillLine text="Our Solutions" />
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight leading-snug md:leading-tight">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-5xl md:text-6xl font-regular tracking-tight leading-snug md:leading-tight">
               The Key Pillars Supporting Our Platform&apos;s Success
             </h2>
           </div>

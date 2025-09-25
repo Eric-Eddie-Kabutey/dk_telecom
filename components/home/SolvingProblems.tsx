@@ -36,19 +36,20 @@ export function SolvingProblems() {
   const activeSolution = problemsData[selectedIndex]?.solution;
 
   return (
-    <section className="bg-indigo-50 py-20 md:py-28 overflow-hidden">
+    <section className="ibm bg-indigo-50 py-20 md:py-28 overflow-hidden">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="flex-grow h-px bg-indigo-200"></div>
-            <div className="flex-shrink-0 rounded-full p-[2px] bg-gradient-to-br from-yellow-400 to-indigo-400">
-              <div className="bg-white rounded-full px-6 py-2">
-                <span className="text-sm font-medium uppercase tracking-widest text-indigo-900">
+            <div className="flex-shrink-0 rounded-full p-[1px] bg-gradient-to-br from-yellow-400 to-indigo-400">
+              <div className="bg-white rounded-full px-4 py-[2px]">
+                <span className="py-[0.5px] text-[11px] font-medium uppercase tracking-widest text-[#140C55]">
                   Solving Real Problems
                 </span>
               </div>
             </div>
+            
             <div className="flex-grow h-px bg-indigo-200"></div>
           </div>
           <h2 className="text-3xl md:text-4xl font-semibold text-indigo-900 leading-tight">

@@ -49,7 +49,7 @@ const testimonialsData = [
 
 export function TestimonialsSection() {
   return (
-    <section className="bg-blue-50/70 py-16 md:py-24 overflow-hidden">
+    <section className="ibm bg-blue-50/70 py-16 md:py-24 overflow-hidden">
       <div className="max-container 2xl:w-[85%] w-[95%] mx-auto px-4">
         
        {/* The <Carousel> component now wraps everything that needs its context */}

@@ -28,8 +28,8 @@ export function NextGen() {
     const pdfUrl = "/docs/dk-telecom-company-profile-2025.pdf";
     
   const content = (
-    <>
-      <h2 className="text-3xl md:text-5xl font-semibold tracking-tight">
+    <div className="ibm">
+      <h2 className=" text-3xl md:text-5xl font-medium tracking-tight">
         Your number one internet service provider.
       </h2>
       <div className="mt-8 space-y-6 text-lg text-blue-200/90 max-w-2xl mx-auto lg:mx-0">
@@ -48,7 +48,7 @@ export function NextGen() {
                 Download Brochure
         </Button>
       </div>
-    </>
+    </div>
   );
 
   return (
