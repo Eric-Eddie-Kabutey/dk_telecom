@@ -2,7 +2,6 @@
 import Link from 'next/link'
 import { ArrowLeft, ArrowRight, Building2, House, Landmark, UserRound } from 'lucide-react'
 import HeroSVG from './HeroSvg'
-import Image from 'next/image'
 import GlowingRotatingBorder from '../svg/gloming-rotation'
 import Typography from '../shared/typography'
 
