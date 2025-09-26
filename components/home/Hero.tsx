@@ -138,7 +138,7 @@ export function CompanyHero() {
 										<Typography
 											typo="header-6-medium"
 										>
-											Home
+											Netflix 
 										</Typography>
 									</div>
 									<div className='h-full flex-1 flex xs:flex-row flex-col items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
@@ -146,7 +146,7 @@ export function CompanyHero() {
 										<Typography
 											typo="header-6-medium"
 										>
-											Government
+											Social Media
 										</Typography>
 									</div>
 								</div>
@@ -156,7 +156,7 @@ export function CompanyHero() {
 										<Typography
 											typo="header-6-medium"
 										>
-											Companies
+											Infrastructure
 										</Typography>
 									</div>
 									<div className='h-full flex-1 flex xs:flex-row flex-col items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
@@ -164,7 +164,7 @@ export function CompanyHero() {
 										<Typography
 											typo="header-6-medium"
 										>
-											Individuals
+											Communication
 										</Typography>
 									</div>
 								</div>
