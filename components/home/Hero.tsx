@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link'
-import { ArrowDown, ArrowLeft, ArrowRight, ArrowUp, Building2, Globe, House, Landmark, MessageSquare, Mic, Server, TvMinimalPlay, UserRound } from 'lucide-react'
+import { ArrowDown, ArrowLeft, ArrowRight, ArrowUp, Building2, Globe, House, Landmark, Mic, Server, TvMinimalPlay, UserRound } from 'lucide-react'
 import HeroSVG from './HeroSvg'
 import GlowingRotatingBorder from '../svg/gloming-rotation'
 import Typography from '../shared/typography'
