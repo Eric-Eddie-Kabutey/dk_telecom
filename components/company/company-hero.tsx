@@ -168,7 +168,7 @@ function CompanyHero() {
                                 },
                                 opacity: { duration: 0.7 }
                             }}
-                            className={`${selectedCulture === data.id ? "col-span-6" : "col-span-1"} md:h-[450px] sm:h-[350px] xs:h-[250px] h-[200px]`}
+                            className={`${selectedCulture === data.id ? "col-span-5" : "col-span-1"} md:h-[450px] sm:h-[350px] xs:h-[250px] h-[200px]`}
                             onClick={() => {
                                 if (!isAnimating) {
                                     setIsAnimating(true);

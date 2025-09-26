@@ -14,11 +14,12 @@ export default function FloatingContactButton() {
     const interval = setInterval(() => {
       setCurrentIcon((prev) => (prev + 1) % icons.length);
     }, 2000);
+    console.log("Hello floating")
     return () => clearInterval(interval);
   }, [open]);
 
   return (
-    <div className="fixed sm:bottom-6 bottom-32 right-6 flex flex-col items-end z-50">
+    <div className="fixed sm:bottom-6 bottom-6 right-6 flex flex-col items-end z-[9999]">
       <AnimatePresence>
         {open && (
           <motion.div
