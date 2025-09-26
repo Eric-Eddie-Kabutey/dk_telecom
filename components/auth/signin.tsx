@@ -1,8 +1,6 @@
 'use client';
 import React, { useState } from 'react'
 import Typography from '../shared/typography'
-import googleIcon from "@/public/assets/images/google-logo.png"
-import Image from 'next/image';
 import { Form, FormControl, FormField, FormItem } from '../ui/form';
 import { useForm } from 'react-hook-form';
 import { Input } from '../ui/input';
