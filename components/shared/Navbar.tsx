@@ -14,7 +14,7 @@ import Typography from "./typography";
 import { useEffect, useState } from "react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger } from "../ui/dropdown-menu";
 import { languages } from "@/constants";
-import { MobileNav } from "./mobile";
+import { MobileNav } from "./mobile"; 
 
 
 
@@ -105,7 +105,7 @@ export default function Navbar() {
                         </Button>
                         <Button variant="primary" asChild className="sm:flex hidden">
                             <Link 
-                                href="/signin"
+                                href="/login"
                                 className="pops bg-orange-500 rounded-lg"
                             >Customer Portal</Link>
                         </Button>

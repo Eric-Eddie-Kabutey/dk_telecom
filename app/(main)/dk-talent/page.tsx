@@ -8,7 +8,6 @@ import DkTalentPipeline from '@/components/dk-talent/dk-talent-pipeline'
 import DkTalentSpecialized from '@/components/dk-talent/dk-talent-specialized'
 import DkTalentWelcome from '@/components/dk-talent/dk-talent-welcome'
 import { CtaSection } from '@/components/home/CtaSection'
-import BookNow from '@/components/reusable/book-now'
 import React from 'react'
 
 // career _ join us (career) and talent (talent hub)
@@ -25,7 +24,6 @@ function DkTalentPage() {
         <DkTalentPartners />
         <DkTalentPipeline />
         <DkTalentFaqs />
-        <BookNow />
         <CtaSection />
     </div>
   )

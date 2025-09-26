@@ -71,7 +71,7 @@ function CompanyHero() {
                     typo="body-medium-light"
                     className='lg:max-w-[60%] w-full'
                 >
-                    DK Telecom is a Gambian-owned telecom and tech company, providing fast, reliable, and affordable internet services nationwide. We offer 4G LTE, enterprise connectivity, managed IT solutions, and value-added services like CCTV, power backups, website and app development just to name a few. With a focus on service, innovation, and community, we’re building Gambia’s digital future, one connection at a time.
+                    DK Telecom is a Gambian-owned telecom and tech company, providing fast, reliable, and affordable internet services nationwide.
                 </Typography>
                 <Button
                     variant="primary"

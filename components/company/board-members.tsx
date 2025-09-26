@@ -8,6 +8,8 @@ import ctoImage from "@/public/assets/images/company/team/CTO-Nicholas-Jatta.jpe
 import marketingManagerImage from "@/public/assets/images/company/team/Marketing-Michael-Jegan-Sock.jpeg"
 import salesManagerImage from "@/public/assets/images/company/team/sales-Mariama-Camara.jpeg"
 import customerCareMangerImage from "@/public/assets/images/company/team/customer-care-Ramatolie-cole.png"
+import yadrammehImage from "@/public/assets/images/company/team/drammer-img.png"
+
 
 import fumbiImg from "@/public/assets/images/dk_logo.png"
 import samuelImg from "@/public/assets/images/dk_logo.png"
@@ -39,25 +41,11 @@ interface TeamMember {
         ]
     },
     {
-        id: "2",
-        name: "Lamin AK Jammeh",
-        is_board: true,
-        title: "Director of Admin",
-        img: samuelImg,
-        description: [
-            `Dr. Fumbi Chima is a globally recognized technology executive with a proven track record of leading digital transformation, driving operational excellence, and aligning technology innovation with business strategy. With extensive experience spanning retail, consumer goods, financial services, and media, she has successfully spearheaded P&L management, M&A initiatives, and large-scale enterprise transformations across some of the world's most recognized brands.`,
-            `Fumbi has held leadership roles at Boeing Credit Union (BECU), adidas, Fox Networks, Burberry, Walmart, and American Express, where she has been instrumental in optimizing infrastructure, implementing cutting-edge digital strategies, and fostering a culture of innovation and high performance. She is a thought leader in AI, cybersecurity, and digital transformation, recognized for her ability to bridge the gap between technology and business to create sustainable value and competitive advantage.`,
-            `Fumbi serves on the board of directors of a number of public and private companies during her career, including Willis Towers Watson Public Limited Company (NASDAQ: WTW), a financial services company. Previously, Ms. Chima served as a member of the board of directors of Whitbread PLC (LSE: WTB), a hospitality company; AZEK Company Inc. (NYSE: AZEK), a manufacturer of residential and commercial building products, Ted Baker PLC (LSE: TED (formerly)), a clothing company, and Africa Prudential PLC (Nigerian Stock Exchange: AFRIPRUD), a business service company; leveraging her expertise to shape corporate governance, digital strategy, and risk management.`,
-            `She is also a dedicated advocate for diversity and inclusion in technology, actively supporting initiatives that empower women and underrepresented communities.`,
-            `Fumbi holds a Doctor of Letters in Business and Politics from the University of Hull, along with executive management certifications from Harvard Business School. She has been recognized by American Banker, Puget Sound Business Journal, Savoy Magazine, and Career Communications Group for her leadership and contributions to the industry.`,
-        ]
-    },
-    {
         id: "3",
         name: "Ya Ida Drammeh",
         is_board: true,
-        title: "HR and Legal Manager",
-        img: fumbiImg,
+        title: "Director of Admin",
+        img: yadrammehImage,
         description: [
             `Dr. Fumbi Chima is a globally recognized technology executive with a proven track record of leading digital transformation, driving operational excellence, and aligning technology innovation with business strategy. With extensive experience spanning retail, consumer goods, financial services, and media, she has successfully spearheaded P&L management, M&A initiatives, and large-scale enterprise transformations across some of the world's most recognized brands.`,
             `Fumbi has held leadership roles at Boeing Credit Union (BECU), adidas, Fox Networks, Burberry, Walmart, and American Express, where she has been instrumental in optimizing infrastructure, implementing cutting-edge digital strategies, and fostering a culture of innovation and high performance. She is a thought leader in AI, cybersecurity, and digital transformation, recognized for her ability to bridge the gap between technology and business to create sustainable value and competitive advantage.`,

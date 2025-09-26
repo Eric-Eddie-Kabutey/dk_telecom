@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/toaster"
 import Navbar from "@/components/shared/Navbar";
 import { usePathname } from "next/navigation";
 import { Footer } from "@/components/footer";
+import InternetNavbar from "@/components/internet-services/internet-navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,10 +26,12 @@ export default function ClientLayout({
   children: React.ReactNode;
 }>) {
     const pathname = usePathname()
-    if(pathname === "/signin" || pathname === "/signup") {
+    if(pathname === "/login" || pathname === "/signup") {
         return(
             <>
+              <InternetNavbar />
                 {children}
+                <Footer />
             </>
         )
     }
