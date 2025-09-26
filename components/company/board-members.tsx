@@ -11,8 +11,8 @@ import customerCareMangerImage from "@/public/assets/images/company/team/custome
 import yadrammehImage from "@/public/assets/images/company/team/drammer-img.png"
 
 
-import fumbiImg from "@/public/assets/images/dk_logo.png"
-import samuelImg from "@/public/assets/images/dk_logo.png"
+// import fumbiImg from "@/public/assets/images/dk_logo.png"
+// import samuelImg from "@/public/assets/images/dk_logo.png"
 import { LeadershipModal } from './leadership-modal'
 
 

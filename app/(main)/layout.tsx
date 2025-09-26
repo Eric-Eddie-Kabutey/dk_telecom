@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = generateMetadata({
-  title: "Heirstech | Empowering Businesses with Tailored Tech Solutions",
-  description: "Heirstech delivers cutting-edge digital solutions to empower businesses, offering expertise in software development, API integration, and cloud technologies.",
+  title: "DK Telecom | Leading/Best Internet Service Provider in Gambia",
+  description: "Enjoy fast and reliable internet in your home or office with dk internet.",
   url: "/",
 });
 
@@ -24,12 +24,12 @@ const OrganizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Heirstech",
-  "url": "https://www.ktechhub.com",
+  "url": "https://dk-telecom-sand.vercel.app/",
   "sameAs": [
-    "https://www.instagram.com/ktechhub",
-    "https://www.facebook.com/ktechhub",
-    "https://twitter.com/ktechhub",
-    "https://www.linkedin.com/company/ktechhub"
+    "https://www.instagram.com/dktelecom",
+    "https://www.facebook.com/dktelecom",
+    "https://twitter.com/dktelecom",
+    "https://www.linkedin.com/company/dktelecom"
   ]
 };
 

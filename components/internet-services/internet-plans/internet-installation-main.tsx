@@ -17,13 +17,15 @@ function InternetPlansMain() {
                     typo="header-3-regular"
                     className='!leading-normal'
                 >
-                    Enjoy fast and reliable internet in your home with MTN Fiber Broadband.
+                    Enjoy fast and reliable internet in your home or office with dk internet.
                 </Typography>
                 <div className='w-full flex flex-col gap-4'>
                     <Typography
                         typo="header-4-semibold"
                     >
-                        Get 10GB data bonus when you buy today.
+                        {/* Get 10GB data bonus when you buy today. */}
+                        Get 4G LTE lighting fast internet
+
                     </Typography>
                     <Typography
                         typo="header-4-semibold"

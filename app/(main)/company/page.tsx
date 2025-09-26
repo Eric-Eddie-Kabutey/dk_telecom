@@ -5,7 +5,6 @@ import LeadershipMain from '@/components/company/leadership-main'
 import Partners from '@/components/company/partners'
 import { CtaSection } from '@/components/home/CtaSection'
 import Testimonial from '@/components/home/testimonial'
-import BookNow from '@/components/reusable/book-now'
 import React from 'react'
 
 function CompanyPage() {

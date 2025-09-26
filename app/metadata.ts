@@ -7,21 +7,21 @@ interface MetadataProps {
 }
 
 export function generateMetadata({
-    title = "Heirstech | Empowering Businesses with Tailored Tech Solutions",
-    description = "Heirstech delivers cutting-edge digital solutions to empower businesses, offering expertise in software development, API integration, and cloud technologies.",
+    title = "Dk Telecom | Leading/Best Internet Service Provider in Gambia",
+    description = "Enjoy fast and reliable internet in your home or office with dk internet.",
     url = "/",
 }: MetadataProps): Metadata {
-    const defaultUrl = process.env.WEBAPP_URL || 'https://heirstechnologies.vercel.app/';
+    const defaultUrl = process.env.WEBAPP_URL || 'https://dk-telecom-sand.vercel.app/';
     return {
-        title: { default: title, template: "%s | Empowering Businesses with Tailored Tech Solutions" },
+        title: { default: title, template: "%s | Leading/Best Internet Service Provider in Gambia" },
         description: description,
-        applicationName: "Heirstech",
-        authors: [{ name: "Heirstech Team", url: process.env.WEBAPP_URL || 'https://heirstechnologies.vercel.app/' }],
+        applicationName: "DK Telecom",
+        authors: [{ name: "DK Telecom Team", url: process.env.WEBAPP_URL || 'https://dk-telecom-sand.vercel.app/' }],
         generator: "Next.js",
-        keywords: ["software development", "API integration", "cloud technologies", "UI/UX design", "DevOps", "business solutions", "technology services", "tailored tech solutions"],
+        keywords: ["internet service provider", "internet for home", "internet for office", "fast internet in Gambia", "best internet service provider", "cheap/affordable internet, Gambia", "dk telecom", "best web designer"],
         referrer: "origin",
-        creator: "Heirstech Team",
-        publisher: "Heirstech",
+        creator: "DK Telecom Team",
+        publisher: "DK Telecom",
         robots: "index, follow",
         alternates: {
             canonical: `${defaultUrl}${url}`,
@@ -36,7 +36,7 @@ export function generateMetadata({
         manifest: "/manifest.json",
         openGraph: {
             type: "website",
-            url: process.env.WEBAPP_URL || 'https://heirstechnologies.vercel.app/',
+            url: process.env.WEBAPP_URL || 'https://dk-telecom-sand.vercel.app/',
             title: title,
             description: description,
             siteName: "Heirstech",
@@ -55,7 +55,7 @@ export function generateMetadata({
             creator: "@ktechhub",
             title: title,
             description: description,
-            images: "https://heirstechnologies.vercel.app//twitter-image.png"
+            images: "https://dk-telecom-sand.vercel.app/twitter-image.png"
         },
         verification: {
             google: "9skpBpwKDtj0DYmqZppulq6euNwztgaLg6JZc4_RZ-g",
@@ -69,15 +69,11 @@ export function generateMetadata({
         formatDetection: {
             telephone: false
         },
-        abstract: "Heirstech delivers cutting-edge digital solutions to empower businesses, offering expertise in software development, API integration, and cloud technologies.",
-        archives: ["https://heirstechnologies.vercel.app//archives"],
-        assets: ["https://heirstechnologies.vercel.app//assets"],
-        bookmarks: ["https://heirstechnologies.vercel.app//bookmarks"],
-        category: "Technology, Business Solutions",
-        classification: "Digital Transformation Services",
-        // other: {
-        //   "msapplication-TileColor": "#2b5797",
-        //   "msapplication-config": "/icons/browserconfig.xml"
-        // }
+        abstract: "Enjoy fast and reliable internet in your home or office with dk internet.",
+        archives: ["https://dk-telecom-sand.vercel.app/archives"],
+        assets: ["https://dk-telecom-sand.vercel.app/assets"],
+        bookmarks: ["https://dk-telecom-sand.vercel.app/bookmarks"],
+        category: "Internet, Business Solutions",
+        classification: "Digital Solutions",
     }
 }
