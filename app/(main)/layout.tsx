@@ -1,10 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
-import { ThemeProvider } from "@/components/theme-provider"
-import { Toaster } from "@/components/ui/toaster"
 import { generateMetadata } from "../metadata";
-import Navbar from "@/components/shared/Navbar";
-import { Footer } from "@/components/footer";
 import ClientLayout from "./client-layout";
 
 

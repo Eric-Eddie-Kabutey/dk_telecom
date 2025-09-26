@@ -6,12 +6,9 @@ import Image from 'next/image';
 import { Form, FormControl, FormField, FormItem } from '../ui/form';
 import { useForm } from 'react-hook-form';
 import { Input } from '../ui/input';
-import { Check, Eye, EyeOff } from 'lucide-react';
+import { Eye, EyeOff } from 'lucide-react';
 import { Button } from '../ui/button';
-import { Checkbox } from '../ui/checkbox';
-import { Label } from '../ui/label';
 import Link from 'next/link';
-import { signup_includes } from '@/constants';
 
 function SignIn() {
   const [isPass, setIsPass] = useState(false)

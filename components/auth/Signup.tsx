@@ -137,7 +137,7 @@ function Signup() {
                         <Label htmlFor="toggle"
                           className='text-xs font-light'
                         >
-                          I agree to BrowserStack's <Link href="/signup" className='text-blue-600'>Terms of Service </Link> and <Link href="/signup" className='text-blue-600'>Privacy Policy</Link> .
+                          I agree to BrowserStack&apos;s <Link href="/signup" className='text-blue-600'>Terms of Service </Link> and <Link href="/signup" className='text-blue-600'>Privacy Policy</Link> .
                         </Label>
                       </div>
                       <Button
