@@ -36,7 +36,7 @@ const typoVariants = cva("overflow-wrap overflow-hidden leading-normal", {
       "header-5-semibold": "xl:text-[25px] lg:text-[20px] xs:text-[18px] text-[16px] xl:leading-[30px] leading-[25px] font-semibold",
       "header-6-regular": "xl:text-[20px] md:text-[18px] text-[20px] xl:leading-[24px] leading-[23px] font-normal",
       "header-6-light": "xl:text-[20px] md:text-[18px] text-[20px] xl:leading-[24px] leading-[23px] font-light",
-      "header-6-medium": "xl:text-[20px] md:text-[18px] text-[20px] xl:leading-[24px] leading-[23px] font-medium",
+      "header-6-medium": "xl:text-[20px] md:text-[18px] sm:text-[20px] text-[16px] xl:leading-[24px] leading-[23px] font-medium",
       "header-6-semibold": "xl:text-[20px] md:text-[18px] text-[20px] xl:leading-normal leading-[23px] font-semibold",
 
       //body typo classnames

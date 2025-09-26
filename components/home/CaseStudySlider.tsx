@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/carousel";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { caseStudiesData } from "@/data/case-studies-mock";
+import Autoplay from "embla-carousel-autoplay";
 
 
 function CaseStudyCard({ study }: { study: typeof caseStudiesData[0] }) {
@@ -78,6 +79,11 @@ export function CaseStudySlider() {
             align: "start",
             loop: true,
           }}
+          plugins={[
+            Autoplay({
+              delay: 2000
+            })
+          ]}
           className="md:mx-16"
         >
           <CarouselContent className="-ml-4">
@@ -92,7 +98,7 @@ export function CaseStudySlider() {
                     ))}
           </CarouselContent>
                               
-            <div className="absolute inset-y-0 flex items-center justify-between w-full pointer-events-none">
+            <div className=" absolute inset-y-0 hidden sm:flex items-center justify-between w-full pointer-events-none">
                 <CarouselPrevious className="h-12 w-12 rounded-full bg-indigo-900 text-white border-none shadow-lg hover:bg-indigo-800 pointer-events-auto ml-4">
                     <ArrowLeft className="h-6 w-6" />
                 </CarouselPrevious>

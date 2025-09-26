@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/carousel";
 import { motion, AnimatePresence } from "framer-motion";
 import { problemsData } from "@/data/problem-data";
+import Autoplay from "embla-carousel-autoplay";
 
 
 
@@ -52,13 +53,19 @@ export function SolvingProblems() {
             
             <div className="flex-grow h-px bg-indigo-200"></div>
           </div>
-          <h2 className="text-3xl md:text-4xl font-semibold text-indigo-900 leading-tight">
+          <h2 className="text-xl sm:text-3xl md:text-4xl font-semibold text-indigo-900 leading-tight">
             We Tackle the Most Complex Technology Problems for Organizations Everywhere.
           </h2>
         </div>
 
         {/* Problems Carousel */}
-        <Carousel setApi={setApi} opts={{ align: "center", loop: true }} className="relative w-full max-w-4xl mx-auto">
+        <Carousel setApi={setApi} opts={{ align: "center", loop: true }} className="relative w-full max-w-4xl mx-auto"
+          plugins={[
+            Autoplay({
+              delay: 2000
+            })
+          ]}
+        >
           <CarouselContent>
             {problemsData.map((item, index) => (
               <CarouselItem key={item.id} className="basis-full md:basis-[90%]">
@@ -82,7 +89,7 @@ export function SolvingProblems() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <div className="absolute inset-0 flex justify-between items-center z-10 pointer-events-none px-0 md:-px-12">
+          <div className="absolute inset-0 hidden sm:flex justify-between items-center z-10 pointer-events-none px-0 md:-px-12">
             <CarouselPrevious className="relative h-12 w-12 rounded-full bg-indigo-900 text-white border-none shadow-lg hover:bg-indigo-800 pointer-events-auto" />
             <CarouselNext className="relative h-12 w-12 rounded-full bg-indigo-900 text-white border-none shadow-lg hover:bg-indigo-800 pointer-events-auto" />
           </div>

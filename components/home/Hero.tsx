@@ -73,7 +73,7 @@ export function CompanyHero() {
 			<div className='w-full relative min-h-[45vh] flex flex-col justify-center'>
 				<HeroSVG />
 				<div className='max-container 2xl:w-[85%] w-[95%] relative mx-auto flex md:flex-row flex-col justify-between items-center'>
-					<GlowingRotatingBorder className='lg:w-[35%] md:w-[50%] w-full'>
+					<GlowingRotatingBorder className='	xl:w-[35%] lg:w-[40%] w-full'>
 						<div className='w-full h-[300px] p-1 ibm'>
 							<div className='w-full h-full p-3 flex flex-col justify-between gap-8 bg-[#130B54] rounded-xl text-white	'>
 								<div className='h-[50%] flex justify-between items-center gap-3'>
@@ -129,7 +129,7 @@ export function CompanyHero() {
 							<ArrowRight className="w-6 h-6 md:block hidden" stroke="url(#glow-gradient)" />
 						</div>
 					</div>
-					<GlowingRotatingBorder className='lg:w-[35%] md:w-[50%] w-full'>
+					<GlowingRotatingBorder className='xl:w-[35%] lg:w-[40%] md:w-[50%] w-full'>
 						<div className='w-full h-[300px] p-1'>
 							<div className='w-full h-full p-3 flex flex-col justify-between gap-8 bg-[#130B54] rounded-xl text-white	'>
 								<div className='h-[50%] flex justify-between items-center gap-3'>
@@ -163,6 +163,7 @@ export function CompanyHero() {
 										<Mic />
 										<Typography
 											typo="header-6-medium"
+											className="break-words whitespace-normal"
 										>
 											Communication
 										</Typography>
