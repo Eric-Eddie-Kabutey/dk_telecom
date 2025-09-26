@@ -69,7 +69,7 @@ function CompanyHero() {
                 </div>
                 <Typography
                     typo="body-medium-light"
-                    className='max-w-[60%]'
+                    className='lg:max-w-[60%] w-full'
                 >
                     DK Telecom is a Gambian-owned telecom and tech company, providing fast, reliable, and affordable internet services nationwide. We offer 4G LTE, enterprise connectivity, managed IT solutions, and value-added services like CCTV, power backups, website and app development just to name a few. With a focus on service, innovation, and community, we’re building Gambia’s digital future, one connection at a time.
                 </Typography>
@@ -100,8 +100,8 @@ function CompanyHero() {
                 </div>
             </div>
             <div className='max-container px-6 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
-                <div className='max-w-[70%] flex flex-col gap-8 '>
-                    <div className='flex flex-col text-white z-[50]'>
+                <div className='lg:max-w-[70%] w-full flex flex-col gap-8 '>
+                    <div className='flex flex-col text-white gap-2'>
                         <Typography
                             typo="header-3-semibold"
                         >
@@ -113,10 +113,10 @@ function CompanyHero() {
                             Africapitalism
                         </Typography>
                     </div>
-                    <div className='flex flex-col gap-3'>
+                    <div className='flex flex-col gap-3 text-justify'>
                         <Typography
                             typo="body-medium-regular"
-                            className='text-gray-300 z-[50]'
+                            className='text-gray-300 z-[20]'
                         >
                             At DK Telecom, we believe business can be a powerful force for positive change. Guided by the principles 
                             of Africapitalism, we’re committed to creating economic value that directly benefits The Gambia and 
@@ -125,7 +125,7 @@ function CompanyHero() {
                         </Typography>
                         <Typography
                             typo="body-medium-regular"
-                            className='text-gray-300 z-[50]'
+                            className='text-gray-300 z-[20]'
                         >
                             Our mission goes beyond providing fast, reliable internet—we’re here to unlock opportunities for 
                             individuals, entrepreneurs, and communities across the nation. By investing in local infrastructure, 
@@ -134,7 +134,7 @@ function CompanyHero() {
                         </Typography>
                         <Typography
                             typo="body-medium-regular"
-                            className='text-gray-300 z-[50]'
+                            className='text-gray-300 z-[20]'
                         >
                             We see technology as the key to unlocking Africa’s potential, and through responsible, inclusive 
                             innovation, DK Telecom is proud to play a vital role in driving sustainable prosperity for The 
@@ -142,7 +142,7 @@ function CompanyHero() {
                         </Typography>
                         <Typography
                             typo="body-medium-semibold"
-                            className='text-white z-[50]'
+                            className='text-white z-[20]'
                         >
                             Together, we connect more than networks — we connect dreams, ambitions, and futures.
                         </Typography>

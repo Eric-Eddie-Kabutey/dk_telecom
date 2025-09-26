@@ -89,7 +89,7 @@ export function SolvingProblems() {
         </Carousel>
         
         {/* Animated Solution Card */}
-        <div className="max-w-2xl mx-auto mt-6 md:mt-12 h-[140px]"> {/* Fixed height container to prevent layout shift */}
+        <div className="max-w-2xl mx-auto mt-6 md:mt-12"> {/* Fixed height container to prevent layout shift */}
           <AnimatePresence mode="wait">
             {activeSolution && (
               <motion.div

@@ -55,8 +55,8 @@ export function TestimonialSliderSection() {
                   }}
                   transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
                 >
-                  <div className="bg-cyan-50/50 rounded-2xl p-10 md:p-12 text-center h-full flex flex-col justify-center items-center">
-                    <blockquote className="text-xl md:text-2xl font-medium text-indigo-900 leading-relaxed">
+                  <div className="bg-cyan-50/50 rounded-2xl p-4 sm:p-10 md:p-12 text-center h-full flex flex-col justify-center items-center">
+                    <blockquote className="sm:text-xl text-base md:text-2xl font-medium text-indigo-900 leading-relaxed sm:text-center ">
                       &quot; {testimonial.quote} &quot;
                     </blockquote>
                     <footer className="mt-8">

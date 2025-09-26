@@ -119,29 +119,31 @@ export default function Navbar() {
                                     </Button>
                                 </div>
                                 </DropdownMenuTrigger>
-                                <DropdownMenuContent className="w-fit">
-                                <DropdownMenuRadioGroup
-                                    value={position}
-                                    onValueChange={handleLanguageChange}
-                                    className="p-4 grid grid-cols-2 gap-8"
-                                >
-                                    {languages.map((lang) => (
-                                    <DropdownMenuRadioItem
-                                        key={lang.id}
-                                        value={lang.label}
-                                        className="flex items-center gap-2"
-                                    >
-                                        <div className="w-8 h-full">
-                                        <Image
-                                            src={lang.flag}
-                                            alt={lang.name}
-                                            className="w-full h-full"
-                                        />
-                                        </div>
-                                        <Typography>{lang.name}</Typography>
-                                    </DropdownMenuRadioItem>
-                                    ))}
-                                </DropdownMenuRadioGroup>
+                                <DropdownMenuContent className="w-[250px]">
+                                  <DropdownMenuRadioGroup
+                                      value={position}
+                                      onValueChange={handleLanguageChange}
+                                      className="p-4 grid gap-2"
+                                  >
+                                      {languages.map((lang) => (
+                                      <DropdownMenuRadioItem
+                                          key={lang.id}
+                                          value={lang.label}
+                                          className="flex items-center gap-2"
+                                      >
+                                          <div className="w-5 h-fit">
+                                          <Image
+                                              src={lang.flag}
+                                              alt={lang.name}
+                                              className="w-full h-full"
+                                          />
+                                          </div>
+                                          <Typography
+                                            typo="body-medium-regular"
+                                          >{lang.name}</Typography>
+                                      </DropdownMenuRadioItem>
+                                      ))}
+                                  </DropdownMenuRadioGroup>
                                 </DropdownMenuContent>
                             </DropdownMenu>
                         </div>    

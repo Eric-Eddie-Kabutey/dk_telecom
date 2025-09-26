@@ -7,7 +7,7 @@ import Typography from '../shared/typography'
 
 export function CompanyHero() {
 	return (
-		<div className='ibm pt-10 flex flex-col gap-6 bg-[#130B54] '>
+		<div className='ibm sm:pt-10 flex flex-col gap-6 bg-[#130B54] '>
 			<section className='relative w-full flex items-center justify-center text-white bg-[#130B54] pt-6 md:pt-12 pb-6 px-6 overflow-hidden'>
 				{/* svg of colored-lines */}
 				<svg width="0" height="0">

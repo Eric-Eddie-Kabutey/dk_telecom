@@ -97,7 +97,7 @@ export function Solution() {
         </div>
         
         {/* Animated Solution Card */}
-        <div className="max-w-2xl mx-auto mt-28 h-[140px]">
+        <div className="max-w-2xl mx-auto mt-28 ">
           <AnimatePresence mode="wait">
             {activeSolution && (
               <motion.div
