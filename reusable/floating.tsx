@@ -18,7 +18,7 @@ function MainFloating() {
         return () => clearInterval(interval);
     }, [open]);
   return (
-    <div className='fixed bottom-16 right-10  flex flex-col items-end'>
+    <div className='fixed right-[20px] bottom-16   flex flex-col items-end '>
         <AnimatePresence>
             {open && (
             <motion.div

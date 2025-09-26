@@ -7,7 +7,6 @@ import { Impact } from "@/components/home/Impact";
 import { ClientsLogo } from "@/components/home/ClientsLogo";
 import { NextGen } from "@/components/home/NextGen";
 import { KeyPillarsSection } from "@/components/home/KeyPillarsSection";
-import FloatingContactButton from "@/reusable/floating-contact-button";
 import MainFloating from "@/reusable/floating";
 
 
