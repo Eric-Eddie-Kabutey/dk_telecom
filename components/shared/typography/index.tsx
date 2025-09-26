@@ -31,9 +31,11 @@ const typoVariants = cva("overflow-wrap overflow-hidden leading-normal", {
       "header-4-medium": "lg:text-[31px] sm:text-[28px] xs:text-[25px] text-[18px] leading-[40px] font-medium",
       "header-4-semibold": "lg:text-[31px] sm:text-[28px] xs:text-[25px] text-[18px] lg:leading-[40px] leading-[37px] font-semibold",
       "header-5-regular": "xl:text-[25px] lg:text-[20px] xs:text-[18px] text-[16px] xl:leading-[30px] leading-[25px] font-normal",
+      "header-5-light": "xl:text-[25px] lg:text-[20px] xs:text-[18px] text-[16px] xl:leading-[30px] leading-[25px] font-light",
       "header-5-medium": "xl:text-[25px] lg:text-[20px] xs:text-[18px] text-[16px] xl:leading-[30px] leading-[25px] font-medium",
       "header-5-semibold": "xl:text-[25px] lg:text-[20px] xs:text-[18px] text-[16px] xl:leading-[30px] leading-[25px] font-semibold",
       "header-6-regular": "xl:text-[20px] md:text-[18px] text-[20px] xl:leading-[24px] leading-[23px] font-normal",
+      "header-6-light": "xl:text-[20px] md:text-[18px] text-[20px] xl:leading-[24px] leading-[23px] font-light",
       "header-6-medium": "xl:text-[20px] md:text-[18px] text-[20px] xl:leading-[24px] leading-[23px] font-medium",
       "header-6-semibold": "xl:text-[20px] md:text-[18px] text-[20px] xl:leading-normal leading-[23px] font-semibold",
 

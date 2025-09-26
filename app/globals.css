@@ -77,6 +77,13 @@
   background-position-x: right;
 }
 
+.login-bg {
+  background: url('/assets/images/login-image.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .book-bg {
   background: url('/assets/images/home/book-back.png');
   background-position: center;

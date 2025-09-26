@@ -13,6 +13,17 @@ import visaImg from "@/public/assets/images/payment_methods/visa_logo.png"
 
 export const payment_methods = [visaImg, googlepayImg, taybullImg, mastercardImg, applepayImg]
 
+export const signup_includes = [
+    "Instant Access to Real Devices",
+    "30 mins each of Interactive Browser & Mobile app testing",
+    "100 mins of Automated Browser & Mobile App Testing",
+    "5000 screenshots/month for Visual Testing with Percy",
+    "Pre-integrated AI agents across the Testing Life Cycle",
+    "Test Case Generation Agent – 90% Faster Test Creation",
+    "Self-Healing Agent – 40% Fewer Automation Build failures",
+    "Visual Review Agent, A11y Issue Detection Agent and more",
+]
+
 export const languages = [
     { id: "1", name: "English", flag: englishFlag, label: "EN", code: "en" },
     { id: "2", name: "Espanol", flag: spanishFlag, label: "ES", code: "es" },

@@ -105,7 +105,7 @@ export default function Navbar() {
                         </Button>
                         <Button variant="primary" asChild className="sm:flex hidden">
                             <Link 
-                                href="/"
+                                href="/signup"
                                 className="pops bg-orange-500 rounded-lg"
                             >Customer Portal</Link>
                         </Button>
