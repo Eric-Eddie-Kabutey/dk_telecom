@@ -1,3 +1,4 @@
+import { CtaSection } from '@/components/home/CtaSection'
 import Testimonial from '@/components/home/testimonial'
 import ManagedServicesHero from '@/components/managed-services/managed-services-hero'
 import ManagedServicesMain from '@/components/managed-services/managed-services-main'
@@ -11,7 +12,7 @@ function ManagedServicesPage() {
         <ManagedServicesMain />
         <WhyManagedServices />
         <Testimonial />
-        {/* <BookNow /> */}
+        <CtaSection />
     </div>
   )
 }

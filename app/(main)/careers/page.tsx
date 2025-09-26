@@ -3,6 +3,7 @@ import CareersHero from '@/components/careers/careers-hero'
 import CareersInsider from '@/components/careers/careers-insider'
 import CareersJoinUs from '@/components/careers/careers-join-us'
 import CareersWhyWork from '@/components/careers/careers-why-work'
+import { CtaSection } from '@/components/home/CtaSection'
 import BookNow from '@/components/reusable/book-now'
 import React from 'react'
 
@@ -15,6 +16,7 @@ function CareersPage() {
         <CareersJoinUs />
         <CareersInsider />
         <BookNow />
+        <CtaSection />
     </div>
   )
 }

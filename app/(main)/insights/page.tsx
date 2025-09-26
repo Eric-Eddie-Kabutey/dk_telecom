@@ -1,5 +1,5 @@
+import { CtaSection } from '@/components/home/CtaSection'
 import InsightsMain from '@/components/insights/insights-main'
-import BookNow from '@/components/reusable/book-now'
 import React, { Suspense } from 'react'
 
 function InsightsPage() {
@@ -8,7 +8,8 @@ function InsightsPage() {
         <Suspense fallback={<div>Loading...</div>}>
             <InsightsMain />
         </Suspense>
-        <BookNow />
+        {/* <BookNow /> */}
+        <CtaSection />
     </div>
   )
 }

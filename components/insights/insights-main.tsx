@@ -141,22 +141,32 @@ function InsightsMain() {
                 );
             case 'events':
                 return (
-                    <div className='lg:w-[700px] md:w-[600px] sm:w-[500px] xs:w-[400px] w-[300px] lg:h-[700px] md:h-[600px] sm:h-[500px] xs:h-[400px] h-[300px] mx-auto relative'>
-                        <div className='w-full h-full'>
-                            <Image 
-                                src={eventImg}
-                                alt='Event Image'
-                                className='w-full h-full rounded-full object-cover'
-                            />
-                            {/* Overlay */}
-                            <div className='absolute top-0 left-0 w-full h-full rounded-full bg-black/40 pointer-events-none'></div>
+                    // <div className='lg:w-[700px] md:w-[600px] sm:w-[500px] xs:w-[400px] w-[300px] lg:h-[700px] md:h-[600px] sm:h-[500px] xs:h-[400px] h-[300px] mx-auto relative'>
+                    //     <div>
+                    //         <div className='w-full h-full'>
+                    //             <Image 
+                    //                 src={eventImg}
+                    //                 alt='Event Image'
+                    //                 className='w-full h-full rounded-full object-cover'
+                    //             />
+                    //             {/* Overlay */}
+                    //             <div className='absolute top-0 left-0 w-full h-full rounded-full bg-black/40 pointer-events-none'></div>
+                    //         </div>
+                    //         <Button 
+                    //             variant="primary"
+                    //             className='w-fit h-fit mx-auto absolute bottom-20 right-1/2 left-1/2 -translate-x-1/2'
+                    //         >
+                    //             View Event
+                    //         </Button>
+
+                    //     </div>
+                    // </div>
+                    <div className='lg:w-[700px] md:w-[600px] sm:w-[500px] xs:w-[400px] w-[300px] py-8 mx-auto'>
+                        <div className='flex flex-col justify-center items-center'>
+                            <Typography
+                                typo="header-5-medium"
+                            >No current event!</Typography>
                         </div>
-                        <Button 
-                            variant="primary"
-                            className='w-fit h-fit mx-auto absolute bottom-20 right-1/2 left-1/2 -translate-x-1/2'
-                        >
-                            View Event
-                        </Button>
                     </div>
                 );
             case 'case-studies':
@@ -265,7 +275,6 @@ function InsightsMain() {
                         <TabsList className='w-fit overflow-auto bg-transparent'>
                             <div className='flex flex-nowrap gap-2'>
                                 <TabsTrigger value="case-studies">Case studies</TabsTrigger>
-                                <TabsTrigger value="pess-release">Press Release</TabsTrigger>
                                 <TabsTrigger value="events">Events</TabsTrigger>
                                 <TabsTrigger value="blog">Blog</TabsTrigger>
                             </div>
@@ -280,9 +289,7 @@ function InsightsMain() {
                         <TabsContent value="events">
                             <Events />
                         </TabsContent>
-                        <TabsContent value="pess-release">
-                            <PressRelease />
-                        </TabsContent>
+                       
                     </Tabs>
                 </div>
             </section>

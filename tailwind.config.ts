@@ -14,7 +14,7 @@ export default {
   			'app-secondary': '#165AA1',
   			'app-deep-blue': '#282781',
   			'app-gray-color': '#F4F4F4',
-  			'app-black-bg': '#262626',
+  			'app-black-bg': '#130b54',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
