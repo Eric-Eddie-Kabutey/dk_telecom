@@ -70,7 +70,7 @@ const LocateBranchMain: React.FC = () => {
   if (!isClient) return <LocationsSkeleton />;
 
   return (
-    <div className='w-full md:h-[100vh] py-12'>
+    <div className='w-full md:h-[90vh] py-12'>
       <section className='h-full max-container mx-auto px-6 flex flex-col md:flex-row gap-6'>
         <div className='w-full max-w-[600px] md:w-[30%] px-5 flex flex-col'>
           <Typography typo="header-4-semibold"

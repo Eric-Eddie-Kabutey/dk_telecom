@@ -39,7 +39,7 @@ function Signup() {
                 <Typography
                   typo="header-6-light"
                   className='text-center'
-                >Already have an account? <Link href="/signin" className='text-blue-500 underline'>Sign in</Link></Typography>
+                >Already have an account? <Link href="/login" className='text-blue-500 underline'>Sign in</Link></Typography>
                 <button className='w-full px-4 py-2.5 flex justify-start items-center gap-8 border border-gray-500 rounded-md'>
                   <Image 
                     src={googleIcon}
@@ -90,8 +90,8 @@ function Signup() {
                                           <Input
                                               className="!py-6 !text-base text-gray-500 placeholder:text-gray-400 font-light rounded-md border-gray-300" 
                                               {...field} 
-                                              type='email'
-                                              placeholder='Business Email'
+                                              type='text'
+                                              placeholder='Customer number/email'
                                           />
                                       </div>
                                   </FormControl>

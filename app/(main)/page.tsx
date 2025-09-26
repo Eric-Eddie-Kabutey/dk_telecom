@@ -7,11 +7,12 @@ import { Impact } from "@/components/home/Impact";
 import { ClientsLogo } from "@/components/home/ClientsLogo";
 import { NextGen } from "@/components/home/NextGen";
 import { KeyPillarsSection } from "@/components/home/KeyPillarsSection";
+import FloatingContactButton from "@/reusable/floating-contact-button";
 
 
 export default function Home() {
   return (
-    <>
+    <div>
       {/* company hero */}
       <CompanyHero />
 
@@ -37,7 +38,8 @@ export default function Home() {
       <TestimonialSliderSection />
 
       {/* CTA */}
-      <CtaSection />     
-    </>
+      <CtaSection /> 
+      <FloatingContactButton />    
+    </div>
   );
 }

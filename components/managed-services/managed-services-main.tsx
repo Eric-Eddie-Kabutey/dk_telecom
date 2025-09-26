@@ -26,8 +26,7 @@ function ManagedServicesMain() {
                     typo="body-medium-regular"
                     className='text-gray-500'
                 >
-                    At Heirs Technologies, we provide comprehensive managed IT services designed to optimise, secure, and scale 
-                    your IT operations seamlessly.
+                    At DK Telecom, we provide reliable internet and ICT solutions designed to connect, empower, and scale your digital experience seamlessly.
                 </Typography>
             </div>
             <div className='w-full py-8 overflow-auto'>

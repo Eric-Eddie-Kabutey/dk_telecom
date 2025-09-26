@@ -4,10 +4,10 @@ import { AnimatedNumber } from "@/components/animate/AnimatedNumber";
 import { CellSignalFull, DeviceMobileCamera, GlobeSimple, Speedometer } from "@phosphor-icons/react";
 
 const statsData = [
-  { id: 1, icon: DeviceMobileCamera, label: "Connected Device", value: "50M+", description: "Trusted worldwide" },
-  { id: 2, icon: CellSignalFull, label: "Network Uptime", value: "99.9%", description: "Guaranteed reliability" },
-  { id: 3, icon: Speedometer, label: "Max Speed", value: "10Gbps", description: "Wide Range Reach" },
-  { id: 4, icon: GlobeSimple, label: "Cities Covered", value: "500+", description: "Industry Expertise" },
+  { id: 1, icon: CellSignalFull, label: "Network Uptime", value: "99.9%", description: "Always-on, reliable connectivity" },
+  { id: 2, icon: Speedometer, label: "Max Speed", value: "10Gbps", description: "High-performance internet speeds" },
+  { id: 3, icon: GlobeSimple, label: "Areas Covered", value: "500+", description: "Extensive nationwide coverage" },
+  { id: 4, icon: DeviceMobileCamera, label: "Connected Device", value: "15K+", description: "Thousands of devices supported" },
 ];
 
 export function Impact() {

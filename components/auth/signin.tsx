@@ -9,12 +9,15 @@ import { Input } from '../ui/input';
 import { Eye, EyeOff } from 'lucide-react';
 import { Button } from '../ui/button';
 import Link from 'next/link';
+import { PackagesModal } from '@/modal/packages-modal';
 
 function SignIn() {
   const [isPass, setIsPass] = useState(false)
+  const [openPackage, setOpenPackage] = useState(false);
+
   const form = useForm({
         defaultValues: {
-          email: "",
+          number: "",
           password: "",
           rememberMe: false,
         },
@@ -30,13 +33,13 @@ function SignIn() {
             >
               Sign In
             </Typography>
-            <div className='xl:w-[70%] md:w-[90%] sm:w-[75%] xs:w-[90%] w-full mx-auto pt-6 flex flex-col gap-4'>
+            <div className='xl:w-[70%] md:w-[90%] sm:w-[75%] xs:w-[90%] w-full mx-auto pt-6 flex flex-col gap-8'>
               <div className='w-full flex flex-col gap-3'>
                 <Typography
                   typo="header-6-light"
                   className='text-center'
                 >Don&apos;t have an account? <Link href="/signup" className='text-blue-500 underline'>Sign up</Link></Typography>
-                <button className='w-full px-4 py-2.5 flex justify-start items-center gap-8 border border-gray-500 rounded-md'>
+                {/* <button className='w-full px-4 py-2.5 flex justify-start items-center gap-8 border border-gray-500 rounded-md'>
                   <Image 
                     src={googleIcon}
                     alt='Google icon'
@@ -47,21 +50,21 @@ function SignIn() {
                   >
                     Sign in with Google
                   </Typography>
-                </button>
+                </button> */}
               </div>
-              <div className='flex items-center gap-3 justify-center'>
+              {/* <div className='flex items-center gap-3 justify-center'>
                 <span className='flex-1 border-b'></span>
                 <Typography
                   typo="body-medium-light"
                 >or</Typography>
                 <span className='flex-1 border-b'></span>
-              </div>
+              </div> */}
               <Form {...form}>
                   <form className='w-full flex flex-col md:gap-5 sm:gap-6 gap-8 text-gray-700'
                   >
                       <FormField
                           control={form?.control}
-                          name="email"
+                          name="number"
                           render={({ field }) => (
                               <FormItem className='sm:flex-1 w-full md:pb-3 flex flex-col gap-0'>
                                   <FormControl className="py-">
@@ -69,8 +72,8 @@ function SignIn() {
                                           <Input
                                               className="!py-6 !text-base text-gray-500 placeholder:text-gray-400 font-light rounded-md border-gray-300" 
                                               {...field} 
-                                              type='email'
-                                              placeholder='Business Email'
+                                              type='text'
+                                              placeholder='Customer number/email'
                                           />
                                       </div>
                                   </FormControl>
@@ -128,27 +131,33 @@ function SignIn() {
             <div className='flex flex-col items-center gap-8 text-black'>
                 <div className='flex flex-col gap-3 text-center'>
                     <Typography
-                        typo="header-5-medium"
+                    typo="header-5-medium"
                     >
-                        Explore, learn and network with BrowserStack events
+                    Reliable Internet & ICT Solutions with DK Telecom
                     </Typography>
                     <Typography
-                        typo="body-medium-regular"
+                    typo="body-medium-regular"
                     >
-                        Connect with industry experts and thought-leaders at our events, whether online or in a city near you!
+                    Stay connected with fast, secure, and affordable internet services. 
+                    DK Telecom empowers homes, businesses, and institutions with 
+                    cutting-edge connectivity and ICT solutions.
                     </Typography>
                 </div>
                 <Button
                     variant="outline"
+                    onClick={() => setOpenPackage(true)}
                     className='py-3 font-normal text-base rounded-md border-gray-500 bg-transparent'
                 >
-                    Explore all events
+                    Discover Our Services
                 </Button>
-            </div>
-            
+                </div>
           </div>
         </div>
       </section>
+      <PackagesModal 
+        open={openPackage}
+        setOpen={setOpenPackage}
+      />
     </div>
   )
 }

@@ -23,8 +23,8 @@ import case_study_1 from "@/public/assets/images/home/case-studies-1.png"
 import case_study_2 from "@/public/assets/images/home/case-studies-2.png"
 import case_study_3 from "@/public/assets/images/home/case-studies-3.png"
 
-import test1 from "@/public/assets/images/home/testimonial-1.png";
-import test2 from "@/public/assets/images/home/testimonial-2.png";
+import test1 from "@/public/assets/images/home/gambia-first-lady.png";
+import test2 from "@/public/assets/images/home/turkish-airline1.jpg";
 import test3 from "@/public/assets/images/home/testimonial-3.png";
 
 import hero_1 from "@/public/assets/images/home/hero_img.png"
@@ -98,21 +98,22 @@ export const testimonial_clients = [
         id: "1",
         logo: client_6,
         img: test1,
-        name: "Catherine Nwosu",
-        position: "Managing Director / CEO",
-        description: `"Heirs Technologies impressed me with their professionalism, expertise, and dedication. Their skilled 
-                        team provided tailored IT solutions, delivering strategic insights that significantly reduced our 
-                        infrastructure costs."`,
+        name: "Fatoumatta Bah-Barrow",
+        position: "First Lady of The Gambia & Founder of the FaBB Foundation",
+        description: `"We are deeply grateful to DK Telecom for designing and building the official website of the FaBB 
+                        Foundation. Their professionalism, creativity, and dedication ensured that our vision was translated 
+                        into a platform that truly reflects our mission to empower and uplift communities. Thanks to DK Telecom, 
+                        we are now able to share our initiatives and impact with greater reach and clarity."`,
     },
     {
         id: "2",
         logo: client_5,
         img: test2,
-        name: "Akosa Onyebuchi",
-        position: "Group Chief Information Officer",
-        description: `Heirs Technologies recruitment demonstrates a level of honesty, skill and due care not always found in 
-                        the industry. In times of need, I have always turned to this company to fill several vacancies from 
-                        software engineers to senior Technical leads, and my company has been the richer for it.`,
+        name: "Turkish Airlines",
+        position: "Management",
+        description: `Reliable connectivity is essential to our operations, and DK Telecom has consistently delivered 
+                        exceptional internet services that meet our high standards. Their professionalism and responsiveness 
+                        have made them a trusted partner for Turkish Airlines in The Gambia.`,
     },
     {
         id: "3",

@@ -49,7 +49,7 @@ function CompanyHero() {
 
   return (
     <div className='pt-4'>
-        <section className='container mx-auto max-h-[700px] h-[90vh] relative z-10'>
+        <section className='container mx-auto max-h-[600px] sm:h-[80vh] h-[60vh] relative z-10'>
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/5 to-black/60 rounded-[1.2rem] z-10"></div>
             <div className='w-full h-full rounded-[1.2rem]'>
                 <Image
@@ -58,7 +58,7 @@ function CompanyHero() {
                     className='w-full h-full object-cover rounded-[1.2rem]'
                 />
             </div>
-            <div className='pops absolute max-container bottom-16 inset-x-0 2xl:w-[85%] w-[95%] flex flex-col gap-6 text-white z-20 px-6'>
+            <div className='pops absolute max-container sm:bottom-16 bottom-12 inset-x-0 2xl:w-[85%] w-[95%] flex flex-col sm:gap-6 gap-4 text-white z-20 px-6'>
                 <div className='flex flex-col '>
                     <Typography
                         typo="header-2-medium"
@@ -149,7 +149,7 @@ function CompanyHero() {
                     </div>
                 </div>
 
-                <div className='w-full py-16 grid grid-cols-9 gap-4'>
+                <div className='w-full py-16 grid md:grid-cols-9 xs:grid-cols-10 grid-cols-11 gap-4'>
                     <AnimatePresence initial={false}>
                     {company_slides.map((data) => (
                         <motion.div
@@ -168,7 +168,7 @@ function CompanyHero() {
                                 },
                                 opacity: { duration: 0.7 }
                             }}
-                            className={`${selectedCulture === data.id ? "col-span-5" : "col-span-1"} h-[450px]`}
+                            className={`${selectedCulture === data.id ? "col-span-6" : "col-span-1"} md:h-[450px] sm:h-[350px] xs:h-[250px] h-[200px]`}
                             onClick={() => {
                                 if (!isAnimating) {
                                     setIsAnimating(true);
