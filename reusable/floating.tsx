@@ -1,5 +1,5 @@
 'use client';
-import { WhatsappLogo } from '@phosphor-icons/react';
+import { HeadCircuit, WhatsappLogo } from '@phosphor-icons/react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, MessageCircle, Phone, X } from 'lucide-react';
 import React, { useEffect, useState } from 'react'
@@ -18,7 +18,9 @@ function MainFloating() {
         return () => clearInterval(interval);
     }, [open]);
   return (
-    <div className='fixed right-[20px] bottom-16   flex flex-col items-end '>
+    <div className='fixed bottom-16  flex flex-col items-end '
+        style={{ right: "50px" }}
+    >
         <AnimatePresence>
             {open && (
             <motion.div
@@ -29,25 +31,31 @@ function MainFloating() {
             >
                 <div className="absolute bottom-[-8px] right-8 w-4 h-4 bg-white rotate-45"></div>
 
-                <div className="space-y-5">
-                <div className="flex items-center gap-3 cursor-pointer">
-                    <div className="p-2 bg-blue-500 rounded-full">
-                    <Phone className="text-white" size={25} />
+                <div className="space-y-5 flex flex-col gap-4">
+                    <div className="flex items-center gap-3 cursor-pointer">
+                        <div className="p-2 bg-yellow-500 rounded-full">
+                        <HeadCircuit className="text-white" size={25} />
+                        </div>
+                        <span className="font-extralight text-[16px]">Talk to AI.</span>
                     </div>
-                    <span className="font-extralight text-[16px]">Call us now.</span>
-                </div>
-                <div className="flex items-center gap-3 cursor-pointer">
-                    <div className="p-2 bg-[#1ebea5] rounded-full text-white">
-                    <WhatsappLogo size={25} />
+                    <div className="flex items-center gap-3 cursor-pointer">
+                        <div className="p-2 bg-blue-500 rounded-full">
+                        <Phone className="text-white" size={25} />
+                        </div>
+                        <span className="font-extralight text-[16px]">Call us now.</span>
                     </div>
-                    <span className="font-extralight text-[16px]">Talk to us on WhatsApp</span>
-                </div>
-                <div className="flex items-center gap-3 cursor-pointer">
-                    <div className="p-2 bg-orange-500 rounded-full text-white">
-                    <Mail className="text-white  " size={25} />
+                    <div className="flex items-center gap-2 cursor-pointer">
+                        <div className=" bg-[#1ebea5] rounded-full text-white">
+                        <WhatsappLogo size={45}  color='#1ebea5'/>
+                        </div>
+                        <span className="font-extralight text-[16px]">Talk to us on WhatsApp</span>
                     </div>
-                    <span className="font-extralight text-[16px]">Send us an E-mail</span>
-                </div>
+                    <div className="flex items-center gap-3 cursor-pointer">
+                        <div className="p-2 bg-orange-500 rounded-full text-white">
+                        <Mail className="text-white  " size={25} />
+                        </div>
+                        <span className="font-extralight text-[16px]">Send us an E-mail</span>
+                    </div>
                 </div>
             </motion.div>
             )}
