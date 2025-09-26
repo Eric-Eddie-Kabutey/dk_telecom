@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link'
-import { ArrowDown, ArrowLeft, ArrowRight, ArrowUp, Building2, Globe, House, Landmark, MessageSquare, Server, TvMinimalPlay, UserRound } from 'lucide-react'
+import { ArrowDown, ArrowLeft, ArrowRight, ArrowUp, Building2, Globe, House, Landmark, MessageSquare, Mic, Server, TvMinimalPlay, UserRound } from 'lucide-react'
 import HeroSVG from './HeroSvg'
 import GlowingRotatingBorder from '../svg/gloming-rotation'
 import Typography from '../shared/typography'
@@ -160,7 +160,7 @@ export function CompanyHero() {
 										</Typography>
 									</div>
 									<div className='h-full flex-1 flex xs:flex-row flex-col items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
-										<MessageSquare />
+										<Mic />
 										<Typography
 											typo="header-6-medium"
 										>
