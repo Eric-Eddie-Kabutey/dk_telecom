@@ -7,13 +7,11 @@ import Image from 'next/image';
 import { Button } from '../ui/button';
 import { ArrowRight } from 'lucide-react';
 import CaseStudies from './case-studies';
-import PressRelease from './press-release';
 import Blog from './blog';
 import Events from './events';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { insights_events } from '@/constants';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs-insights';
-import eventImg from "@/public/assets/images/careers/hero_mobile_img.png";
 
 function InsightsMain() {
     const [api, setApi] = useState<CarouselApi>();
