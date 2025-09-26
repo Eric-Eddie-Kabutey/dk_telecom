@@ -55,11 +55,11 @@ interface TeamMember {
         ]
     },
     {
-        id: "4",
-        name: "Michael Sock",
+        id: "5",
+        name: "Nicholas Jatta",
         is_board: true,
-        title: "Marketing Manager",
-        img: marketingManagerImage,
+        title: "Chief Technical Officer",
+        img: ctoImage,
         description: [
             `Dr. Fumbi Chima is a globally recognized technology executive with a proven track record of leading digital transformation, driving operational excellence, and aligning technology innovation with business strategy. With extensive experience spanning retail, consumer goods, financial services, and media, she has successfully spearheaded P&L management, M&A initiatives, and large-scale enterprise transformations across some of the world's most recognized brands.`,
             `Fumbi has held leadership roles at Boeing Credit Union (BECU), adidas, Fox Networks, Burberry, Walmart, and American Express, where she has been instrumental in optimizing infrastructure, implementing cutting-edge digital strategies, and fostering a culture of innovation and high performance. She is a thought leader in AI, cybersecurity, and digital transformation, recognized for her ability to bridge the gap between technology and business to create sustainable value and competitive advantage.`,
@@ -69,11 +69,11 @@ interface TeamMember {
         ]
     },
     {
-        id: "5",
-        name: "Nicholas Jatta",
+        id: "4",
+        name: "Michael Sock",
         is_board: true,
-        title: "Chief Technical Officer",
-        img: ctoImage,
+        title: "Marketing Manager",
+        img: marketingManagerImage,
         description: [
             `Dr. Fumbi Chima is a globally recognized technology executive with a proven track record of leading digital transformation, driving operational excellence, and aligning technology innovation with business strategy. With extensive experience spanning retail, consumer goods, financial services, and media, she has successfully spearheaded P&L management, M&A initiatives, and large-scale enterprise transformations across some of the world's most recognized brands.`,
             `Fumbi has held leadership roles at Boeing Credit Union (BECU), adidas, Fox Networks, Burberry, Walmart, and American Express, where she has been instrumental in optimizing infrastructure, implementing cutting-edge digital strategies, and fostering a culture of innovation and high performance. She is a thought leader in AI, cybersecurity, and digital transformation, recognized for her ability to bridge the gap between technology and business to create sustainable value and competitive advantage.`,
@@ -143,7 +143,7 @@ function BoardMembers() {
   };
   return (
     <div className='w-full'>
-        <div className='w-full xl:pt-8 xs:pt-4 grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2  2xl:gap-20 lg:gap-12 gap-4'>
+        <div className='w-full xl:pt-8 xs:pt-4 grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2  2xl:gap-20 lg:gap-12 gap-4'>
             {team_members.map((data, index) => (
                 <div 
                     onClick={() => handleMemberClick(data)}

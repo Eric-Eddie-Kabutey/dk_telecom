@@ -24,10 +24,10 @@ export function DownloadAppSection() {
             {/* Left Column: Text Content & QR */}
             <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
               <h2 className="text-3xl md:text-4xl font-bold">
-                Download DKPayWallet
+                Download DK Pay Wallet
               </h2>
               <p className="mt-2 text-lg text-blue-200">
-                What can you do with DKPay Wallet?
+                What can you do with DKPay Wallet?  
               </p>
 
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 my-10 w-full max-w-lg">
@@ -61,7 +61,7 @@ export function DownloadAppSection() {
                 </div>
                 <div className="sm:text-left">
                   <p className="font-semibold text-lg leading-tight">
-                    Scan this QR code to download<br />MyNafa Wallet
+                    Scan this QR code to download<br />DK Pay Wallet
                   </p>                  
                   <div className="flex items-center justify-center sm:justify-start gap-4 mt-4">
                     <Link href="#" aria-label="Get it on Google Play">
