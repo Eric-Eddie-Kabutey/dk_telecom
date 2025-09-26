@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link'
-import { ArrowDown, ArrowLeft, ArrowRight, ArrowUp, Building2, House, Landmark, UserRound } from 'lucide-react'
+import { ArrowDown, ArrowLeft, ArrowRight, ArrowUp, Building2, Globe, House, Landmark, MessageSquare, Server, TvMinimalPlay, UserRound } from 'lucide-react'
 import HeroSVG from './HeroSvg'
 import GlowingRotatingBorder from '../svg/gloming-rotation'
 import Typography from '../shared/typography'
@@ -134,7 +134,7 @@ export function CompanyHero() {
 							<div className='w-full h-full p-3 flex flex-col justify-between gap-8 bg-[#130B54] rounded-xl text-white	'>
 								<div className='h-[50%] flex justify-between items-center gap-3'>
 									<div className='h-full flex-1 flex xs:flex-row flex-col items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
-										<House />
+										<TvMinimalPlay />
 										<Typography
 											typo="header-6-medium"
 										>
@@ -142,7 +142,7 @@ export function CompanyHero() {
 										</Typography>
 									</div>
 									<div className='h-full flex-1 flex xs:flex-row flex-col items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
-										<Landmark />
+										<Globe />
 										<Typography
 											typo="header-6-medium"
 										>
@@ -152,7 +152,7 @@ export function CompanyHero() {
 								</div>
 								<div className='h-[50%] flex justify-between items-center gap-3'>
 									<div className='h-full flex-1 flex xs:flex-row flex-col items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
-										<Building2 />
+										<Server />
 										<Typography
 											typo="header-6-medium"
 										>
@@ -160,7 +160,7 @@ export function CompanyHero() {
 										</Typography>
 									</div>
 									<div className='h-full flex-1 flex xs:flex-row flex-col items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
-										<UserRound />
+										<MessageSquare />
 										<Typography
 											typo="header-6-medium"
 										>
