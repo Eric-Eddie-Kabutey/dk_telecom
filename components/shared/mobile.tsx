@@ -5,10 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronRight } from "lucide-react";
+import { Menu } from "lucide-react";
 
 import dk_logo from "@/public/assets/images/dk_logo_blue.png"
-import back_arrow from "@/public/assets/icons/back-arrow.png"
 import { Accordion } from "../ui/accordion-faqs";
 import { AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
 import { Article, Binoculars, Briefcase, Building, Calendar, FileText, Globe, Phone, PuzzlePiece, Rocket } from "@phosphor-icons/react";
