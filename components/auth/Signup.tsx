@@ -153,7 +153,7 @@ function Signup() {
           </div>
         </div>
         <div className='md:block hidden flex-1 h-full bg-[#130b54]'>
-          <div className='xl:w-[80%] w-[90%] mx-auto py-12 flex flex-col gap-6 text-white'>
+          <div className='xl:w-[80%] w-[90%] mx-auto py-24 flex flex-col gap-6 text-white'>
             <Typography
               typo="header-6-medium"
             >What&apos;s include</Typography>

@@ -72,10 +72,10 @@ export function CompanyHero() {
 			</section>
 			<div className='w-full relative min-h-[45vh] flex flex-col justify-center'>
 				<HeroSVG />
-				<div className='max-container 2xl:w-[85%] w-[95%] relative mx-auto flex md:flex-row flex-col justify-between items-center'>
+				<div className='max-container 2xl:w-[85%] w-[95%] relative mx-auto flex md:flex-row flex-col justify-between items-center z-[20]'>
 					<GlowingRotatingBorder className='	xl:w-[35%] lg:w-[40%] w-full'>
 						<div className='w-full h-[300px] p-1 ibm'>
-							<div className='w-full h-full p-3 flex flex-col justify-between gap-8 bg-[#130B54] rounded-xl text-white	'>
+							<div className='w-full h-full p-3 flex flex-col justify-between gap-8 bg-[#130B54] rounded-xl text-white z-[20]'>
 								<div className='h-[50%] flex justify-between items-center gap-3'>
 									<div className='h-full flex-1 flex xs:flex-row flex-col items-center justify-center gap-2 text-center p-3 border border-[#f5bc36] rounded-lg'>
 										<House />

@@ -72,7 +72,7 @@ export function TestimonialSliderSection() {
           </CarouselContent>
           
           {/* Custom Navigation */}
-          <div className="absolute inset-x-0 bottom-[-60px] md:bottom-1/2 md:translate-y-1/2 flex justify-center md:justify-between items-center z-10 pointer-events-none">
+          <div className="absolute inset-x-0 bottom-[-60px] md:bottom-1/2 md:translate-y-1/2 hidden sm:flex justify-center md:justify-between items-center z-10 pointer-events-none">
             <CarouselPrevious className="relative h-14 w-14 rounded-full bg-indigo-900 text-white border-none shadow-lg hover:bg-indigo-800 pointer-events-auto disabled:opacity-50 md:static">
               <ArrowLeft className="h-6 w-6" />
             </CarouselPrevious>

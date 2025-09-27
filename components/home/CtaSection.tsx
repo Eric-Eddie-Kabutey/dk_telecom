@@ -10,7 +10,7 @@ export function CtaSection() {
       {/* <HeroSVG /> */}
       <CtaSVG />
       <div className="container mx-auto px-6 py-20 text-center">
-        <h2 className="w-[65%] mx-auto sm:text-4xl text-3xl md:text-6xl font-regular tracking-normal leading-relaxed">
+        <h2 className="lg:w-[65%] w-full mx-auto sm:text-4xl xs:text-3xl text-2xl md:text-6xl font-regular tracking-normal leading-relaxed">
           Ready to Experience the Speed
           That Redefines Connectivity?
         </h2>

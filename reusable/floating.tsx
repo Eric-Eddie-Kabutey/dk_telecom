@@ -18,7 +18,7 @@ function MainFloating() {
         return () => clearInterval(interval);
     }, [open]);
   return (
-    <div className='fixed bottom-16  flex flex-col items-end '
+    <div className='fixed bottom-16  flex flex-col items-end z-[999]'
         style={{ right: "50px" }}
     >
         <AnimatePresence>
@@ -63,7 +63,7 @@ function MainFloating() {
 
         <motion.button
             whileTap={{ scale: 0.9 }}
-            className="w-14 h-14 rounded-full bg-green-500 flex items-center justify-center shadow-lg text-white"
+            className="w-14 h-14 rounded-full bg-green-500 flex items-center justify-center shadow-lg text-white z-[999]"
             onClick={() => setOpen(!open)}
         >
             <AnimatePresence mode="wait">

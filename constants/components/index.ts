@@ -14,14 +14,11 @@ import visaImg from "@/public/assets/images/payment_methods/visa_logo.png"
 export const payment_methods = [visaImg, googlepayImg, taybullImg, mastercardImg, applepayImg]
 
 export const signup_includes = [
-    "Instant Access to Real Devices",
-    "30 mins each of Interactive Browser & Mobile app testing",
-    "100 mins of Automated Browser & Mobile App Testing",
-    "5000 screenshots/month for Visual Testing with Percy",
-    "Pre-integrated AI agents across the Testing Life Cycle",
-    "Test Case Generation Agent – 90% Faster Test Creation",
-    "Self-Healing Agent – 40% Fewer Automation Build failures",
-    "Visual Review Agent, A11y Issue Detection Agent and more",
+    "Internet installation requests",
+    "Subscription management & plan upgrades",
+    "Payment receipt uploads",
+    "Auto-notifications for renewals, expiry, and plan changes",
+    "In-app customer support (WhatsApp + chatbot + agent escalation)",
 ]
 
 export const languages = [
