@@ -18,6 +18,8 @@ import Autoplay from "embla-carousel-autoplay";
 export function SolvingProblems() {
   const [api, setApi] = useState<CarouselApi>();
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     if (!api) return;
@@ -33,6 +35,31 @@ export function SolvingProblems() {
       api.off("select", handleSelect);
     };
   }, [api]);
+
+  useEffect(() => {
+      if (!api) return;
+  
+      const updateState = () => {
+        const newCount = api.scrollSnapList().length;
+        const newCurrent = api.selectedScrollSnap();
+        
+        console.log("Count:", newCount, "Current:", newCurrent);
+        
+        setCount(newCount);
+        setCurrent(newCurrent);
+      };
+  
+      // Set initial state
+      updateState();
+  
+      api.on("select", updateState);
+      api.on("slidesChanged", updateState);
+  
+      return () => {
+        api.off("select", updateState);
+        api.off("slidesChanged", updateState);
+      };
+    }, [api]);
 
   const activeSolution = problemsData[selectedIndex]?.solution;
 
@@ -92,6 +119,20 @@ export function SolvingProblems() {
           <div className="absolute inset-0 hidden sm:flex justify-between items-center z-10 pointer-events-none px-0 md:-px-12">
             <CarouselPrevious className="relative h-12 w-12 rounded-full bg-indigo-900 text-white border-none shadow-lg hover:bg-indigo-800 pointer-events-auto" />
             <CarouselNext className="relative h-12 w-12 rounded-full bg-indigo-900 text-white border-none shadow-lg hover:bg-indigo-800 pointer-events-auto" />
+          </div>
+          <div className="w-full pt-10 px-8 flex justify-end items-center gap-6">
+            <div className=" flex justify-end items-center gap-2 ">
+                {Array.from({ length: count }).map((_, index) => (
+                  <button
+                      key={index}
+                      onClick={() => api?.scrollTo(index)}
+                      className={` h-[8px] rounded-full transition-colors ${
+                      index === current ? 'w-10 bg-app-primary' : 'w-[8px] bg-black'
+                      }`}
+                      aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
+            </div>
           </div>
         </Carousel>
         

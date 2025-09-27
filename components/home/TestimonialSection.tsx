@@ -17,6 +17,8 @@ import { testimonialsData } from "@/data/testimonial-mock";
 export function TestimonialSliderSection() {
   const [api, setApi] = useState<CarouselApi>();
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     if (!api) return;
@@ -29,6 +31,32 @@ export function TestimonialSliderSection() {
     
     return () => {
       api.off("select", handleSelect);
+    };
+    
+  }, [api]);
+
+  useEffect(() => {
+    if (!api) return;
+
+    const updateState = () => {
+      const newCount = api.scrollSnapList().length;
+      const newCurrent = api.selectedScrollSnap();
+      
+      console.log("Count:", newCount, "Current:", newCurrent);
+      
+      setCount(newCount);
+      setCurrent(newCurrent);
+    };
+
+    // Set initial state
+    updateState();
+
+    api.on("select", updateState);
+    api.on("slidesChanged", updateState);
+
+    return () => {
+      api.off("select", updateState);
+      api.off("slidesChanged", updateState);
     };
   }, [api]);
 
@@ -79,6 +107,20 @@ export function TestimonialSliderSection() {
             <CarouselNext className="relative h-14 w-14 rounded-full bg-indigo-900 text-white border-none shadow-lg hover:bg-indigo-800 pointer-events-auto disabled:opacity-50 md:static">
               <ArrowRight className="h-6 w-6" />
             </CarouselNext>
+          </div>
+          <div className="w-full pt-6 flex justify-end items-center gap-6">
+            <div className=" flex justify-end items-center gap-2 ">
+                {Array.from({ length: count }).map((_, index) => (
+                  <button
+                      key={index}
+                      onClick={() => api?.scrollTo(index)}
+                      className={` h-[8px] rounded-full transition-colors ${
+                      index === current ? 'w-10 bg-app-primary' : 'w-[8px] bg-black'
+                      }`}
+                      aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
+            </div>
           </div>
         </Carousel>
       </div>

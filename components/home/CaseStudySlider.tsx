@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {
   Carousel,
+  CarouselApi,
   CarouselContent,
   CarouselItem,
   CarouselNext,
@@ -12,9 +13,11 @@ import {
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { caseStudiesData } from "@/data/case-studies-mock";
 import Autoplay from "embla-carousel-autoplay";
+import { useEffect, useState } from "react";
 
 
 function CaseStudyCard({ study }: { study: typeof caseStudiesData[0] }) {
+  
   return (
     // The card is now a single relative container
     <div className="group relative h-full flex flex-col">
@@ -52,6 +55,38 @@ function CaseStudyCard({ study }: { study: typeof caseStudiesData[0] }) {
 
 // --- Main Section Component ---
 export function CaseStudySlider() {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!api) return;
+
+    console.log("API initialized");
+    console.log("Scroll snap list length:", api.scrollSnapList().length);
+    console.log("Current slide:", api.selectedScrollSnap());
+
+    const updateState = () => {
+      const newCount = api.scrollSnapList().length;
+      const newCurrent = api.selectedScrollSnap();
+      
+      console.log("Count:", newCount, "Current:", newCurrent);
+      
+      setCount(newCount);
+      setCurrent(newCurrent);
+    };
+
+    // Set initial state
+    updateState();
+
+    api.on("select", updateState);
+    api.on("slidesChanged", updateState);
+
+    return () => {
+      api.off("select", updateState);
+      api.off("slidesChanged", updateState);
+    };
+  }, [api]);
   return (
     <section className="ibm bg-indigo-50 py-20 md:py-28 px-6">
       <div className="max-container">
@@ -75,6 +110,7 @@ export function CaseStudySlider() {
 
         {/* Carousel */}
         <Carousel
+          setApi={setApi}
           opts={{
             align: "start",
             loop: true,
@@ -105,6 +141,21 @@ export function CaseStudySlider() {
                 <CarouselNext className="h-12 w-12 rounded-full bg-indigo-900 text-white border-none shadow-lg hover:bg-indigo-800 pointer-events-auto mr-4">
                     <ArrowRight className="h-6 w-6" />
                 </CarouselNext>
+            </div>
+            <div className="w-full pt-6 flex justify-end items-center gap-6">
+              {/* <div className="w-[50%]"></div> */}
+              <div className=" flex justify-end items-center gap-2 ">
+                  {Array.from({ length: count }).map((_, index) => (
+                    <button
+                        key={index}
+                        onClick={() => api?.scrollTo(index)}
+                        className={` h-[8px] rounded-full transition-colors ${
+                        index === current ? 'w-10 bg-app-primary' : 'w-[8px] bg-black'
+                        }`}
+                        aria-label={`Go to slide ${index + 1}`}
+                    />
+                  ))}
+              </div>
             </div>
         </Carousel>
 
